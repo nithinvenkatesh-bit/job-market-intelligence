@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Secrets - never commit
+.env
+
+# Data - large and regenerable
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.duckdb
+*.parquet
+*.csv
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Testing
+.pytest_cache/
+.coverage
