@@ -10,6 +10,12 @@ Every extractor returns an evidence span -- the exact text it matched. That
 mirrors the contract we'll impose on the LLM, so the two are directly
 comparable, and it lets us check whether an answer was grounded or invented.
 
+REVISION NOTE (after error analysis on 2,000 postings):
+  Four bugs were found by inspecting the worst failures and are fixed here.
+  Each is marked FIX-n below with the real posting that exposed it. The
+  baseline had to be corrected before comparing against an LLM -- measuring
+  a strong model against a broken baseline would flatter the model.
+
 Run:  python src/baselines.py
 """
 
@@ -49,16 +55,36 @@ class Extraction:
 # Salary
 # ---------------------------------------------------------------------------
 
-# A dollar figure: $140,000 / $140,000.50 / $140K / $65.00
-_AMOUNT = r"\$\s?(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?|\d+(?:\.\d{1,2})?)\s*([kK])?"
+# FIX-1: number truncation.
+# The old pattern was \d{1,3}(?:,\d{3})*  -- the * allows ZERO comma groups,
+# so "163680.00" matched the first three digits and stopped, yielding 163.
+# Requiring + on the comma-separated branch means an unformatted number must
+# fall through to the plain-digits branch and be captured whole.
+#   Broke on: job 3906254848 "$ 163680.00" -> 163
+#             job 3886851948 "$1840.90"    -> 184
+_NUM = r"(\d{1,3}(?:,\d{3})+(?:\.\d{1,2})?|\d+(?:\.\d{1,2})?)\s*([kK])?"
 
-# A range: two figures joined by a dash, en-dash, or the word "to".
-_SALARY_RANGE = re.compile(_AMOUNT + r"\s*(?:-|–|—|to|through)\s*" + _AMOUNT)
+_AMOUNT = r"\$\s*" + _NUM          # requires a dollar sign
+_AMOUNT_OPT = r"\$?\s*" + _NUM     # dollar sign optional (second half of a range)
+
+# FIX-2: ranges where only the first figure carries a dollar sign.
+#   Broke on: job 3895206655 "$50-60K" -> matched only "$50"
+_SALARY_RANGE = re.compile(_AMOUNT + r"\s*(?:-|–|—|to|through)\s*" + _AMOUNT_OPT)
 _SALARY_SINGLE = re.compile(_AMOUNT)
 
-_HOURLY_HINT = re.compile(r"per\s+hour|hourly|/\s?hr\b|an\s+hour|/hour", re.I)
-_YEARLY_HINT = re.compile(r"per\s+year|annual|annually|/\s?yr\b|a\s+year|per\s+annum", re.I)
-_MONTHLY_HINT = re.compile(r"per\s+month|monthly|/\s?mo\b", re.I)
+# FIX-3: scale words. "$30 billion" is company revenue, not compensation.
+#   Broke on: job 3903456111 "$224 billion (retail investment client assets)"
+_SCALE_WORD = re.compile(r"^\s*(billion|million|trillion|bn|mm)\b", re.I)
+
+# Ordered so that more specific periods are tried first; ties are broken by
+# proximity, not by list position.
+_PERIOD_HINTS: list[tuple[str, re.Pattern]] = [
+    ("HOURLY",   re.compile(r"per\s+hour|hourly|/\s?hr\b|an\s+hour|/hour|\bph\b", re.I)),
+    ("WEEKLY",   re.compile(r"per\s+week\b|/\s?wk\b|(?:gross\s+)?weekly\s+(?:pay|rate|salary|earnings)", re.I)),
+    ("BIWEEKLY", re.compile(r"bi-?weekly|every\s+two\s+weeks", re.I)),
+    ("MONTHLY",  re.compile(r"per\s+month|monthly|/\s?mo\b|a\s+month", re.I)),
+    ("YEARLY",   re.compile(r"per\s+year|annual|annually|/\s?yr\b|a\s+year|per\s+annum", re.I)),
+]
 
 
 def _to_float(number: str, k_suffix: str | None) -> float:
@@ -69,58 +95,132 @@ def _to_float(number: str, k_suffix: str | None) -> float:
     return value
 
 
+def _nearest_period(text: str, start: int, end: int) -> str | None:
+    """Find the period word CLOSEST to the matched figure.
+
+    FIX-4: postings routinely quote both an hourly and an annual rate in the
+    same paragraph. The old code scanned a +/-120 char window and took the
+    first hint it found, which meant it picked whichever word appeared
+    earlier in the string rather than whichever describes THIS number. That
+    single bug produced roughly 9 of the 15 worst errors.
+      Broke on: "Salary Grade Minimum - Annual $108,400 ... Hourly $52.12"
+                "Salary/Hourly Rate $130k - $180k Annually"
+    """
+    lo, hi = max(0, start - 150), min(len(text), end + 150)
+    window = text[lo:hi]
+    best_period: str | None = None
+    best_distance = 10**9
+
+    for period, pattern in _PERIOD_HINTS:
+        for m in pattern.finditer(window):
+            pos = lo + m.start()
+            # Distance 0 if the hint sits inside the match itself.
+            distance = 0 if start <= pos <= end else min(abs(pos - end), abs(start - pos))
+            if distance < best_distance:
+                best_period, best_distance = period, distance
+
+    return best_period
+
+
+def _find_amount(text: str) -> tuple[re.Match | None, bool]:
+    """First plausible money match, skipping scale-word figures.
+
+    Returns (match, is_range).
+    """
+    for m in _SALARY_RANGE.finditer(text):
+        if not _SCALE_WORD.match(text[m.end():m.end() + 12]):
+            return m, True
+    for m in _SALARY_SINGLE.finditer(text):
+        if not _SCALE_WORD.match(text[m.end():m.end() + 12]):
+            return m, False
+    return None, False
+
+
 def extract_salary(text: str) -> tuple[float | None, float | None, str | None, str | None]:
     """Return (min, max, pay_period, evidence).
 
-    Strategy: prefer an explicit range, fall back to a single figure. Pay
-    period comes from words near the match; when absent we infer from
-    magnitude -- under $500 is almost certainly an hourly rate, not a salary.
-    That heuristic is documented rather than hidden because it is the kind
-    of assumption that quietly distorts downstream numbers.
+    Known limitation, deliberately left in: this takes the FIRST money
+    figure in the description. When a posting leads with a benefit
+    ("$5,250 annually toward education") the extractor grabs that instead
+    of the salary. A regex has no way to tell which figure is compensation.
+    That is precisely the judgement an LLM should provide, so it stays as a
+    documented gap rather than being papered over with more heuristics.
     """
     if not text:
         return None, None, None, None
 
-    match = _SALARY_RANGE.search(text)
-    if match:
+    match, is_range = _find_amount(text)
+    if match is None:
+        return None, None, None, None
+
+    if is_range:
         low = _to_float(match.group(1), match.group(2))
         high = _to_float(match.group(3), match.group(4))
-        evidence = match.group(0)
+        # "$50-60K": the K binds only to the second figure. Propagate it when
+        # the first is implausibly small relative to the second.
+        if match.group(4) and not match.group(2) and low < high / 100:
+            low *= 1_000
     else:
-        match = _SALARY_SINGLE.search(text)
-        if not match:
-            return None, None, None, None
         low = high = _to_float(match.group(1), match.group(2))
-        evidence = match.group(0)
 
-    # Look at a window around the match for period words.
-    start, end = max(0, match.start() - 120), min(len(text), match.end() + 120)
-    window = text[start:end]
+    period = _nearest_period(text, match.start(), match.end())
 
-    if _HOURLY_HINT.search(window):
-        period = "HOURLY"
-    elif _YEARLY_HINT.search(window):
+    # Magnitude sanity check. An "hourly" rate of $108,400 or a "yearly"
+    # salary of $33 is a misread, not a real figure. Stated openly because
+    # it is an assumption, and assumptions should be visible in the code.
+    # Magnitude sanity checks. Stated openly because these are assumptions.
+    if period == "HOURLY" and low > 1_000:
         period = "YEARLY"
-    elif _MONTHLY_HINT.search(window):
+    elif period == "YEARLY" and low < 200:
+        period = "HOURLY"
+    # HYPOTHESIS (validate on holdout): US federal minimum wage full-time is
+    # ~$15,080/yr, so a "yearly" figure between $1k and $20k is far more
+    # likely a monthly salary -- the pattern in state-government postings
+    # that quote "$3,640.00 - $4,561.00" with no period word at all.
+    elif period == "YEARLY" and 1_000 < low < 20_000:
         period = "MONTHLY"
-    else:
+    elif period is None:
         period = "HOURLY" if low < 500 else "YEARLY"
 
     if low > high:  # ranges occasionally appear reversed
         low, high = high, low
 
-    return low, high, period, evidence.strip()
+    return low, high, period, match.group(0).strip()
 
 
 # ---------------------------------------------------------------------------
 # Seniority
 # ---------------------------------------------------------------------------
 
+# FIX-5: titles where a seniority keyword does NOT indicate seniority.
+# "Account Executive" is a salesperson. "Executive Assistant" supports an
+# executive. Error analysis found 39 false Executive labels, and these two
+# patterns accounted for nearly all of them.
+_SENIORITY_EXCLUSIONS = re.compile(
+    r"(account|sales|client|enterprise|outside|inside|healthcare|"
+    r"business\s+development)\s+executive"
+    r"|executive\s+(assistant|administrative|admin|support|secretary)"
+    r"|assistant\s+to\s+(the\s+)?(ceo|president|vice\s+president|vp|leadership)"
+    r"|support\s+(for|to)\s+(the\s+)?(ceo|cto|cfo|coo|president|vp)",
+    re.I,
+)
+
+# When the title is an assistant/support role, the Executive rule is
+# suppressed entirely -- otherwise "Executive Assistant to the Vice
+# President" still matches on the leftover "Vice President".
+_ASSISTANT_ROLE = re.compile(
+    r"\b(assistant|secretary|receptionist|coordinator)\b|support\s+(for|to)\b",
+    re.I,
+)
+
 # Output uses LinkedIn's own label space so it can be scored directly
 # against formatted_experience_level. Order matters -- first match wins.
 _SENIORITY_RULES: list[tuple[str, str]] = [
     (r"\b(intern|internship|co-?op)\b", "Internship"),
-    (r"\b(chief|c[teof]o\b|vice president|\bvp\b|head of|executive)\b", "Executive"),
+    # Restricted to genuine C-suite. Bare "chief" was catching "Division
+    # Chief" and "Planning Chief", which are middle-management titles.
+    (r"\bc[teofim]o\b|\bchief\s+\w+\s+officer\b|\bvice\s+president\b|\bvp\b|\bhead\s+of\b",
+     "Executive"),
     (r"\bdirector\b", "Director"),
     (r"\b(senior|sr\.?|lead|principal|staff|manager|mgr\.?)\b", "Mid-Senior level"),
     (r"\b(junior|jr\.?|entry[- ]level|new grad|graduate|trainee|apprentice)\b", "Entry level"),
@@ -133,14 +233,30 @@ _SENIORITY = [(re.compile(p, re.I), label) for p, label in _SENIORITY_RULES]
 def classify_seniority(title: str, description: str = "") -> tuple[str | None, str | None]:
     """Return (level, evidence).
 
-    Title first -- it is far more reliable than the body text, where words
-    like "senior leadership" appear constantly without describing the role.
-    Returns None rather than guessing when no keyword matches, so that
-    abstention shows up honestly in the metrics instead of being hidden
-    behind a default label.
+    Title only -- the body text says "senior leadership" constantly without
+    describing the role being advertised. Returns None rather than guessing
+    when no keyword matches, so abstention shows up honestly in the metrics
+    instead of hiding behind a default label.
+
+    Known limitation: 444 postings labelled Entry level by LinkedIn carry no
+    seniority keyword at all (File Clerk, Pharmacy Technician, Dental
+    Assistant). No title-based rule can reach them. This is the single
+    clearest place for an LLM to earn its cost, and it is left unfixed on
+    purpose so the comparison is honest.
     """
+    original = title or ""
+    working = original
+    suppress_executive = False
+
+    if _SENIORITY_EXCLUSIONS.search(working):
+        working = _SENIORITY_EXCLUSIONS.sub(" ", working)
+        if _ASSISTANT_ROLE.search(original):
+            suppress_executive = True
+
     for pattern, label in _SENIORITY:
-        m = pattern.search(title or "")
+        if label == "Executive" and suppress_executive:
+            continue
+        m = pattern.search(working)
         if m:
             return label, m.group(0)
     return None, None
@@ -150,16 +266,19 @@ def classify_seniority(title: str, description: str = "") -> tuple[str | None, s
 # Years of experience
 # ---------------------------------------------------------------------------
 
-_YEARS = re.compile(r"(\d{1,2})\s*(?:\+|plus)?\s*(?:-|–|to)?\s*(\d{1,2})?\s*\+?\s*(?:year|yr)s?\b", re.I)
+_YEARS = re.compile(
+    r"(\d{1,2})\s*(?:\+|plus)?\s*(?:-|–|to)?\s*(\d{1,2})?\s*\+?\s*(?:year|yr)s?\b",
+    re.I,
+)
 
 
 def extract_years_experience(text: str) -> tuple[int | None, str | None]:
     """Return (minimum years, evidence).
 
-    A bare "5 years" is ambiguous -- it might be "5 years of company history".
-    So we only accept a match when the word 'experience' appears within an
-    80-character window, and we take the smallest qualifying number, since
-    job ads state a floor ("5+ years") far more often than a ceiling.
+    A bare "5 years" is ambiguous -- it might be "5 years in business". So a
+    match only counts when "experience" appears within an 80-character
+    window, and we take the smallest qualifying number, since job ads state
+    a floor ("5+ years") far more often than a ceiling.
     """
     if not text:
         return None, None
@@ -185,9 +304,9 @@ def extract_years_experience(text: str) -> tuple[int | None, str | None]:
 # Skills
 # ---------------------------------------------------------------------------
 
-# Canonical name -> regex alternatives. Aliases are folded here so that
-# "PowerBI", "Power-BI" and "Power BI" all normalise to one entity; without
-# canonicalisation the skill counts fragment and precision/recall break.
+# Canonical name -> regex alternatives. Aliases fold here so "PowerBI",
+# "Power-BI" and "Power BI" all normalise to one entity; without
+# canonicalisation the counts fragment and precision/recall break.
 _SKILL_PATTERNS: dict[str, str] = {
     "SQL": r"\bsql\b",
     "Python": r"\bpython\b",
@@ -235,12 +354,12 @@ _SKILL_PATTERNS: dict[str, str] = {
 }
 
 # Note: bare "R" is deliberately excluded. Matching a single capital letter
-# produces far too many false positives (bullet markers, "R&D", initials).
-# It is a known gap and a good example of where an LLM should win.
+# catches bullet markers, "R&D", and initials. It is a known gap and a clean
+# example of where an LLM should win.
 
 _SKILLS = {name: re.compile(p, re.I) for name, p in _SKILL_PATTERNS.items()}
 
-# Words that signal a skill is optional rather than mandatory.
+# Words signalling a skill is optional rather than mandatory.
 _PREFERRED_HINT = re.compile(
     r"preferred|nice to have|nice-to-have|a plus|bonus|desirable|would be great|"
     r"ideally|familiarity with|exposure to|good to have",
@@ -251,10 +370,11 @@ _PREFERRED_HINT = re.compile(
 def extract_skills(text: str) -> tuple[list[str], list[str], dict[str, str]]:
     """Return (required, preferred, evidence-by-skill).
 
-    Required vs preferred is decided by looking at a window around each
-    match for hedging language. This is crude on purpose -- it is precisely
-    the distinction a keyword matcher cannot really make, and therefore the
-    clearest place to see whether the LLM earns its cost.
+    Required vs preferred is decided by scanning a window around each match
+    for hedging language. This is crude on purpose -- descriptions routinely
+    say "Python required; Spark preferred" in one sentence, which a window
+    cannot separate. It is the clearest place to see whether the LLM earns
+    its cost.
     """
     if not text:
         return [], [], {}
@@ -315,10 +435,10 @@ def extract_all(job_id: int, title: str, description: str) -> Extraction:
     )
 
 
-def run_on_benchmark() -> pd.DataFrame:
+def run_on_benchmark(dataset: str = "benchmark") -> pd.DataFrame:
     con = duckdb.connect()
     df = con.execute(
-        f"SELECT job_id, title, description FROM '{PROCESSED / 'benchmark.parquet'}'"
+        f"SELECT job_id, title, description FROM '{PROCESSED / f'{dataset}.parquet'}'"
     ).fetchdf()
 
     rows = [
@@ -346,16 +466,25 @@ def run_on_benchmark() -> pd.DataFrame:
         for e in rows
     ])
 
-    path = PROCESSED / "baseline_extractions.parquet"
+    path = PROCESSED / f"baseline_{dataset}.parquet"
     out.to_parquet(path, index=False)
     return out
 
 
 if __name__ == "__main__":
-    result = run_on_benchmark()
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset", default="benchmark",
+                        choices=["benchmark", "holdout"],
+                        help="benchmark = tuning set; holdout = unseen validation set")
+    args = parser.parse_args()
+
+    result = run_on_benchmark(args.dataset)
     total = len(result)
 
-    print(f"\nExtracted {total:,} postings with rule-based methods\n")
+    print(f"\nDataset: {args.dataset}")
+    print(f"Extracted {total:,} postings with rule-based methods\n")
     print("Coverage (% of postings where the rule produced an answer)")
     print("-" * 55)
     for col in ("salary_min", "pay_period", "years_experience_min", "seniority"):
@@ -374,9 +503,5 @@ if __name__ == "__main__":
 
     print("\nSeniority distribution")
     print(result["seniority"].value_counts(dropna=False).to_string())
-
-    print("\nSample extractions")
-    print(result[["job_id", "salary_min", "salary_max", "pay_period",
-                  "years_experience_min", "seniority", "n_required"]].head(10).to_string(index=False))
 
     print(f"\nWrote {PROCESSED / 'baseline_extractions.parquet'}")

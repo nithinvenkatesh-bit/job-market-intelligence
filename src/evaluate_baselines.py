@@ -39,7 +39,17 @@ ANNUALISE = {
     "YEARLY": 1,
 }
 
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--dataset", default="benchmark",
+                    choices=["benchmark", "holdout"])
+args = parser.parse_args()
+DATASET = args.dataset
+
 con = duckdb.connect()
+
+print(f"Evaluating on: {DATASET}")
 
 df = con.execute(f"""
     SELECT
@@ -55,8 +65,8 @@ df = con.execute(f"""
       e.pay_period            AS pred_pay_period,
       e.seniority             AS pred_seniority,
       e.years_experience_min  AS pred_years
-    FROM '{PROCESSED / "benchmark.parquet"}' b
-    LEFT JOIN '{PROCESSED / "baseline_extractions.parquet"}' e USING (job_id)
+    FROM '{PROCESSED / f"{DATASET}.parquet"}' b
+    LEFT JOIN '{PROCESSED / f"baseline_{DATASET}.parquet"}' e USING (job_id)
 """).fetchdf()
 
 # Label shape: a true range, or a single midpoint?
@@ -225,5 +235,5 @@ summary = pd.DataFrame([
 ])
 print(summary.to_string(index=False))
 
-summary.to_csv(PROCESSED / "baseline_summary.csv", index=False)
-print(f"\nWrote {PROCESSED / 'baseline_summary.csv'}")
+summary.to_csv(PROCESSED / f"baseline_summary_{DATASET}.csv", index=False)
+print(f"\nWrote baseline_summary_{DATASET}.csv")
