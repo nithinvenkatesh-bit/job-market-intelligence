@@ -62,7 +62,7 @@ con.execute("""
 
       -- Does the prose actually contain a dollar figure? This is what
       -- decides whether extraction is even possible for a given row.
-      regexp_matches(description, '\\$[0-9]')            AS salary_in_text,
+      regexp_matches(description, '\\$\\s?[0-9]')            AS salary_in_text,
 
       CASE
         WHEN regexp_matches(lower(title), 'analytics engineer') THEN 'Analytics Engineer'

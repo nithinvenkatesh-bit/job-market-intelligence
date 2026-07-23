@@ -42,7 +42,7 @@ con.execute("""
       remote_allowed,
       LENGTH(description)        AS desc_len,
       (min_salary IS NOT NULL OR med_salary IS NOT NULL) AS has_salary_label,
-      regexp_matches(description, '\\$[0-9]')             AS salary_in_text
+      regexp_matches(description, '\\$\\s?[0-9]')            AS salary_in_text
     FROM postings
     WHERE description IS NOT NULL
       AND LENGTH(description) >= 500
