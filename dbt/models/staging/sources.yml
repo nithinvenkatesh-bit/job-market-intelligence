@@ -1,0 +1,51 @@
+version: 2
+
+sources:
+  - name: raw
+    description: >
+      Parquet outputs from the Python pipeline. dbt reads these directly
+      rather than requiring a load step -- DuckDB queries parquet natively,
+      which keeps the project to one storage format.
+    meta:
+      external_location: "../data/processed/{name}.parquet"
+    tables:
+      - name: benchmark
+        description: "2,000 stratified postings with LinkedIn ground-truth labels"
+        columns:
+          - name: job_id
+            tests: [unique, not_null]
+          - name: description
+            tests: [not_null]
+          - name: stratum
+            tests:
+              - accepted_values:
+                  values: ['labeled_stated', 'labeled_not_stated']
+
+      - name: holdout
+        description: "2,000 unseen postings, no overlap with benchmark"
+        columns:
+          - name: job_id
+            tests: [unique, not_null]
+
+      - name: baseline_benchmark
+        description: "Rule-based extractions over the benchmark"
+        columns:
+          - name: job_id
+            tests: [unique, not_null]
+
+      - name: llm_extractions_benchmark
+        description: "LLM extractions, one row per (job_id, prompt variant)"
+        columns:
+          - name: job_id
+            tests: [not_null]
+          - name: variant
+            tests:
+              - accepted_values:
+                  values: ['zero_shot', 'few_shot', 'schema_rules', 'decomposed']
+
+      - name: data_roles
+        description: "Data/analytics postings for the market dashboard"
+        columns:
+          - name: job_id
+            tests: [unique, not_null]
+            

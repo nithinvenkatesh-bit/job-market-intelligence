@@ -1,0 +1,13 @@
+jmi:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # One file holding every model. Swapping this block for a Snowflake
+      # target is the only change needed to run the same models in the
+      # cloud -- the SQL itself is portable.
+      path: ../data/processed/jmi.duckdb
+      threads: 4
+      extensions:
+        - parquet
+        
