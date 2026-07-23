@@ -504,4 +504,4 @@ if __name__ == "__main__":
     print("\nSeniority distribution")
     print(result["seniority"].value_counts(dropna=False).to_string())
 
-    print(f"\nWrote {PROCESSED / 'baseline_extractions.parquet'}")
+    print(f"\nWrote {PROCESSED / f'baseline_{args.dataset}.parquet'}")
