@@ -1,10 +1,16 @@
 """
 Build a held-out benchmark from postings never used for tuning.
 
-Why this exists: the baseline has been corrected twice using error analysis
-on benchmark.parquet. Any further score improvement on that same file is
-partly tuning, not capability. Reporting final numbers on unseen postings
-separates the two -- and makes the eventual rules-vs-LLM comparison clean.
+Why this exists: the rule-based baseline was corrected twice using error
+analysis on benchmark.parquet. Any further score improvement on that same
+file is partly tuning, not capability. Reporting final numbers on unseen
+postings separates the two -- and makes the rules-vs-LLM comparison clean.
+
+REPRODUCIBILITY NOTE:
+  Sampling orders by hash(job_id), NOT random(). DuckDB's setseed() does not
+  make ORDER BY random() stable across sessions, so every run produced a
+  different holdout set. hash(job_id) is pseudo-random but deterministic:
+  the same job_id always sorts to the same position, on any machine.
 
 Run:  python src/build_holdout.py
 """
@@ -17,8 +23,9 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
 PROCESSED = ROOT / "data" / "processed"
 
+MIN_DESC_CHARS = 500
+
 con = duckdb.connect()
-con.execute("SELECT setseed(0.99)")  # different seed from build_datasets.py
 
 con.execute(f"""
     CREATE OR REPLACE VIEW postings AS
@@ -31,7 +38,7 @@ con.execute(f"""
     SELECT job_id FROM '{PROCESSED / "benchmark.parquet"}'
 """)
 
-con.execute("""
+con.execute(f"""
     CREATE OR REPLACE VIEW base AS
     SELECT
       job_id, company_name, title, description, location,
@@ -42,10 +49,12 @@ con.execute("""
       remote_allowed,
       LENGTH(description)        AS desc_len,
       (min_salary IS NOT NULL OR med_salary IS NOT NULL) AS has_salary_label,
-      regexp_matches(description, '\\$\\s?[0-9]')            AS salary_in_text
+      -- \\s? matters: "$ 20.47" with a space is common, and requiring a digit
+      -- immediately after $ misclassified those rows as "no salary stated".
+      regexp_matches(description, '\\$\\s?[0-9]')          AS salary_in_text
     FROM postings
     WHERE description IS NOT NULL
-      AND LENGTH(description) >= 500
+      AND LENGTH(description) >= {MIN_DESC_CHARS}
       AND job_id NOT IN (SELECT job_id FROM used)
 """)
 
@@ -63,7 +72,7 @@ con.execute("""
     ),
     ranked AS (
         SELECT *, row_number() OVER (PARTITION BY stratum, pay_bucket
-                                     ORDER BY random()) AS rn
+                                     ORDER BY hash(job_id)) AS rn
         FROM pool
     )
     SELECT * EXCLUDE (rn) FROM ranked
