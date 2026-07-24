@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # Only what the tests need. The full requirements.txt pulls Airflow and
+      # dbt, which are irrelevant here and would add minutes to every run.
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest ruff pandas duckdb pyarrow scipy
+
+      # Errors only, not style. E9 = syntax errors, F63/F7 = broken constructs,
+      # F82 = undefined names -- the class of bug that means the code cannot
+      # possibly work. Style opinions are deliberately excluded so CI stays a
+      # signal about correctness rather than a nag about formatting.
+      - name: Lint (errors only)
+        run: ruff check --select E9,F63,F7,F82 src/ tests/ dags/
+
+      - name: Run tests
+        run: pytest -q
+
+# NOTE -- what this workflow deliberately does NOT do:
+#
+#   dbt tests are not run in CI. They need the parquet outputs, which are
+#   gitignored (the raw dataset is 493MB). Running them would mean either
+#   committing data or downloading it on every push. They run locally as part
+#   of the pipeline, and the Airflow DAG gates on them.
+#
+#   LLM calls are not made in CI. Every test here exercises pure functions,
+#   so the suite needs no API key, no network, and no spend.

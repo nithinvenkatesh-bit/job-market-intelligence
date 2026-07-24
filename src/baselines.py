@@ -7,14 +7,15 @@ final question from "which prompt won?" into the better one: "is the LLM
 worth its cost, field by field?"
 
 Every extractor returns an evidence span -- the exact text it matched. That
-mirrors the contract we'll impose on the LLM, so the two are directly
-comparable, and it lets us check whether an answer was grounded or invented.
+mirrors the contract imposed on the LLM, so the two are directly comparable,
+and it lets us check whether an answer was grounded or invented.
 
-REVISION NOTE (after error analysis on 2,000 postings):
-  Four bugs were found by inspecting the worst failures and are fixed here.
-  Each is marked FIX-n below with the real posting that exposed it. The
-  baseline had to be corrected before comparing against an LLM -- measuring
-  a strong model against a broken baseline would flatter the model.
+REVISION NOTE:
+  Six bugs are fixed here, each marked FIX-n with the posting or test that
+  exposed it. Five came from error analysis on 2,000 postings; the sixth was
+  caught later by a regression test. The baseline had to be corrected before
+  comparing against an LLM -- measuring a strong model against a broken
+  baseline would flatter the model.
 
 Run:  python src/baselines.py
 """
@@ -33,7 +34,7 @@ PROCESSED = ROOT / "data" / "processed"
 
 
 # ---------------------------------------------------------------------------
-# Output contract -- shared by baselines and (later) the LLM extractor
+# Output contract -- shared by baselines and the LLM extractor
 # ---------------------------------------------------------------------------
 
 
@@ -76,8 +77,7 @@ _SALARY_SINGLE = re.compile(_AMOUNT)
 #   Broke on: job 3903456111 "$224 billion (retail investment client assets)"
 _SCALE_WORD = re.compile(r"^\s*(billion|million|trillion|bn|mm)\b", re.I)
 
-# Ordered so that more specific periods are tried first; ties are broken by
-# proximity, not by list position.
+# Ties are broken by proximity, not by position in this list.
 _PERIOD_HINTS: list[tuple[str, re.Pattern]] = [
     ("HOURLY",   re.compile(r"per\s+hour|hourly|/\s?hr\b|an\s+hour|/hour|\bph\b", re.I)),
     ("WEEKLY",   re.compile(r"per\s+week\b|/\s?wk\b|(?:gross\s+)?weekly\s+(?:pay|rate|salary|earnings)", re.I)),
@@ -100,9 +100,9 @@ def _nearest_period(text: str, start: int, end: int) -> str | None:
 
     FIX-4: postings routinely quote both an hourly and an annual rate in the
     same paragraph. The old code scanned a +/-120 char window and took the
-    first hint it found, which meant it picked whichever word appeared
-    earlier in the string rather than whichever describes THIS number. That
-    single bug produced roughly 9 of the 15 worst errors.
+    first hint it found, so it picked whichever word appeared earlier in the
+    string rather than whichever describes THIS number. That single bug
+    produced roughly 9 of the 15 worst salary errors.
       Broke on: "Salary Grade Minimum - Annual $108,400 ... Hourly $52.12"
                 "Salary/Hourly Rate $130k - $180k Annually"
     """
@@ -139,12 +139,12 @@ def _find_amount(text: str) -> tuple[re.Match | None, bool]:
 def extract_salary(text: str) -> tuple[float | None, float | None, str | None, str | None]:
     """Return (min, max, pay_period, evidence).
 
-    Known limitation, deliberately left in: this takes the FIRST money
-    figure in the description. When a posting leads with a benefit
-    ("$5,250 annually toward education") the extractor grabs that instead
-    of the salary. A regex has no way to tell which figure is compensation.
-    That is precisely the judgement an LLM should provide, so it stays as a
-    documented gap rather than being papered over with more heuristics.
+    Known limitation, deliberately left in: this takes the FIRST money figure
+    in the description. When a posting leads with a benefit ("$5,250 annually
+    toward education") the extractor grabs that instead of the salary. A regex
+    has no way to tell which figure is compensation. That is precisely the
+    judgement an LLM should provide, so it stays as a documented gap rather
+    than being papered over with more heuristics.
     """
     if not text:
         return None, None, None, None
@@ -165,18 +165,17 @@ def extract_salary(text: str) -> tuple[float | None, float | None, str | None, s
 
     period = _nearest_period(text, match.start(), match.end())
 
-    # Magnitude sanity check. An "hourly" rate of $108,400 or a "yearly"
-    # salary of $33 is a misread, not a real figure. Stated openly because
-    # it is an assumption, and assumptions should be visible in the code.
-    # Magnitude sanity checks. Stated openly because these are assumptions.
+    # Magnitude sanity checks. Stated openly because these are assumptions,
+    # and assumptions should be visible in the code rather than buried.
     if period == "HOURLY" and low > 1_000:
         period = "YEARLY"
     elif period == "YEARLY" and low < 200:
         period = "HOURLY"
-    # HYPOTHESIS (validate on holdout): US federal minimum wage full-time is
-    # ~$15,080/yr, so a "yearly" figure between $1k and $20k is far more
-    # likely a monthly salary -- the pattern in state-government postings
-    # that quote "$3,640.00 - $4,561.00" with no period word at all.
+    # Tested on the holdout and it was a WASH -- fixed three postings, broke
+    # three. Kept because the reasoning is sound (US full-time minimum wage
+    # is ~$15,080/yr, so a "yearly" figure under $20k is more likely monthly)
+    # and state-government postings do quote "$3,640.00 - $4,561.00" with no
+    # period word at all. Reported as a null result rather than removed.
     elif period == "YEARLY" and 1_000 < low < 20_000:
         period = "MONTHLY"
     elif period is None:
@@ -213,8 +212,8 @@ _ASSISTANT_ROLE = re.compile(
     re.I,
 )
 
-# Output uses LinkedIn's own label space so it can be scored directly
-# against formatted_experience_level. Order matters -- first match wins.
+# Output uses LinkedIn's own label space so it can be scored directly against
+# formatted_experience_level. Order matters -- first match wins.
 _SENIORITY_RULES: list[tuple[str, str]] = [
     (r"\b(intern|internship|co-?op)\b", "Internship"),
     # Restricted to genuine C-suite. Bare "chief" was catching "Division
@@ -233,16 +232,16 @@ _SENIORITY = [(re.compile(p, re.I), label) for p, label in _SENIORITY_RULES]
 def classify_seniority(title: str, description: str = "") -> tuple[str | None, str | None]:
     """Return (level, evidence).
 
-    Title only -- the body text says "senior leadership" constantly without
+    Title only -- body text says "senior leadership" constantly without
     describing the role being advertised. Returns None rather than guessing
     when no keyword matches, so abstention shows up honestly in the metrics
     instead of hiding behind a default label.
 
-    Known limitation: 444 postings labelled Entry level by LinkedIn carry no
-    seniority keyword at all (File Clerk, Pharmacy Technician, Dental
-    Assistant). No title-based rule can reach them. This is the single
-    clearest place for an LLM to earn its cost, and it is left unfixed on
-    purpose so the comparison is honest.
+    Known limitation: 444 postings labelled Entry level carry no seniority
+    keyword at all (File Clerk, Pharmacy Technician, Dental Assistant). No
+    title-based rule can reach them. This is the clearest place for an LLM to
+    earn its cost, and it is left unfixed on purpose so the comparison is
+    honest.
     """
     original = title or ""
     working = original
@@ -276,9 +275,9 @@ def extract_years_experience(text: str) -> tuple[int | None, str | None]:
     """Return (minimum years, evidence).
 
     A bare "5 years" is ambiguous -- it might be "5 years in business". So a
-    match only counts when "experience" appears within an 80-character
-    window, and we take the smallest qualifying number, since job ads state
-    a floor ("5+ years") far more often than a ceiling.
+    match only counts when "experience" appears within an 80-character window,
+    and we take the smallest qualifying number, since job ads state a floor
+    ("5+ years") far more often than a ceiling.
     """
     if not text:
         return None, None
@@ -359,22 +358,53 @@ _SKILL_PATTERNS: dict[str, str] = {
 
 _SKILLS = {name: re.compile(p, re.I) for name, p in _SKILL_PATTERNS.items()}
 
-# Words signalling a skill is optional rather than mandatory.
+# Words signalling a skill is optional...
 _PREFERRED_HINT = re.compile(
     r"preferred|nice to have|nice-to-have|a plus|bonus|desirable|would be great|"
     r"ideally|familiarity with|exposure to|good to have",
     re.I,
 )
 
+# ...and words signalling it is mandatory. Both are needed because the
+# question is which one is CLOSER, not merely which one is present.
+_REQUIRED_HINT = re.compile(
+    r"required|must have|must possess|essential|mandatory|minimum qualification",
+    re.I,
+)
+
+
+def _nearest_hint(pattern: re.Pattern, text: str, start: int, end: int,
+                  width: int = 250) -> int | None:
+    """Distance from a skill mention to the closest match of `pattern`.
+
+    Returns None when the pattern does not appear in the window.
+    """
+    lo, hi = max(0, start - width), min(len(text), end + width)
+    best: int | None = None
+    for m in pattern.finditer(text[lo:hi]):
+        pos = lo + m.start()
+        distance = 0 if start <= pos <= end else min(abs(pos - end), abs(start - pos))
+        if best is None or distance < best:
+            best = distance
+    return best
+
 
 def extract_skills(text: str) -> tuple[list[str], list[str], dict[str, str]]:
     """Return (required, preferred, evidence-by-skill).
 
-    Required vs preferred is decided by scanning a window around each match
-    for hedging language. This is crude on purpose -- descriptions routinely
-    say "Python required; Spark preferred" in one sentence, which a window
-    cannot separate. It is the clearest place to see whether the LLM earns
-    its cost.
+    FIX-6: required vs preferred is decided by which hint is NEARER, not by
+    whether a hedge appears anywhere in a wide window.
+
+    The old version scanned 200 chars back and 100 forward for hedging words
+    and filed the skill as preferred if it found any. On "Advanced Excel
+    required for this role. Tableau is a plus." that window covers the whole
+    sentence, so "a plus" contaminated Excel even though "required" sat
+    directly beside it. Same bug class as the pay-period window -- and unlike
+    the other five, this one was caught by a regression test rather than by
+    error analysis.
+
+    Defaults to required when neither hint is present: a skill mentioned
+    without hedging is more likely expected than optional.
     """
     if not text:
         return [], [], {}
@@ -388,10 +418,10 @@ def extract_skills(text: str) -> tuple[list[str], list[str], dict[str, str]]:
         if not m:
             continue
 
-        start, end = max(0, m.start() - 200), min(len(text), m.end() + 100)
-        window = text[start:end]
+        d_preferred = _nearest_hint(_PREFERRED_HINT, text, m.start(), m.end())
+        d_required = _nearest_hint(_REQUIRED_HINT, text, m.start(), m.end())
 
-        if _PREFERRED_HINT.search(window):
+        if d_preferred is not None and (d_required is None or d_preferred < d_required):
             preferred.append(name)
         else:
             required.append(name)
