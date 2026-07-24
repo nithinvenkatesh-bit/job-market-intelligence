@@ -153,6 +153,9 @@ Kaggle CSV (124K postings)
                      Airflow DAG (10 tasks, weekly)
 ```
 
+![Airflow DAG — all tasks green on a full run](docs/airflow_dag.png)
+
+
 Stack: Python, DuckDB, dbt, Airflow 3, Anthropic API, pandas, scipy.
 
 ---
