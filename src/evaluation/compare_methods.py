@@ -13,6 +13,11 @@ Measurement principles carried over from the baseline evaluation:
   test and paired bootstrap apply. This matters: unpaired at n=400, even a
   7pp difference can fail to reach significance; paired, ~2pp is detectable.
 
+  MULTIPLE COMPARISONS -- this script runs ~24 tests. At alpha=0.05 that is
+  roughly one false positive expected by chance, so raw p-values overstate
+  confidence. Holm-Bonferroni corrections are reported at the end, under two
+  framings that disagree.
+
   COST FROM TOKENS -- reruns replay from cache, so recorded cost is 0.
   Token counts survive caching, so cost is recomputed from them.
 
@@ -91,6 +96,25 @@ def bootstrap_diff(a: np.ndarray, b: np.ndarray, n_iter: int = 5000,
     return (float(a.mean() - b.mean()),
             float(np.percentile(diffs, 2.5)),
             float(np.percentile(diffs, 97.5)))
+
+
+def holm(pvalues: list[float], alpha: float = 0.05) -> tuple[list[float], list[bool]]:
+    """Holm-Bonferroni step-down correction.
+
+    Returns (adjusted p-values, rejected) in the original order.
+
+    Uniformly more powerful than Bonferroni at the same family-wise error
+    rate. The running max enforces monotonicity: an adjusted p-value can
+    never fall below that of a test with a smaller raw p-value.
+    """
+    m = len(pvalues)
+    order_idx = sorted(range(m), key=lambda i: pvalues[i])
+    adjusted = [0.0] * m
+    running_max = 0.0
+    for rank, idx in enumerate(order_idx):
+        running_max = max(running_max, min(1.0, (m - rank) * pvalues[idx]))
+        adjusted[idx] = running_max
+    return adjusted, [adjusted[i] <= alpha for i in range(m)]
 
 
 def macro_f1(truth: pd.Series, pred: pd.Series, labels: list[str]) -> float:
@@ -270,6 +294,7 @@ print(cost_table.to_string(index=False))
 # ---------------------------------------------------------------------------
 
 print(f"\n{'=' * 96}\nSIGNIFICANCE vs RULES BASELINE (paired, same postings)\n{'=' * 96}")
+print("Raw p-values -- see the correction section below before quoting these.")
 print("CI spanning zero = difference indistinguishable from noise\n")
 
 base = scored["rules"]
@@ -296,16 +321,15 @@ for name in order:
             "95% CI": f"[{100 * lo:+.1f}, {100 * hi:+.1f}]",
             "LLM only": a_only,
             "rules only": b_only,
+            "p_raw": p,
             "p": f"{p:.4f}" if p >= 0.0001 else "<0.0001",
-            "verdict": "LLM better" if p < 0.05 and diff > 0
-                       else "rules better" if p < 0.05 and diff < 0
-                       else "no difference",
         })
 
 sig = pd.DataFrame(rows)
 for metric in sig.metric.unique():
     print(f"--- {metric} ---")
-    print(sig[sig.metric == metric].drop(columns="metric").to_string(index=False))
+    print(sig[sig.metric == metric]
+          .drop(columns=["metric", "p_raw"]).to_string(index=False))
     print()
 
 
@@ -318,7 +342,7 @@ best = max(llm_only, key=lambda n: scored[n]["seniority_f1"] + scored[n]["salary
 
 print(f"{'=' * 96}\nBEST VARIANT ({best}) vs OTHER PROMPTS\n{'=' * 96}\n")
 
-rows = []
+prompt_rows = []
 for name in llm_only:
     if name == best:
         continue
@@ -328,12 +352,13 @@ for name in llm_only:
         a, b = scored[best][key][mask], scored[name][key][mask]
         diff, lo, hi = bootstrap_diff(a, b)
         _, _, p = mcnemar(a, b)
-        rows.append({"vs": name, "metric": metric,
-                     "diff": f"{100 * diff:+.1f}pp",
-                     "95% CI": f"[{100 * lo:+.1f}, {100 * hi:+.1f}]",
-                     "p": f"{p:.4f}",
-                     "significant": "yes" if p < 0.05 else "no"})
-print(pd.DataFrame(rows).to_string(index=False))
+        prompt_rows.append({"vs": name, "metric": metric,
+                            "diff": f"{100 * diff:+.1f}pp",
+                            "95% CI": f"[{100 * lo:+.1f}, {100 * hi:+.1f}]",
+                            "p_raw": p,
+                            "p": f"{p:.4f}"})
+prompts = pd.DataFrame(prompt_rows)
+print(prompts.drop(columns="p_raw").to_string(index=False))
 
 
 # ---------------------------------------------------------------------------
@@ -359,9 +384,67 @@ print(pd.DataFrame(rows).to_string(index=False))
 
 
 # ---------------------------------------------------------------------------
+# Multiple-comparison correction
+# ---------------------------------------------------------------------------
+
+print(f"\n{'=' * 96}\nMULTIPLE-COMPARISON CORRECTION (Holm-Bonferroni)\n{'=' * 96}")
+print("""
+This analysis runs ~24 significance tests. At alpha=0.05 roughly one false
+positive is expected by chance alone, so raw p-values overstate confidence.
+
+Two framings are reported because they disagree, and choosing between them is
+a judgement call rather than a fact:
+
+  WITHIN-FAMILY   Each metric is treated as a separate question, so the
+                  correction is applied within metric. More powerful -- but
+                  the families were defined AFTER seeing results, which is a
+                  real limitation and is stated as one.
+
+  WHOLE-FAMILY    All tests corrected together. Conservative, assumption-free,
+                  and the safer number to quote.
+
+Where the two disagree, prefer the conservative reading, and lead with the
+effect size and confidence interval rather than the p-value.
+""")
+
+# Combine both families of tests into one frame.
+corr = pd.concat([
+    sig.assign(comparison=sig.method + " vs rules")[
+        ["comparison", "metric", "diff", "95% CI", "p", "p_raw"]],
+    prompts.assign(comparison=f"{best} vs " + prompts["vs"])[
+        ["comparison", "metric", "diff", "95% CI", "p", "p_raw"]],
+], ignore_index=True)
+
+# Within-metric correction.
+parts = []
+for metric, group in corr.groupby("metric", sort=False):
+    adj, rej = holm(group["p_raw"].tolist())
+    g = group.copy()
+    g["holm_within"] = [f"{a:.4f}" for a in adj]
+    g["sig_within"] = ["yes" if r else "no" for r in rej]
+    parts.append(g)
+corr = pd.concat(parts).sort_index()
+
+# Whole-family correction across every test above.
+adj_all, rej_all = holm(corr["p_raw"].tolist())
+corr["holm_all"] = [f"{a:.4f}" for a in adj_all]
+corr["sig_all"] = ["yes" if r else "no" for r in rej_all]
+
+print(corr[["comparison", "metric", "diff", "95% CI", "p",
+            "holm_within", "sig_within", "holm_all", "sig_all"]].to_string(index=False))
+
+n_within = (corr.sig_within == "yes").sum()
+n_all = (corr.sig_all == "yes").sum()
+print(f"\nSurvive within-family correction: {n_within}/{len(corr)}")
+print(f"Survive whole-family correction : {n_all}/{len(corr)}")
+
+
+# ---------------------------------------------------------------------------
 # Save
 # ---------------------------------------------------------------------------
 
 table.to_csv(PROCESSED / "method_comparison.csv", index=False)
-sig.to_csv(PROCESSED / "significance_tests.csv", index=False)
-print(f"\nWrote method_comparison.csv and significance_tests.csv")
+sig.drop(columns="p_raw").to_csv(PROCESSED / "significance_tests.csv", index=False)
+corr.drop(columns="p_raw").to_csv(PROCESSED / "significance_corrected.csv", index=False)
+print("\nWrote method_comparison.csv, significance_tests.csv, "
+      "significance_corrected.csv")
