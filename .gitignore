@@ -27,3 +27,6 @@ dbt/logs/
 # Testing
 .pytest_cache/
 .coverage
+
+# Airflow
+airflow_home/
