@@ -1,5 +1,7 @@
 # Job Market Intelligence
 
+[![CI](https://github.com/nithinvenkatesh-bit/job-market-intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/nithinvenkatesh-bit/job-market-intelligence/actions/workflows/ci.yml)
+
 **Does an LLM beat regex at reading job postings? Sometimes. I measured where.**
 
 An extraction pipeline over 124K job postings that compares four LLM prompt
