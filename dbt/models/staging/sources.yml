@@ -19,7 +19,8 @@ sources:
           - name: stratum
             tests:
               - accepted_values:
-                  values: ['labeled_stated', 'labeled_not_stated']
+                  arguments:
+                    values: ['labeled_stated', 'labeled_not_stated']
 
       - name: holdout
         description: "2,000 unseen postings, no overlap with benchmark"
@@ -41,11 +42,11 @@ sources:
           - name: variant
             tests:
               - accepted_values:
-                  values: ['zero_shot', 'few_shot', 'schema_rules', 'decomposed']
+                  arguments:
+                    values: ['zero_shot', 'few_shot', 'schema_rules', 'decomposed']
 
       - name: data_roles
         description: "Data/analytics postings for the market dashboard"
         columns:
           - name: job_id
             tests: [unique, not_null]
-            
