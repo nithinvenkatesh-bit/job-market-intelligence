@@ -46,6 +46,7 @@ class Extraction:
     pay_period: str | None = None
     years_experience_min: int | None = None
     seniority: str | None = None
+    work_arrangement: str = "unclear"
     required_skills: list[str] = field(default_factory=list)
     preferred_skills: list[str] = field(default_factory=list)
     evidence: dict[str, str] = field(default_factory=dict)
@@ -432,6 +433,187 @@ def extract_skills(text: str) -> tuple[list[str], list[str], dict[str, str]]:
 
 
 # ---------------------------------------------------------------------------
+# Work arrangement
+# ---------------------------------------------------------------------------
+
+# Conservative rules: only language tied to this particular role counts.
+# Company policies, facilities, other teams and generic boilerplate do not.
+
+_ARRANGEMENT_AMBIGUOUS = [
+    re.compile(r"\bremote\s*/\s*on-?site\b", re.I),
+    re.compile(r"\bwork\s+from\s+home\s*/\s*hybrid\b", re.I),
+    re.compile(
+        r"\bhybrid options\b.{0,220}\bin other locations\b"
+        r".{0,180}\bwork from home\b",
+        re.I | re.S,
+    ),
+]
+
+_ARRANGEMENT_HYBRID = [
+    re.compile(
+        r"\bthis (?:position|role|job) "
+        r"(?:is|will be|has been designated as) "
+        r"(?:a\s+)?hybrid\b",
+        re.I,
+    ),
+    re.compile(
+        r"\bremote type\s*:\s*this position is "
+        r"a hybrid of office/remote working\b",
+        re.I,
+    ),
+    re.compile(
+        r"\bhybrid\s*-\s*\d+\s+days?\s+on-?site\b",
+        re.I,
+    ),
+    re.compile(r"\bhybrid\s+on-?site\b", re.I),
+    re.compile(
+        r"\bhybrid\b.{0,180}"
+        r"\b(?:minimum of\s+|at least\s+)?"
+        r"(?:\d+|one|two|three|four|five)\s+"
+        r"(?:office\s+)?days?\s+"
+        r"(?:per|each|a)\s+(?:week|month)\b",
+        re.I | re.S,
+    ),
+    re.compile(
+        r"\bon-?site\b.{0,120}"
+        r"\b(?:\d+|one|two|three|four|five)"
+        r"(?:\s*(?:to|-)\s*"
+        r"(?:\d+|one|two|three|four|five))?"
+        r"\s+days?\s+(?:a|per)\s+week\b",
+        re.I | re.S,
+    ),
+    re.compile(
+        r"\bthis job will be on-?site weekly\b",
+        re.I,
+    ),
+    re.compile(
+        r"\boffers a hybrid,\s*flexible environment\b",
+        re.I,
+    ),
+]
+
+_ARRANGEMENT_REMOTE = [
+    re.compile(
+        r"\bthis (?:position|role|job) "
+        r"(?:is|will be|has been designated as) "
+        r"(?:fully\s+|100%\s+)?remote\b",
+        re.I,
+    ),
+    re.compile(
+        r"\bthis role is available\b.{0,250}\bremote usa\b",
+        re.I | re.S,
+    ),
+    re.compile(
+        r"\bposition location\b.{0,250}\bremote usa\b",
+        re.I | re.S,
+    ),
+    re.compile(
+        r"\b(?:united states|usa)\s*\|\s*remote\b",
+        re.I,
+    ),
+    re.compile(
+        r"\bremote type\s*:\s*(?:fully\s+|100%\s+)?remote\b",
+        re.I,
+    ),
+    re.compile(
+        r"\bthis (?:position|role|job)\b.{0,120}"
+        r"\bwork(?:ing)? from home\b",
+        re.I | re.S,
+    ),
+]
+
+_ARRANGEMENT_ONSITE = [
+    re.compile(
+        r"\bthis (?:position|role|job) "
+        r"(?:is|will be|has been designated as) "
+        r"(?:a\s+)?(?:fully\s+)?on-?site\b",
+        re.I,
+    ),
+    re.compile(
+        r"\bmust be willing(?:/able| and able)? "
+        r"to work on-?site\b",
+        re.I,
+    ),
+    re.compile(
+        r"\bworkplace type\s*:\s*on-?site\b",
+        re.I,
+    ),
+    re.compile(r"\bfull[-\s]+time on-?site\b", re.I),
+    re.compile(r"\bremote work is not available\b", re.I),
+]
+
+_CONDITIONAL_ARRANGEMENT = re.compile(
+    r"\bif this (?:position|role) "
+    r"(?:is listed as|necessitates)\b",
+    re.I,
+)
+
+
+def _arrangement_match(
+    patterns: list[re.Pattern],
+    text: str,
+) -> re.Match | None:
+    """Return the earliest non-conditional role-specific match."""
+
+    best: re.Match | None = None
+
+    for pattern in patterns:
+        for match in pattern.finditer(text):
+            context_start = max(0, match.start() - 100)
+            context = text[context_start:match.end()]
+
+            if _CONDITIONAL_ARRANGEMENT.search(context):
+                continue
+
+            if best is None or match.start() < best.start():
+                best = match
+
+    return best
+
+
+def extract_work_arrangement(
+    text: str,
+) -> tuple[str, str | None]:
+    """Return remote, hybrid, onsite or unclear plus evidence."""
+
+    if not text:
+        return "unclear", None
+
+    if any(
+        pattern.search(text)
+        for pattern in _ARRANGEMENT_AMBIGUOUS
+    ):
+        return "unclear", None
+
+    hybrid = _arrangement_match(
+        _ARRANGEMENT_HYBRID,
+        text,
+    )
+    remote = _arrangement_match(
+        _ARRANGEMENT_REMOTE,
+        text,
+    )
+    onsite = _arrangement_match(
+        _ARRANGEMENT_ONSITE,
+        text,
+    )
+
+    # Specific partial-office evidence takes precedence over a generic
+    # requirement to be able to work onsite. For example, "onsite weekly"
+    # or "two to three days per week" is hybrid, not fully onsite.
+    if hybrid is not None:
+        return "hybrid", hybrid.group(0).strip()
+
+    if remote is not None:
+        return "remote", remote.group(0).strip()
+
+    if onsite is not None:
+        return "onsite", onsite.group(0).strip()
+
+    return "unclear", None
+
+
+# ---------------------------------------------------------------------------
 # Orchestration
 # ---------------------------------------------------------------------------
 
@@ -441,6 +623,7 @@ def extract_all(job_id: int, title: str, description: str) -> Extraction:
     s_min, s_max, period, s_ev = extract_salary(description)
     years, y_ev = extract_years_experience(description)
     level, l_ev = classify_seniority(title, description)
+    arrangement, w_ev = extract_work_arrangement(description)
     required, preferred, skill_ev = extract_skills(description)
 
     evidence: dict[str, str] = {}
@@ -450,6 +633,8 @@ def extract_all(job_id: int, title: str, description: str) -> Extraction:
         evidence["years_experience"] = y_ev
     if l_ev:
         evidence["seniority"] = l_ev
+    if w_ev:
+        evidence["work_arrangement"] = w_ev
     evidence.update({f"skill:{k}": v for k, v in skill_ev.items()})
 
     return Extraction(
@@ -459,6 +644,7 @@ def extract_all(job_id: int, title: str, description: str) -> Extraction:
         pay_period=period,
         years_experience_min=years,
         seniority=level,
+        work_arrangement=arrangement,
         required_skills=required,
         preferred_skills=preferred,
         evidence=evidence,
@@ -484,6 +670,7 @@ def run_on_benchmark(dataset: str = "benchmark") -> pd.DataFrame:
             "pay_period": e.pay_period,
             "years_experience_min": e.years_experience_min,
             "seniority": e.seniority,
+            "work_arrangement": e.work_arrangement,
             "required_skills": e.required_skills,
             "preferred_skills": e.preferred_skills,
             "n_required": len(e.required_skills),
@@ -491,6 +678,7 @@ def run_on_benchmark(dataset: str = "benchmark") -> pd.DataFrame:
             "evidence_salary": e.evidence.get("salary"),
             "evidence_years": e.evidence.get("years_experience"),
             "evidence_seniority": e.evidence.get("seniority"),
+            "evidence_work_arrangement": e.evidence.get("work_arrangement"),
             "method": e.method,
         }
         for e in rows
@@ -506,10 +694,10 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", default="benchmark",
-                        choices=["benchmark", "holdout"],
-                        help="benchmark = tuning set; holdout = unseen validation set")
+                        choices=["benchmark", "holdout", "gold_seed"],
+                        help="benchmark = tuning set; holdout = unseen validation; "
+                             "gold_seed = the 80 hand-annotated postings")
     args = parser.parse_args()
-
     result = run_on_benchmark(args.dataset)
     total = len(result)
 

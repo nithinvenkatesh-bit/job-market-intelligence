@@ -30,3 +30,5 @@ dbt/logs/
 
 # Airflow
 airflow_home/
+# Local timestamped source backups
+*_before_*.py
