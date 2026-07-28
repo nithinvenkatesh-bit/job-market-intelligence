@@ -1,0 +1,40 @@
+skill_name,skill_category,regex_pattern,display_order
+SQL,Programming and query languages,"(?i)(^|[^a-z0-9])sql([^a-z0-9]|$)",1
+Python,Programming and query languages,"(?i)(^|[^a-z0-9])python([^a-z0-9]|$)",2
+R,Programming and query languages,"(?i)(r programming|r language|rstudio|python[[:space:]]*/[[:space:]]*r|r[[:space:]]*/[[:space:]]*python)",3
+Java,Programming and query languages,"(?i)(^|[^a-z0-9])java([^a-z0-9]|$)",4
+Scala,Programming and query languages,"(?i)(^|[^a-z0-9])scala([^a-z0-9]|$)",5
+Excel,BI and visualization,"(?i)(microsoft excel|ms excel|(^|[^a-z0-9])excel([^a-z0-9]|$))",10
+Tableau,BI and visualization,"(?i)(^|[^a-z0-9])tableau([^a-z0-9]|$)",11
+Power BI,BI and visualization,"(?i)power[[:space:]]*bi",12
+Looker,BI and visualization,"(?i)(^|[^a-z0-9])looker([^a-z0-9]|$)",13
+Qlik,BI and visualization,"(?i)(qlikview|qlik sense|(^|[^a-z0-9])qlik([^a-z0-9]|$))",14
+AWS,Cloud platforms,"(?i)(amazon web services|(^|[^a-z0-9])aws([^a-z0-9]|$))",20
+Azure,Cloud platforms,"(?i)(microsoft azure|(^|[^a-z0-9])azure([^a-z0-9]|$))",21
+Google Cloud,Cloud platforms,"(?i)(google cloud platform|google cloud|(^|[^a-z0-9])gcp([^a-z0-9]|$))",22
+Snowflake,Data platforms and warehouses,"(?i)(^|[^a-z0-9])snowflake([^a-z0-9]|$)",30
+Databricks,Data platforms and warehouses,"(?i)(^|[^a-z0-9])databricks([^a-z0-9]|$)",31
+BigQuery,Data platforms and warehouses,"(?i)(bigquery|big query)",32
+Redshift,Data platforms and warehouses,"(?i)(amazon redshift|(^|[^a-z0-9])redshift([^a-z0-9]|$))",33
+PostgreSQL,Data platforms and warehouses,"(?i)(postgresql|postgres)",34
+MySQL,Data platforms and warehouses,"(?i)(^|[^a-z0-9])mysql([^a-z0-9]|$)",35
+Oracle,Data platforms and warehouses,"(?i)(oracle database|oracle sql|oracle db)",36
+MongoDB,Data platforms and warehouses,"(?i)(^|[^a-z0-9])mongodb([^a-z0-9]|$)",37
+NoSQL,Data platforms and warehouses,"(?i)(^|[^a-z0-9])nosql([^a-z0-9]|$)",38
+Apache Spark,Big data and streaming,"(?i)(apache spark|pyspark)",40
+Hadoop,Big data and streaming,"(?i)(^|[^a-z0-9])hadoop([^a-z0-9]|$)",41
+Kafka,Big data and streaming,"(?i)(apache kafka|(^|[^a-z0-9])kafka([^a-z0-9]|$))",42
+dbt,Transformation and orchestration,"(?i)(^|[^a-z0-9])dbt([^a-z0-9]|$)",50
+Airflow,Transformation and orchestration,"(?i)(apache airflow|(^|[^a-z0-9])airflow([^a-z0-9]|$))",51
+Informatica,Transformation and orchestration,"(?i)(^|[^a-z0-9])informatica([^a-z0-9]|$)",52
+Alteryx,Transformation and orchestration,"(?i)(^|[^a-z0-9])alteryx([^a-z0-9]|$)",53
+SAS,Analytics and machine learning,"(?i)(^|[^a-z0-9])sas([^a-z0-9]|$)",60
+Pandas,Analytics and machine learning,"(?i)(^|[^a-z0-9])pandas([^a-z0-9]|$)",61
+NumPy,Analytics and machine learning,"(?i)(^|[^a-z0-9])numpy([^a-z0-9]|$)",62
+Scikit-learn,Analytics and machine learning,"(?i)(scikit-learn|scikit learn|sklearn)",63
+TensorFlow,Analytics and machine learning,"(?i)(^|[^a-z0-9])tensorflow([^a-z0-9]|$)",64
+PyTorch,Analytics and machine learning,"(?i)(^|[^a-z0-9])pytorch([^a-z0-9]|$)",65
+Git,Engineering tools,"(?i)(github|gitlab|(^|[^a-z0-9])git([^a-z0-9]|$))",70
+Docker,Engineering tools,"(?i)(^|[^a-z0-9])docker([^a-z0-9]|$)",71
+Kubernetes,Engineering tools,"(?i)(kubernetes|(^|[^a-z0-9])k8s([^a-z0-9]|$))",72
+Jira,Engineering tools,"(?i)(^|[^a-z0-9])jira([^a-z0-9]|$)",73

@@ -1,0 +1,102 @@
+version: 2
+
+models:
+  - name: fct_market_postings
+    description: "One enriched row per historical market posting"
+    columns:
+      - name: job_id
+        data_tests: [unique, not_null]
+      - name: posting_date
+        data_tests: [not_null]
+      - name: remote_status
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - Remote tagged
+                  - Unknown / not supplied
+
+  - name: agg_market_overview
+    description: "Single-row market KPI summary"
+    columns:
+      - name: total_postings
+        data_tests: [not_null]
+
+  - name: agg_market_daily
+    description: "Daily historical posting trends"
+    columns:
+      - name: posting_date
+        data_tests: [unique, not_null]
+
+  - name: agg_market_companies
+    description: "Company-level posting and salary metrics"
+    columns:
+      - name: company_id
+        data_tests: [unique, not_null]
+
+  - name: agg_market_industries
+    description: "Industry-level market metrics"
+    columns:
+      - name: industry_id
+        data_tests: [unique, not_null]
+      - name: industry_name
+        data_tests: [not_null]
+
+  - name: agg_market_skill_categories
+    description: "LinkedIn broad job-function demand"
+    columns:
+      - name: skill_abr
+        data_tests: [unique, not_null]
+      - name: skill_name
+        data_tests: [not_null]
+
+  - name: agg_data_role_family
+    description: "Role-family metrics for data and analytics postings"
+    columns:
+      - name: role_family
+        data_tests: [unique, not_null]
+
+  - name: agg_data_role_daily
+    description: "Daily posting trends by data-role family"
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - posting_date
+              - role_family
+    columns:
+      - name: posting_date
+        data_tests: [not_null]
+      - name: role_family
+        data_tests: [not_null]
+
+  - name: fct_data_role_skill_mentions
+    description: "One row per data-role posting and deterministically matched technology"
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - job_id
+              - skill_name
+    columns:
+      - name: job_id
+        data_tests: [not_null]
+      - name: skill_name
+        data_tests: [not_null]
+      - name: skill_category
+        data_tests: [not_null]
+
+  - name: agg_data_role_skills
+    description: "Technology-demand metrics overall and by data-role family"
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - skill_name
+              - role_family
+    columns:
+      - name: skill_name
+        data_tests: [not_null]
+      - name: role_family
+        data_tests: [not_null]
