@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-07-28T02:47:07.586774+00:00",
+  "gold_postings": 80,
+  "methods": [
+    "rules",
+    "zero_shot",
+    "few_shot",
+    "schema_rules",
+    "decomposed"
+  ],
+  "item_score_rows": 400,
+  "pairwise_test_rows": 24,
+  "skill_error_rows": 357,
+  "notes": [
+    "Gold evaluation uses 80 manually reviewed postings.",
+    "The deterministic work-arrangement baseline is gold-informed and diagnostic.",
+    "One malformed schema-rules arrangement response is counted as InvalidPrediction.",
+    "No raw job descriptions or API responses are included in dashboard exports."
+  ]
+}
