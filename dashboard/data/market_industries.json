@@ -1,0 +1,3485 @@
+[
+  {
+    "industry_id": 14,
+    "industry_name": "Hospitals and Health Care",
+    "postings": 17762,
+    "market_share_pct": 14.34,
+    "salary_postings": 4072,
+    "median_salary_usd": 82285.0,
+    "remote_tagged_postings": 1203
+  },
+  {
+    "industry_id": 27,
+    "industry_name": "Retail",
+    "postings": 10731,
+    "market_share_pct": 8.66,
+    "salary_postings": 1919,
+    "median_salary_usd": 41600.0,
+    "remote_tagged_postings": 211
+  },
+  {
+    "industry_id": 96,
+    "industry_name": "IT Services and IT Consulting",
+    "postings": 10039,
+    "market_share_pct": 8.11,
+    "salary_postings": 2414,
+    "median_salary_usd": 114400.0,
+    "remote_tagged_postings": 2426
+  },
+  {
+    "industry_id": 104,
+    "industry_name": "Staffing and Recruiting",
+    "postings": 8261,
+    "market_share_pct": 6.67,
+    "salary_postings": 3011,
+    "median_salary_usd": 83200.0,
+    "remote_tagged_postings": 769
+  },
+  {
+    "industry_id": 43,
+    "industry_name": "Financial Services",
+    "postings": 7964,
+    "market_share_pct": 6.43,
+    "salary_postings": 2431,
+    "median_salary_usd": 105000.0,
+    "remote_tagged_postings": 1641
+  },
+  {
+    "industry_id": 4,
+    "industry_name": "Software Development",
+    "postings": 4852,
+    "market_share_pct": 3.92,
+    "salary_postings": 1682,
+    "median_salary_usd": 136850.0,
+    "remote_tagged_postings": 1950
+  },
+  {
+    "industry_id": 25,
+    "industry_name": "Manufacturing",
+    "postings": 3550,
+    "market_share_pct": 2.87,
+    "salary_postings": 1237,
+    "median_salary_usd": 76627.0,
+    "remote_tagged_postings": 205
+  },
+  {
+    "industry_id": 48,
+    "industry_name": "Construction",
+    "postings": 3305,
+    "market_share_pct": 2.67,
+    "salary_postings": 1040,
+    "median_salary_usd": 98800.0,
+    "remote_tagged_postings": 149
+  },
+  {
+    "industry_id": 41,
+    "industry_name": "Banking",
+    "postings": 2745,
+    "market_share_pct": 2.22,
+    "salary_postings": 1086,
+    "median_salary_usd": 95250.0,
+    "remote_tagged_postings": 193
+  },
+  {
+    "industry_id": 42,
+    "industry_name": "Insurance",
+    "postings": 2576,
+    "market_share_pct": 2.08,
+    "salary_postings": 940,
+    "median_salary_usd": 88200.0,
+    "remote_tagged_postings": 695
+  },
+  {
+    "industry_id": 31,
+    "industry_name": "Hospitality",
+    "postings": 2417,
+    "market_share_pct": 1.95,
+    "salary_postings": 727,
+    "median_salary_usd": 54600.0,
+    "remote_tagged_postings": 83
+  },
+  {
+    "industry_id": 15,
+    "industry_name": "Pharmaceutical Manufacturing",
+    "postings": 2403,
+    "market_share_pct": 1.94,
+    "salary_postings": 727,
+    "median_salary_usd": 107000.0,
+    "remote_tagged_postings": 494
+  },
+  {
+    "industry_id": 44,
+    "industry_name": "Real Estate",
+    "postings": 2313,
+    "market_share_pct": 1.87,
+    "salary_postings": 647,
+    "median_salary_usd": 73840.0,
+    "remote_tagged_postings": 206
+  },
+  {
+    "industry_id": 8,
+    "industry_name": "Telecommunications",
+    "postings": 2074,
+    "market_share_pct": 1.67,
+    "salary_postings": 449,
+    "median_salary_usd": 91500.0,
+    "remote_tagged_postings": 156
+  },
+  {
+    "industry_id": 100,
+    "industry_name": "Non-profit Organizations",
+    "postings": 2033,
+    "market_share_pct": 1.64,
+    "salary_postings": 666,
+    "median_salary_usd": 65000.0,
+    "remote_tagged_postings": 161
+  },
+  {
+    "industry_id": 135,
+    "industry_name": "Industrial Machinery Manufacturing",
+    "postings": 2030,
+    "market_share_pct": 1.64,
+    "salary_postings": 404,
+    "median_salary_usd": 76440.0,
+    "remote_tagged_postings": 92
+  },
+  {
+    "industry_id": 12,
+    "industry_name": "Biotechnology Research",
+    "postings": 1955,
+    "market_share_pct": 1.58,
+    "salary_postings": 694,
+    "median_salary_usd": 113424.0,
+    "remote_tagged_postings": 445
+  },
+  {
+    "industry_id": 53,
+    "industry_name": "Motor Vehicle Manufacturing",
+    "postings": 1923,
+    "market_share_pct": 1.55,
+    "salary_postings": 345,
+    "median_salary_usd": 75000.0,
+    "remote_tagged_postings": 67
+  },
+  {
+    "industry_id": 34,
+    "industry_name": "Food and Beverage Services",
+    "postings": 1865,
+    "market_share_pct": 1.51,
+    "salary_postings": 598,
+    "median_salary_usd": 57200.0,
+    "remote_tagged_postings": 101
+  },
+  {
+    "industry_id": 80,
+    "industry_name": "Advertising Services",
+    "postings": 1839,
+    "market_share_pct": 1.48,
+    "salary_postings": 534,
+    "median_salary_usd": 80000.0,
+    "remote_tagged_postings": 291
+  },
+  {
+    "industry_id": 11,
+    "industry_name": "Business Consulting and Services",
+    "postings": 1784,
+    "market_share_pct": 1.44,
+    "salary_postings": 603,
+    "median_salary_usd": 104000.0,
+    "remote_tagged_postings": 395
+  },
+  {
+    "industry_id": 47,
+    "industry_name": "Accounting",
+    "postings": 1691,
+    "market_share_pct": 1.37,
+    "salary_postings": 822,
+    "median_salary_usd": 90000.0,
+    "remote_tagged_postings": 253
+  },
+  {
+    "industry_id": 68,
+    "industry_name": "Higher Education",
+    "postings": 1661,
+    "market_share_pct": 1.34,
+    "salary_postings": 573,
+    "median_salary_usd": 61500.0,
+    "remote_tagged_postings": 115
+  },
+  {
+    "industry_id": 17,
+    "industry_name": "Medical Equipment Manufacturing",
+    "postings": 1587,
+    "market_share_pct": 1.28,
+    "salary_postings": 570,
+    "median_salary_usd": 90000.0,
+    "remote_tagged_postings": 273
+  },
+  {
+    "industry_id": 75,
+    "industry_name": "Government Administration",
+    "postings": 1507,
+    "market_share_pct": 1.22,
+    "salary_postings": 715,
+    "median_salary_usd": 75850.0,
+    "remote_tagged_postings": 88
+  },
+  {
+    "industry_id": 6,
+    "industry_name": "Technology, Information and Internet",
+    "postings": 1503,
+    "market_share_pct": 1.21,
+    "salary_postings": 580,
+    "median_salary_usd": 145675.0,
+    "remote_tagged_postings": 451
+  },
+  {
+    "industry_id": 124,
+    "industry_name": "Wellness and Fitness Services",
+    "postings": 1469,
+    "market_share_pct": 1.19,
+    "salary_postings": 489,
+    "median_salary_usd": 69711.0,
+    "remote_tagged_postings": 115
+  },
+  {
+    "industry_id": 1,
+    "industry_name": "Defense and Space Manufacturing",
+    "postings": 1446,
+    "market_share_pct": 1.17,
+    "salary_postings": 392,
+    "median_salary_usd": 121008.0,
+    "remote_tagged_postings": 86
+  },
+  {
+    "industry_id": 116,
+    "industry_name": "Transportation, Logistics, Supply Chain and Storage",
+    "postings": 1411,
+    "market_share_pct": 1.14,
+    "salary_postings": 497,
+    "median_salary_usd": 58100.0,
+    "remote_tagged_postings": 104
+  },
+  {
+    "industry_id": 23,
+    "industry_name": "Food and Beverage Manufacturing",
+    "postings": 1366,
+    "market_share_pct": 1.1,
+    "salary_postings": 468,
+    "median_salary_usd": 63232.0,
+    "remote_tagged_postings": 91
+  },
+  {
+    "industry_id": 19,
+    "industry_name": "Retail Apparel and Fashion",
+    "postings": 1333,
+    "market_share_pct": 1.08,
+    "salary_postings": 315,
+    "median_salary_usd": 67246.0,
+    "remote_tagged_postings": 58
+  },
+  {
+    "industry_id": 51,
+    "industry_name": "Civil Engineering",
+    "postings": 1329,
+    "market_share_pct": 1.07,
+    "salary_postings": 336,
+    "median_salary_usd": 107120.0,
+    "remote_tagged_postings": 53
+  },
+  {
+    "industry_id": 112,
+    "industry_name": "Appliances, Electrical, and Electronics Manufacturing",
+    "postings": 1285,
+    "market_share_pct": 1.04,
+    "salary_postings": 357,
+    "median_salary_usd": 83450.0,
+    "remote_tagged_postings": 104
+  },
+  {
+    "industry_id": 13,
+    "industry_name": "Medical Practices",
+    "postings": 1222,
+    "market_share_pct": 0.99,
+    "salary_postings": 287,
+    "median_salary_usd": 80500.0,
+    "remote_tagged_postings": 152
+  },
+  {
+    "industry_id": 84,
+    "industry_name": "Information Services",
+    "postings": 1164,
+    "market_share_pct": 0.94,
+    "salary_postings": 354,
+    "median_salary_usd": 130000.0,
+    "remote_tagged_postings": 344
+  },
+  {
+    "industry_id": 57,
+    "industry_name": "Oil and Gas",
+    "postings": 1151,
+    "market_share_pct": 0.93,
+    "salary_postings": 245,
+    "median_salary_usd": 97760.0,
+    "remote_tagged_postings": 74
+  },
+  {
+    "industry_id": 1594,
+    "industry_name": "Technology, Information and Media",
+    "postings": 1147,
+    "market_share_pct": 0.93,
+    "salary_postings": 452,
+    "median_salary_usd": 119080.0,
+    "remote_tagged_postings": 483
+  },
+  {
+    "industry_id": 86,
+    "industry_name": "Environmental Services",
+    "postings": 1146,
+    "market_share_pct": 0.93,
+    "salary_postings": 312,
+    "median_salary_usd": 72500.0,
+    "remote_tagged_postings": 67
+  },
+  {
+    "industry_id": 9,
+    "industry_name": "Law Practice",
+    "postings": 1081,
+    "market_share_pct": 0.87,
+    "salary_postings": 514,
+    "median_salary_usd": 107500.0,
+    "remote_tagged_postings": 86
+  },
+  {
+    "industry_id": 59,
+    "industry_name": "Utilities",
+    "postings": 1009,
+    "market_share_pct": 0.81,
+    "salary_postings": 360,
+    "median_salary_usd": 101205.0,
+    "remote_tagged_postings": 92
+  },
+  {
+    "industry_id": 52,
+    "industry_name": "Aviation and Aerospace Component Manufacturing",
+    "postings": 998,
+    "market_share_pct": 0.81,
+    "salary_postings": 297,
+    "median_salary_usd": 99840.0,
+    "remote_tagged_postings": 36
+  },
+  {
+    "industry_id": 54,
+    "industry_name": "Chemical Manufacturing",
+    "postings": 959,
+    "market_share_pct": 0.77,
+    "salary_postings": 257,
+    "median_salary_usd": 72800.0,
+    "remote_tagged_postings": 58
+  },
+  {
+    "industry_id": 32,
+    "industry_name": "Restaurants",
+    "postings": 955,
+    "market_share_pct": 0.77,
+    "salary_postings": 226,
+    "median_salary_usd": 57350.0,
+    "remote_tagged_postings": 32
+  },
+  {
+    "industry_id": 49,
+    "industry_name": "Wholesale Building Materials",
+    "postings": 944,
+    "market_share_pct": 0.76,
+    "salary_postings": 180,
+    "median_salary_usd": 59738.0,
+    "remote_tagged_postings": 59
+  },
+  {
+    "industry_id": 69,
+    "industry_name": "Education Administration Programs",
+    "postings": 921,
+    "market_share_pct": 0.74,
+    "salary_postings": 217,
+    "median_salary_usd": 59900.0,
+    "remote_tagged_postings": 130
+  },
+  {
+    "industry_id": 92,
+    "industry_name": "Truck Transportation",
+    "postings": 921,
+    "market_share_pct": 0.74,
+    "salary_postings": 260,
+    "median_salary_usd": 58890.0,
+    "remote_tagged_postings": 48
+  },
+  {
+    "industry_id": 118,
+    "industry_name": "Computer and Network Security",
+    "postings": 917,
+    "market_share_pct": 0.74,
+    "salary_postings": 241,
+    "median_salary_usd": 130667.0,
+    "remote_tagged_postings": 626
+  },
+  {
+    "industry_id": 28,
+    "industry_name": "Entertainment Providers",
+    "postings": 898,
+    "market_share_pct": 0.73,
+    "salary_postings": 342,
+    "median_salary_usd": 99920.0,
+    "remote_tagged_postings": 77
+  },
+  {
+    "industry_id": 3242,
+    "industry_name": "Engineering Services",
+    "postings": 897,
+    "market_share_pct": 0.72,
+    "salary_postings": 210,
+    "median_salary_usd": 107500.0,
+    "remote_tagged_postings": 349
+  },
+  {
+    "industry_id": 46,
+    "industry_name": "Investment Management",
+    "postings": 882,
+    "market_share_pct": 0.71,
+    "salary_postings": 299,
+    "median_salary_usd": 110000.0,
+    "remote_tagged_postings": 51
+  },
+  {
+    "industry_id": 10,
+    "industry_name": "Legal Services",
+    "postings": 878,
+    "market_share_pct": 0.71,
+    "salary_postings": 443,
+    "median_salary_usd": 105000.0,
+    "remote_tagged_postings": 116
+  },
+  {
+    "industry_id": 91,
+    "industry_name": "Consumer Services",
+    "postings": 818,
+    "market_share_pct": 0.66,
+    "salary_postings": 248,
+    "median_salary_usd": 70000.0,
+    "remote_tagged_postings": 157
+  },
+  {
+    "industry_id": 139,
+    "industry_name": "Mental Health Care",
+    "postings": 810,
+    "market_share_pct": 0.65,
+    "salary_postings": 286,
+    "median_salary_usd": 75125.0,
+    "remote_tagged_postings": 189
+  },
+  {
+    "industry_id": 137,
+    "industry_name": "Human Resources Services",
+    "postings": 806,
+    "market_share_pct": 0.65,
+    "salary_postings": 228,
+    "median_salary_usd": 80000.0,
+    "remote_tagged_postings": 108
+  },
+  {
+    "industry_id": 70,
+    "industry_name": "Research Services",
+    "postings": 709,
+    "market_share_pct": 0.57,
+    "salary_postings": 275,
+    "median_salary_usd": 95000.0,
+    "remote_tagged_postings": 122
+  },
+  {
+    "industry_id": 122,
+    "industry_name": "Facilities Services",
+    "postings": 617,
+    "market_share_pct": 0.5,
+    "salary_postings": 206,
+    "median_salary_usd": 55000.0,
+    "remote_tagged_postings": 9
+  },
+  {
+    "industry_id": 3231,
+    "industry_name": "Information Technology & Services",
+    "postings": 610,
+    "market_share_pct": 0.49,
+    "salary_postings": 72,
+    "median_salary_usd": 102000.0,
+    "remote_tagged_postings": 186
+  },
+  {
+    "industry_id": 45,
+    "industry_name": "Investment Banking",
+    "postings": 597,
+    "market_share_pct": 0.48,
+    "salary_postings": 311,
+    "median_salary_usd": 119600.0,
+    "remote_tagged_postings": 28
+  },
+  {
+    "industry_id": 90,
+    "industry_name": "Civic and Social Organizations",
+    "postings": 574,
+    "market_share_pct": 0.46,
+    "salary_postings": 80,
+    "median_salary_usd": 59250.0,
+    "remote_tagged_postings": 23
+  },
+  {
+    "industry_id": 55,
+    "industry_name": "Machinery Manufacturing",
+    "postings": 554,
+    "market_share_pct": 0.45,
+    "salary_postings": 119,
+    "median_salary_usd": 72800.0,
+    "remote_tagged_postings": 26
+  },
+  {
+    "industry_id": 67,
+    "industry_name": "Primary and Secondary Education",
+    "postings": 553,
+    "market_share_pct": 0.45,
+    "salary_postings": 127,
+    "median_salary_usd": 73500.0,
+    "remote_tagged_postings": 17
+  },
+  {
+    "industry_id": 133,
+    "industry_name": "Wholesale",
+    "postings": 538,
+    "market_share_pct": 0.43,
+    "salary_postings": 142,
+    "median_salary_usd": 56680.0,
+    "remote_tagged_postings": 25
+  },
+  {
+    "industry_id": 94,
+    "industry_name": "Airlines and Aviation",
+    "postings": 532,
+    "market_share_pct": 0.43,
+    "salary_postings": 137,
+    "median_salary_usd": 92500.0,
+    "remote_tagged_postings": 27
+  },
+  {
+    "industry_id": 146,
+    "industry_name": "Packaging and Containers Manufacturing",
+    "postings": 526,
+    "market_share_pct": 0.42,
+    "salary_postings": 155,
+    "median_salary_usd": 66500.0,
+    "remote_tagged_postings": 29
+  },
+  {
+    "industry_id": 50,
+    "industry_name": "Architecture and Planning",
+    "postings": 523,
+    "market_share_pct": 0.42,
+    "salary_postings": 161,
+    "median_salary_usd": 100000.0,
+    "remote_tagged_postings": 24
+  },
+  {
+    "industry_id": 7,
+    "industry_name": "Semiconductor Manufacturing",
+    "postings": 496,
+    "market_share_pct": 0.4,
+    "salary_postings": 151,
+    "median_salary_usd": 131123.0,
+    "remote_tagged_postings": 32
+  },
+  {
+    "industry_id": 147,
+    "industry_name": "Automation Machinery Manufacturing",
+    "postings": 473,
+    "market_share_pct": 0.38,
+    "salary_postings": 156,
+    "median_salary_usd": 92560.0,
+    "remote_tagged_postings": 40
+  },
+  {
+    "industry_id": 1862,
+    "industry_name": "Marketing Services",
+    "postings": 461,
+    "market_share_pct": 0.37,
+    "salary_postings": 212,
+    "median_salary_usd": 72000.0,
+    "remote_tagged_postings": 145
+  },
+  {
+    "industry_id": 121,
+    "industry_name": "Security and Investigations",
+    "postings": 458,
+    "market_share_pct": 0.37,
+    "salary_postings": 157,
+    "median_salary_usd": 49920.0,
+    "remote_tagged_postings": 32
+  },
+  {
+    "industry_id": 88,
+    "industry_name": "Individual and Family Services",
+    "postings": 453,
+    "market_share_pct": 0.37,
+    "salary_postings": 163,
+    "median_salary_usd": 59750.0,
+    "remote_tagged_postings": 14
+  },
+  {
+    "industry_id": 1810,
+    "industry_name": "Professional Services",
+    "postings": 450,
+    "market_share_pct": 0.36,
+    "salary_postings": 137,
+    "median_salary_usd": 95000.0,
+    "remote_tagged_postings": 35
+  },
+  {
+    "industry_id": 16,
+    "industry_name": "Veterinary Services",
+    "postings": 415,
+    "market_share_pct": 0.34,
+    "salary_postings": 173,
+    "median_salary_usd": 49920.0,
+    "remote_tagged_postings": 11
+  },
+  {
+    "industry_id": 99,
+    "industry_name": "Design Services",
+    "postings": 391,
+    "market_share_pct": 0.32,
+    "salary_postings": 135,
+    "median_salary_usd": 102500.0,
+    "remote_tagged_postings": 45
+  },
+  {
+    "industry_id": 3,
+    "industry_name": "Computer Hardware Manufacturing",
+    "postings": 378,
+    "market_share_pct": 0.31,
+    "salary_postings": 163,
+    "median_salary_usd": 138150.0,
+    "remote_tagged_postings": 65
+  },
+  {
+    "industry_id": 78,
+    "industry_name": "Public Safety",
+    "postings": 367,
+    "market_share_pct": 0.3,
+    "salary_postings": 110,
+    "median_salary_usd": 98917.0,
+    "remote_tagged_postings": 32
+  },
+  {
+    "industry_id": 3243,
+    "industry_name": "Services for Renewable Energy",
+    "postings": 342,
+    "market_share_pct": 0.28,
+    "salary_postings": 142,
+    "median_salary_usd": 113450.0,
+    "remote_tagged_postings": 68
+  },
+  {
+    "industry_id": 36,
+    "industry_name": "Broadcast Media Production and Distribution",
+    "postings": 340,
+    "market_share_pct": 0.27,
+    "salary_postings": 122,
+    "median_salary_usd": 81250.0,
+    "remote_tagged_postings": 37
+  },
+  {
+    "industry_id": 98,
+    "industry_name": "Public Relations and Communications Services",
+    "postings": 333,
+    "market_share_pct": 0.27,
+    "salary_postings": 93,
+    "median_salary_usd": 56160.0,
+    "remote_tagged_postings": 80
+  },
+  {
+    "industry_id": 30,
+    "industry_name": "Travel Arrangements",
+    "postings": 317,
+    "market_share_pct": 0.26,
+    "salary_postings": 118,
+    "median_salary_usd": 58250.0,
+    "remote_tagged_postings": 29
+  },
+  {
+    "industry_id": 2353,
+    "industry_name": "Health and Human Services",
+    "postings": 296,
+    "market_share_pct": 0.24,
+    "salary_postings": 162,
+    "median_salary_usd": 82000.0,
+    "remote_tagged_postings": 48
+  },
+  {
+    "industry_id": 18,
+    "industry_name": "Personal Care Product Manufacturing",
+    "postings": 292,
+    "market_share_pct": 0.24,
+    "salary_postings": 125,
+    "median_salary_usd": 70000.0,
+    "remote_tagged_postings": 21
+  },
+  {
+    "industry_id": 138,
+    "industry_name": "Retail Office Equipment",
+    "postings": 280,
+    "market_share_pct": 0.23,
+    "salary_postings": 78,
+    "median_salary_usd": 58240.0,
+    "remote_tagged_postings": 9
+  },
+  {
+    "industry_id": 87,
+    "industry_name": "Freight and Package Transportation",
+    "postings": 275,
+    "market_share_pct": 0.22,
+    "salary_postings": 107,
+    "median_salary_usd": 40000.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 3129,
+    "industry_name": "Business Content",
+    "postings": 273,
+    "market_share_pct": 0.22,
+    "salary_postings": 45,
+    "median_salary_usd": 46500.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 24,
+    "industry_name": "Computers and Electronics Manufacturing",
+    "postings": 272,
+    "market_share_pct": 0.22,
+    "salary_postings": 113,
+    "median_salary_usd": 131123.0,
+    "remote_tagged_postings": 34
+  },
+  {
+    "industry_id": 106,
+    "industry_name": "Venture Capital and Private Equity Principals",
+    "postings": 271,
+    "market_share_pct": 0.22,
+    "salary_postings": 102,
+    "median_salary_usd": 123750.0,
+    "remote_tagged_postings": 92
+  },
+  {
+    "industry_id": 144,
+    "industry_name": "Renewable Energy Semiconductor Manufacturing",
+    "postings": 262,
+    "market_share_pct": 0.21,
+    "salary_postings": 58,
+    "median_salary_usd": 132500.0,
+    "remote_tagged_postings": 59
+  },
+  {
+    "industry_id": 119,
+    "industry_name": "Wireless Services",
+    "postings": 255,
+    "market_share_pct": 0.21,
+    "salary_postings": 68,
+    "median_salary_usd": 127750.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 132,
+    "industry_name": "E-Learning Providers",
+    "postings": 254,
+    "market_share_pct": 0.21,
+    "salary_postings": 54,
+    "median_salary_usd": 74000.0,
+    "remote_tagged_postings": 197
+  },
+  {
+    "industry_id": 143,
+    "industry_name": "Retail Luxury Goods and Jewelry",
+    "postings": 252,
+    "market_share_pct": 0.2,
+    "salary_postings": 102,
+    "median_salary_usd": 62450.0,
+    "remote_tagged_postings": 11
+  },
+  {
+    "industry_id": 1999,
+    "industry_name": "Education",
+    "postings": 248,
+    "market_share_pct": 0.2,
+    "salary_postings": 91,
+    "median_salary_usd": 85000.0,
+    "remote_tagged_postings": 70
+  },
+  {
+    "industry_id": 22,
+    "industry_name": "Retail Groceries",
+    "postings": 235,
+    "market_share_pct": 0.19,
+    "salary_postings": 86,
+    "median_salary_usd": 40898.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 56,
+    "industry_name": "Mining",
+    "postings": 234,
+    "market_share_pct": 0.19,
+    "salary_postings": 42,
+    "median_salary_usd": 101900.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 93,
+    "industry_name": "Warehousing and Storage",
+    "postings": 226,
+    "market_share_pct": 0.18,
+    "salary_postings": 58,
+    "median_salary_usd": 77500.0,
+    "remote_tagged_postings": 13
+  },
+  {
+    "industry_id": 20,
+    "industry_name": "Sporting Goods Manufacturing",
+    "postings": 223,
+    "market_share_pct": 0.18,
+    "salary_postings": 44,
+    "median_salary_usd": 71000.0,
+    "remote_tagged_postings": 11
+  },
+  {
+    "industry_id": 82,
+    "industry_name": "Book and Periodical Publishing",
+    "postings": 199,
+    "market_share_pct": 0.16,
+    "salary_postings": 52,
+    "median_salary_usd": 60910.0,
+    "remote_tagged_postings": 28
+  },
+  {
+    "industry_id": 117,
+    "industry_name": "Plastics Manufacturing",
+    "postings": 196,
+    "market_share_pct": 0.16,
+    "salary_postings": 33,
+    "median_salary_usd": 95000.0,
+    "remote_tagged_postings": 14
+  },
+  {
+    "industry_id": 126,
+    "industry_name": "Media Production",
+    "postings": 193,
+    "market_share_pct": 0.16,
+    "salary_postings": 82,
+    "median_salary_usd": 83350.0,
+    "remote_tagged_postings": 27
+  },
+  {
+    "industry_id": 1285,
+    "industry_name": "Internet Marketplace Platforms",
+    "postings": 188,
+    "market_share_pct": 0.15,
+    "salary_postings": 78,
+    "median_salary_usd": 125625.0,
+    "remote_tagged_postings": 24
+  },
+  {
+    "industry_id": 110,
+    "industry_name": "Events Services",
+    "postings": 186,
+    "market_share_pct": 0.15,
+    "salary_postings": 67,
+    "median_salary_usd": 64000.0,
+    "remote_tagged_postings": 27
+  },
+  {
+    "industry_id": 26,
+    "industry_name": "Furniture and Home Furnishings Manufacturing",
+    "postings": 185,
+    "market_share_pct": 0.15,
+    "salary_postings": 64,
+    "median_salary_usd": 52250.0,
+    "remote_tagged_postings": 14
+  },
+  {
+    "industry_id": 3200,
+    "industry_name": "Education Management",
+    "postings": 184,
+    "market_share_pct": 0.15,
+    "salary_postings": 49,
+    "median_salary_usd": 71500.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 406,
+    "industry_name": "Building Construction",
+    "postings": 175,
+    "market_share_pct": 0.14,
+    "salary_postings": 117,
+    "median_salary_usd": 105000.0,
+    "remote_tagged_postings": 11
+  },
+  {
+    "industry_id": 2358,
+    "industry_name": "Public Health",
+    "postings": 172,
+    "market_share_pct": 0.14,
+    "salary_postings": 117,
+    "median_salary_usd": 95305.0,
+    "remote_tagged_postings": 32
+  },
+  {
+    "industry_id": 33,
+    "industry_name": "Spectator Sports",
+    "postings": 172,
+    "market_share_pct": 0.14,
+    "salary_postings": 47,
+    "median_salary_usd": 70000.0,
+    "remote_tagged_postings": 17
+  },
+  {
+    "industry_id": 148,
+    "industry_name": "Government Relations Services",
+    "postings": 169,
+    "market_share_pct": 0.14,
+    "salary_postings": 92,
+    "median_salary_usd": 88948.0,
+    "remote_tagged_postings": 28
+  },
+  {
+    "industry_id": 129,
+    "industry_name": "Capital Markets",
+    "postings": 168,
+    "market_share_pct": 0.14,
+    "salary_postings": 75,
+    "median_salary_usd": 155000.0,
+    "remote_tagged_postings": 10
+  },
+  {
+    "industry_id": 60,
+    "industry_name": "Textile Manufacturing",
+    "postings": 168,
+    "market_share_pct": 0.14,
+    "salary_postings": 38,
+    "median_salary_usd": 65000.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 61,
+    "industry_name": "Paper and Forest Product Manufacturing",
+    "postings": 167,
+    "market_share_pct": 0.13,
+    "salary_postings": 58,
+    "median_salary_usd": 70640.0,
+    "remote_tagged_postings": 9
+  },
+  {
+    "industry_id": 3102,
+    "industry_name": "IT System Custom Software Development",
+    "postings": 157,
+    "market_share_pct": 0.13,
+    "salary_postings": 59,
+    "median_salary_usd": 120000.0,
+    "remote_tagged_postings": 69
+  },
+  {
+    "industry_id": 29,
+    "industry_name": "Gambling Facilities and Casinos",
+    "postings": 153,
+    "market_share_pct": 0.12,
+    "salary_postings": 34,
+    "median_salary_usd": 80000.0,
+    "remote_tagged_postings": 12
+  },
+  {
+    "industry_id": 71,
+    "industry_name": "Armed Forces",
+    "postings": 147,
+    "market_share_pct": 0.12,
+    "salary_postings": 16,
+    "median_salary_usd": 65583.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 141,
+    "industry_name": "International Trade and Development",
+    "postings": 133,
+    "market_share_pct": 0.11,
+    "salary_postings": 27,
+    "median_salary_usd": 59280.0,
+    "remote_tagged_postings": 16
+  },
+  {
+    "industry_id": 63,
+    "industry_name": "Farming",
+    "postings": 126,
+    "market_share_pct": 0.1,
+    "salary_postings": 38,
+    "median_salary_usd": 76960.0,
+    "remote_tagged_postings": 11
+  },
+  {
+    "industry_id": 3210,
+    "industry_name": "Human Resources",
+    "postings": 126,
+    "market_share_pct": 0.1,
+    "salary_postings": 19,
+    "median_salary_usd": 112500.0,
+    "remote_tagged_postings": 6
+  },
+  {
+    "industry_id": 123,
+    "industry_name": "Outsourcing and Offshoring Consulting",
+    "postings": 126,
+    "market_share_pct": 0.1,
+    "salary_postings": 34,
+    "median_salary_usd": 52980.0,
+    "remote_tagged_postings": 56
+  },
+  {
+    "industry_id": 142,
+    "industry_name": "Beverage Manufacturing",
+    "postings": 124,
+    "market_share_pct": 0.1,
+    "salary_postings": 32,
+    "median_salary_usd": 84250.0,
+    "remote_tagged_postings": 9
+  },
+  {
+    "industry_id": 382,
+    "industry_name": "Electric Power Transmission, Control, and Distribution",
+    "postings": 118,
+    "market_share_pct": 0.1,
+    "salary_postings": 58,
+    "median_salary_usd": 101000.0,
+    "remote_tagged_postings": 22
+  },
+  {
+    "industry_id": 97,
+    "industry_name": "Market Research",
+    "postings": 108,
+    "market_share_pct": 0.09,
+    "salary_postings": 43,
+    "median_salary_usd": 95000.0,
+    "remote_tagged_postings": 47
+  },
+  {
+    "industry_id": 105,
+    "industry_name": "Professional Training and Coaching",
+    "postings": 103,
+    "market_share_pct": 0.08,
+    "salary_postings": 30,
+    "median_salary_usd": 78750.0,
+    "remote_tagged_postings": 50
+  },
+  {
+    "industry_id": 1912,
+    "industry_name": "Administrative and Support Services",
+    "postings": 102,
+    "market_share_pct": 0.08,
+    "salary_postings": 56,
+    "median_salary_usd": 49939.0,
+    "remote_tagged_postings": 50
+  },
+  {
+    "industry_id": 128,
+    "industry_name": "Leasing Non-residential Real Estate",
+    "postings": 101,
+    "market_share_pct": 0.08,
+    "salary_postings": 31,
+    "median_salary_usd": 87500.0,
+    "remote_tagged_postings": 10
+  },
+  {
+    "industry_id": 109,
+    "industry_name": "Computer Games",
+    "postings": 99,
+    "market_share_pct": 0.08,
+    "salary_postings": 42,
+    "median_salary_usd": 128505.0,
+    "remote_tagged_postings": 26
+  },
+  {
+    "industry_id": 5,
+    "industry_name": "Computer Networking Products",
+    "postings": 99,
+    "market_share_pct": 0.08,
+    "salary_postings": 55,
+    "median_salary_usd": 156000.0,
+    "remote_tagged_postings": 34
+  },
+  {
+    "industry_id": 3202,
+    "industry_name": "Non-profit Organization Management",
+    "postings": 99,
+    "market_share_pct": 0.08,
+    "salary_postings": 39,
+    "median_salary_usd": 50000.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 83,
+    "industry_name": "Printing Services",
+    "postings": 99,
+    "market_share_pct": 0.08,
+    "salary_postings": 29,
+    "median_salary_usd": 52850.0,
+    "remote_tagged_postings": 9
+  },
+  {
+    "industry_id": 3190,
+    "industry_name": "Apparel & Fashion",
+    "postings": 98,
+    "market_share_pct": 0.08,
+    "salary_postings": 20,
+    "median_salary_usd": 43160.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 383,
+    "industry_name": "Electric Power Generation",
+    "postings": 91,
+    "market_share_pct": 0.07,
+    "salary_postings": 40,
+    "median_salary_usd": 127500.0,
+    "remote_tagged_postings": 16
+  },
+  {
+    "industry_id": 1339,
+    "industry_name": "Food and Beverage Retail",
+    "postings": 91,
+    "market_share_pct": 0.07,
+    "salary_postings": 42,
+    "median_salary_usd": 96250.0,
+    "remote_tagged_postings": 16
+  },
+  {
+    "industry_id": 113,
+    "industry_name": "Online Audio and Video Media",
+    "postings": 91,
+    "market_share_pct": 0.07,
+    "salary_postings": 36,
+    "median_salary_usd": 98000.0,
+    "remote_tagged_postings": 31
+  },
+  {
+    "industry_id": 2458,
+    "industry_name": "Data Infrastructure and Analytics",
+    "postings": 89,
+    "market_share_pct": 0.07,
+    "salary_postings": 38,
+    "median_salary_usd": 88920.0,
+    "remote_tagged_postings": 38
+  },
+  {
+    "industry_id": 1737,
+    "industry_name": "Insurance Agencies and Brokerages",
+    "postings": 87,
+    "market_share_pct": 0.07,
+    "salary_postings": 38,
+    "median_salary_usd": 93000.0,
+    "remote_tagged_postings": 37
+  },
+  {
+    "industry_id": 2468,
+    "industry_name": "Electrical Equipment Manufacturing",
+    "postings": 86,
+    "market_share_pct": 0.07,
+    "salary_postings": 44,
+    "median_salary_usd": 85350.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 77,
+    "industry_name": "Law Enforcement",
+    "postings": 84,
+    "market_share_pct": 0.07,
+    "salary_postings": 30,
+    "median_salary_usd": 109716.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 108,
+    "industry_name": "Translation and Localization",
+    "postings": 84,
+    "market_share_pct": 0.07,
+    "salary_postings": 8,
+    "median_salary_usd": 55000.0,
+    "remote_tagged_postings": 67
+  },
+  {
+    "industry_id": 2081,
+    "industry_name": "Hospitals",
+    "postings": 83,
+    "market_share_pct": 0.07,
+    "salary_postings": 39,
+    "median_salary_usd": 89440.0,
+    "remote_tagged_postings": 8
+  },
+  {
+    "industry_id": 3198,
+    "industry_name": "Automotive",
+    "postings": 80,
+    "market_share_pct": 0.06,
+    "salary_postings": 13,
+    "median_salary_usd": 150000.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 3192,
+    "industry_name": "Consumer Goods",
+    "postings": 77,
+    "market_share_pct": 0.06,
+    "salary_postings": 18,
+    "median_salary_usd": 54600.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 3124,
+    "industry_name": "Internet News",
+    "postings": 75,
+    "market_share_pct": 0.06,
+    "salary_postings": 19,
+    "median_salary_usd": 139500.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 1359,
+    "industry_name": "Retail Health and Personal Care Products",
+    "postings": 74,
+    "market_share_pct": 0.06,
+    "salary_postings": 32,
+    "median_salary_usd": 103750.0,
+    "remote_tagged_postings": 17
+  },
+  {
+    "industry_id": 3106,
+    "industry_name": "IT System Data Services",
+    "postings": 73,
+    "market_share_pct": 0.06,
+    "salary_postings": 22,
+    "median_salary_usd": 99892.0,
+    "remote_tagged_postings": 27
+  },
+  {
+    "industry_id": 901,
+    "industry_name": "Agriculture, Construction, Mining Machinery Manufacturing",
+    "postings": 72,
+    "market_share_pct": 0.06,
+    "salary_postings": 40,
+    "median_salary_usd": 90000.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 3250,
+    "industry_name": "Retail Pharmacies",
+    "postings": 72,
+    "market_share_pct": 0.06,
+    "salary_postings": 16,
+    "median_salary_usd": 63990.0,
+    "remote_tagged_postings": 8
+  },
+  {
+    "industry_id": 89,
+    "industry_name": "Religious Institutions",
+    "postings": 69,
+    "market_share_pct": 0.06,
+    "salary_postings": 11,
+    "median_salary_usd": 85000.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 76,
+    "industry_name": "Executive Offices",
+    "postings": 65,
+    "market_share_pct": 0.05,
+    "salary_postings": 12,
+    "median_salary_usd": 91000.0,
+    "remote_tagged_postings": 6
+  },
+  {
+    "industry_id": 3238,
+    "industry_name": "Biotechnology",
+    "postings": 64,
+    "market_share_pct": 0.05,
+    "salary_postings": 16,
+    "median_salary_usd": 138025.0,
+    "remote_tagged_postings": 16
+  },
+  {
+    "industry_id": 37,
+    "industry_name": "Museums, Historical Sites, and Zoos",
+    "postings": 64,
+    "market_share_pct": 0.05,
+    "salary_postings": 26,
+    "median_salary_usd": 62500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3207,
+    "industry_name": "Health, Wellness & Fitness",
+    "postings": 60,
+    "market_share_pct": 0.05,
+    "salary_postings": 19,
+    "median_salary_usd": 70000.0,
+    "remote_tagged_postings": 6
+  },
+  {
+    "industry_id": 923,
+    "industry_name": "HVAC and Refrigeration Equipment Manufacturing",
+    "postings": 57,
+    "market_share_pct": 0.05,
+    "salary_postings": 38,
+    "median_salary_usd": 92500.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 2194,
+    "industry_name": "Hotels and Motels",
+    "postings": 57,
+    "market_share_pct": 0.05,
+    "salary_postings": 30,
+    "median_salary_usd": 78750.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 3107,
+    "industry_name": "IT System Testing and Evaluation",
+    "postings": 57,
+    "market_share_pct": 0.05,
+    "salary_postings": 10,
+    "median_salary_usd": 102000.0,
+    "remote_tagged_postings": 25
+  },
+  {
+    "industry_id": 3217,
+    "industry_name": "Medical Device",
+    "postings": 56,
+    "market_share_pct": 0.05,
+    "salary_postings": 18,
+    "median_salary_usd": 86775.0,
+    "remote_tagged_postings": 15
+  },
+  {
+    "industry_id": 1916,
+    "industry_name": "Office Administration",
+    "postings": 56,
+    "market_share_pct": 0.05,
+    "salary_postings": 38,
+    "median_salary_usd": 49669.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 935,
+    "industry_name": "Engines and Power Transmission Equipment Manufacturing",
+    "postings": 52,
+    "market_share_pct": 0.04,
+    "salary_postings": 18,
+    "median_salary_usd": 101170.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 125,
+    "industry_name": "Alternative Medicine",
+    "postings": 51,
+    "market_share_pct": 0.04,
+    "salary_postings": 10,
+    "median_salary_usd": 38480.0,
+    "remote_tagged_postings": 10
+  },
+  {
+    "industry_id": 40,
+    "industry_name": "Recreational Facilities",
+    "postings": 49,
+    "market_share_pct": 0.04,
+    "salary_postings": 10,
+    "median_salary_usd": 70000.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 145,
+    "industry_name": "Glass, Ceramics and Concrete Manufacturing",
+    "postings": 48,
+    "market_share_pct": 0.04,
+    "salary_postings": 14,
+    "median_salary_usd": 81250.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 1042,
+    "industry_name": "Motor Vehicle Parts Manufacturing",
+    "postings": 47,
+    "market_share_pct": 0.04,
+    "salary_postings": 21,
+    "median_salary_usd": 93600.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 2225,
+    "industry_name": "Repair and Maintenance",
+    "postings": 47,
+    "market_share_pct": 0.04,
+    "salary_postings": 23,
+    "median_salary_usd": 78104.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1292,
+    "industry_name": "Retail Motor Vehicles",
+    "postings": 47,
+    "market_share_pct": 0.04,
+    "salary_postings": 14,
+    "median_salary_usd": 84100.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 3241,
+    "industry_name": "Renewable Energy Equipment Manufacturing",
+    "postings": 46,
+    "market_share_pct": 0.04,
+    "salary_postings": 11,
+    "median_salary_usd": 109200.0,
+    "remote_tagged_postings": 10
+  },
+  {
+    "industry_id": 95,
+    "industry_name": "Maritime Transportation",
+    "postings": 45,
+    "market_share_pct": 0.04,
+    "salary_postings": 10,
+    "median_salary_usd": 80000.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 3248,
+    "industry_name": "Robotics Engineering",
+    "postings": 45,
+    "market_share_pct": 0.04,
+    "salary_postings": 14,
+    "median_salary_usd": 107500.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 3222,
+    "industry_name": "Transportation/Trucking/Railroad",
+    "postings": 45,
+    "market_share_pct": 0.04,
+    "salary_postings": 13,
+    "median_salary_usd": 57450.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 65,
+    "industry_name": "Dairy Product Manufacturing",
+    "postings": 43,
+    "market_share_pct": 0.03,
+    "salary_postings": 10,
+    "median_salary_usd": 80000.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 3195,
+    "industry_name": "Food & Beverages",
+    "postings": 43,
+    "market_share_pct": 0.03,
+    "salary_postings": 13,
+    "median_salary_usd": 60000.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 3224,
+    "industry_name": "Food Production",
+    "postings": 43,
+    "market_share_pct": 0.03,
+    "salary_postings": 9,
+    "median_salary_usd": 61360.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1231,
+    "industry_name": "Wholesale Food and Beverage",
+    "postings": 43,
+    "market_share_pct": 0.03,
+    "salary_postings": 24,
+    "median_salary_usd": 88050.0,
+    "remote_tagged_postings": 6
+  },
+  {
+    "industry_id": 3240,
+    "industry_name": "Renewable Energy Power Generation",
+    "postings": 41,
+    "market_share_pct": 0.03,
+    "salary_postings": 11,
+    "median_salary_usd": 140000.0,
+    "remote_tagged_postings": 13
+  },
+  {
+    "industry_id": 58,
+    "industry_name": "Shipbuilding",
+    "postings": 41,
+    "market_share_pct": 0.03,
+    "salary_postings": 9,
+    "median_salary_usd": 76586.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 101,
+    "industry_name": "Fundraising",
+    "postings": 40,
+    "market_share_pct": 0.03,
+    "salary_postings": 25,
+    "median_salary_usd": 80000.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 3132,
+    "industry_name": "Internet Publishing",
+    "postings": 40,
+    "market_share_pct": 0.03,
+    "salary_postings": 13,
+    "median_salary_usd": 123650.0,
+    "remote_tagged_postings": 17
+  },
+  {
+    "industry_id": 115,
+    "industry_name": "Musicians",
+    "postings": 40,
+    "market_share_pct": 0.03,
+    "salary_postings": 15,
+    "median_salary_usd": 71500.0,
+    "remote_tagged_postings": 13
+  },
+  {
+    "industry_id": 1725,
+    "industry_name": "Insurance Carriers",
+    "postings": 38,
+    "market_share_pct": 0.03,
+    "salary_postings": 15,
+    "median_salary_usd": 85000.0,
+    "remote_tagged_postings": 16
+  },
+  {
+    "industry_id": 332,
+    "industry_name": "Oil, Gas, and Mining",
+    "postings": 38,
+    "market_share_pct": 0.03,
+    "salary_postings": 15,
+    "median_salary_usd": 111350.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 2401,
+    "industry_name": "Operations Consulting",
+    "postings": 38,
+    "market_share_pct": 0.03,
+    "salary_postings": 20,
+    "median_salary_usd": 109719.0,
+    "remote_tagged_postings": 19
+  },
+  {
+    "industry_id": 840,
+    "industry_name": "Fabricated Metal Products",
+    "postings": 37,
+    "market_share_pct": 0.03,
+    "salary_postings": 20,
+    "median_salary_usd": 82500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3103,
+    "industry_name": "IT System Operations and Maintenance",
+    "postings": 37,
+    "market_share_pct": 0.03,
+    "salary_postings": 20,
+    "median_salary_usd": 117000.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 1481,
+    "industry_name": "Rail Transportation",
+    "postings": 36,
+    "market_share_pct": 0.03,
+    "salary_postings": 14,
+    "median_salary_usd": 140629.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 62,
+    "industry_name": "Railroad Equipment Manufacturing",
+    "postings": 36,
+    "market_share_pct": 0.03,
+    "salary_postings": 7,
+    "median_salary_usd": 72498.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 21,
+    "industry_name": "Tobacco Manufacturing",
+    "postings": 36,
+    "market_share_pct": 0.03,
+    "salary_postings": 13,
+    "median_salary_usd": 85250.0,
+    "remote_tagged_postings": 6
+  },
+  {
+    "industry_id": 3197,
+    "industry_name": "Building Materials",
+    "postings": 35,
+    "market_share_pct": 0.03,
+    "salary_postings": 7,
+    "median_salary_usd": 41600.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 74,
+    "industry_name": "International Affairs",
+    "postings": 35,
+    "market_share_pct": 0.03,
+    "salary_postings": 6,
+    "median_salary_usd": 106800.0,
+    "remote_tagged_postings": 15
+  },
+  {
+    "industry_id": 3127,
+    "industry_name": "Social Networking Platforms",
+    "postings": 35,
+    "market_share_pct": 0.03,
+    "salary_postings": 16,
+    "median_salary_usd": 81128.0,
+    "remote_tagged_postings": 21
+  },
+  {
+    "industry_id": 2391,
+    "industry_name": "Military and International Affairs",
+    "postings": 34,
+    "market_share_pct": 0.03,
+    "salary_postings": 11,
+    "median_salary_usd": 120000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 39,
+    "industry_name": "Performing Arts",
+    "postings": 34,
+    "market_share_pct": 0.03,
+    "salary_postings": 13,
+    "median_salary_usd": 57200.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 79,
+    "industry_name": "Public Policy Offices",
+    "postings": 34,
+    "market_share_pct": 0.03,
+    "salary_postings": 24,
+    "median_salary_usd": 83750.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 131,
+    "industry_name": "Philanthropic Fundraising Services",
+    "postings": 33,
+    "market_share_pct": 0.03,
+    "salary_postings": 19,
+    "median_salary_usd": 90000.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 102,
+    "industry_name": "Strategic Management Services",
+    "postings": 33,
+    "market_share_pct": 0.03,
+    "salary_postings": 14,
+    "median_salary_usd": 95738.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 103,
+    "industry_name": "Writing and Editing",
+    "postings": 33,
+    "market_share_pct": 0.03,
+    "salary_postings": 12,
+    "median_salary_usd": 97500.0,
+    "remote_tagged_postings": 21
+  },
+  {
+    "industry_id": 918,
+    "industry_name": "Commercial and Service Industry Machinery Manufacturing",
+    "postings": 31,
+    "market_share_pct": 0.03,
+    "salary_postings": 12,
+    "median_salary_usd": 90000.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 3126,
+    "industry_name": "Interior Design",
+    "postings": 31,
+    "market_share_pct": 0.03,
+    "salary_postings": 11,
+    "median_salary_usd": 69680.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 2091,
+    "industry_name": "Nursing Homes and Residential Care Facilities",
+    "postings": 31,
+    "market_share_pct": 0.03,
+    "salary_postings": 16,
+    "median_salary_usd": 91700.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 3089,
+    "industry_name": "Space Research and Technology",
+    "postings": 31,
+    "market_share_pct": 0.03,
+    "salary_postings": 15,
+    "median_salary_usd": 181200.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 3213,
+    "industry_name": "Renewables & Environment",
+    "postings": 30,
+    "market_share_pct": 0.02,
+    "salary_postings": 9,
+    "median_salary_usd": 86278.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 1324,
+    "industry_name": "Retail Building Materials and Garden Equipment",
+    "postings": 30,
+    "market_share_pct": 0.02,
+    "salary_postings": 3,
+    "median_salary_usd": 95000.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 3187,
+    "industry_name": "Defense & Space",
+    "postings": 29,
+    "market_share_pct": 0.02,
+    "salary_postings": 3,
+    "median_salary_usd": 106938.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 1905,
+    "industry_name": "Holding Companies",
+    "postings": 28,
+    "market_share_pct": 0.02,
+    "salary_postings": 4,
+    "median_salary_usd": 61000.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 2074,
+    "industry_name": "Home Health Care Services",
+    "postings": 28,
+    "market_share_pct": 0.02,
+    "salary_postings": 4,
+    "median_salary_usd": 53920.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 136,
+    "industry_name": "Photography",
+    "postings": 28,
+    "market_share_pct": 0.02,
+    "salary_postings": 3,
+    "median_salary_usd": 70000.0,
+    "remote_tagged_postings": 22
+  },
+  {
+    "industry_id": 3218,
+    "industry_name": "Semiconductors",
+    "postings": 28,
+    "market_share_pct": 0.02,
+    "salary_postings": 2,
+    "median_salary_usd": 127625.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2366,
+    "industry_name": "Air, Water, and Waste Program Management",
+    "postings": 27,
+    "market_share_pct": 0.02,
+    "salary_postings": 17,
+    "median_salary_usd": 110000.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 3065,
+    "industry_name": "Courts of Law",
+    "postings": 27,
+    "market_share_pct": 0.02,
+    "salary_postings": 19,
+    "median_salary_usd": 135000.0,
+    "remote_tagged_postings": 6
+  },
+  {
+    "industry_id": 435,
+    "industry_name": "Specialty Trade Contractors",
+    "postings": 27,
+    "market_share_pct": 0.02,
+    "salary_postings": 9,
+    "median_salary_usd": 70000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 709,
+    "industry_name": "Agricultural Chemical Manufacturing",
+    "postings": 26,
+    "market_share_pct": 0.02,
+    "salary_postings": 9,
+    "median_salary_usd": 105505.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 35,
+    "industry_name": "Movies, Videos, and Sound",
+    "postings": 26,
+    "market_share_pct": 0.02,
+    "salary_postings": 18,
+    "median_salary_usd": 150000.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 3237,
+    "industry_name": "Entertainment",
+    "postings": 25,
+    "market_share_pct": 0.02,
+    "salary_postings": 12,
+    "median_salary_usd": 56680.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1779,
+    "industry_name": "Equipment Rental Services",
+    "postings": 25,
+    "market_share_pct": 0.02,
+    "salary_postings": 6,
+    "median_salary_usd": 90000.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 1743,
+    "industry_name": "Insurance and Employee Benefit Funds",
+    "postings": 25,
+    "market_share_pct": 0.02,
+    "salary_postings": 8,
+    "median_salary_usd": 108680.0,
+    "remote_tagged_postings": 9
+  },
+  {
+    "industry_id": 3221,
+    "industry_name": "Mechanical Or Industrial Engineering",
+    "postings": 25,
+    "market_share_pct": 0.02,
+    "salary_postings": 6,
+    "median_salary_usd": 62500.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 107,
+    "industry_name": "Political Organizations",
+    "postings": 25,
+    "market_share_pct": 0.02,
+    "salary_postings": 10,
+    "median_salary_usd": 73700.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 1958,
+    "industry_name": "Security Systems Services",
+    "postings": 25,
+    "market_share_pct": 0.02,
+    "salary_postings": 1,
+    "median_salary_usd": 56160.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 690,
+    "industry_name": "Chemical Raw Materials Manufacturing",
+    "postings": 24,
+    "market_share_pct": 0.02,
+    "salary_postings": 12,
+    "median_salary_usd": 112500.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 722,
+    "industry_name": "Paint, Coating, and Adhesive Manufacturing",
+    "postings": 24,
+    "market_share_pct": 0.02,
+    "salary_postings": 9,
+    "median_salary_usd": 65000.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 2027,
+    "industry_name": "Sports and Recreation Instruction",
+    "postings": 24,
+    "market_share_pct": 0.02,
+    "salary_postings": 2,
+    "median_salary_usd": 43150.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 38,
+    "industry_name": "Artists and Writers",
+    "postings": 23,
+    "market_share_pct": 0.02,
+    "salary_postings": 4,
+    "median_salary_usd": 45700.0,
+    "remote_tagged_postings": 18
+  },
+  {
+    "industry_id": 3130,
+    "industry_name": "Data Security Software Products",
+    "postings": 23,
+    "market_share_pct": 0.02,
+    "salary_postings": 12,
+    "median_salary_usd": 63700.0,
+    "remote_tagged_postings": 16
+  },
+  {
+    "industry_id": 807,
+    "industry_name": "Primary Metal Manufacturing",
+    "postings": 23,
+    "market_share_pct": 0.02,
+    "salary_postings": 12,
+    "median_salary_usd": 81600.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3191,
+    "industry_name": "Consumer Electronics",
+    "postings": 22,
+    "market_share_pct": 0.02,
+    "salary_postings": 1,
+    "median_salary_usd": 85000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 114,
+    "industry_name": "Nanotechnology Research",
+    "postings": 22,
+    "market_share_pct": 0.02,
+    "salary_postings": 9,
+    "median_salary_usd": 95680.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 73,
+    "industry_name": "Administration of Justice",
+    "postings": 21,
+    "market_share_pct": 0.02,
+    "salary_postings": 17,
+    "median_salary_usd": 121081.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1319,
+    "industry_name": "Retail Appliances, Electrical, and Electronic Equipment",
+    "postings": 21,
+    "market_share_pct": 0.02,
+    "salary_postings": 5,
+    "median_salary_usd": 56160.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 2369,
+    "industry_name": "Housing and Community Development",
+    "postings": 20,
+    "market_share_pct": 0.02,
+    "salary_postings": 12,
+    "median_salary_usd": 88750.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 111,
+    "industry_name": "Retail Art Supplies",
+    "postings": 20,
+    "market_share_pct": 0.02,
+    "salary_postings": 7,
+    "median_salary_usd": 38480.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1931,
+    "industry_name": "Telephone Call Centers",
+    "postings": 20,
+    "market_share_pct": 0.02,
+    "salary_postings": 9,
+    "median_salary_usd": 39520.0,
+    "remote_tagged_postings": 10
+  },
+  {
+    "industry_id": 3086,
+    "industry_name": "Utilities Administration",
+    "postings": 20,
+    "market_share_pct": 0.02,
+    "salary_postings": 11,
+    "median_salary_usd": 99580.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 598,
+    "industry_name": "Apparel Manufacturing",
+    "postings": 19,
+    "market_share_pct": 0.02,
+    "salary_postings": 8,
+    "median_salary_usd": 83750.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 66,
+    "industry_name": "Fisheries",
+    "postings": 19,
+    "market_share_pct": 0.02,
+    "salary_postings": 5,
+    "median_salary_usd": 47476.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 140,
+    "industry_name": "Graphic Design",
+    "postings": 19,
+    "market_share_pct": 0.02,
+    "salary_postings": 9,
+    "median_salary_usd": 101500.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 1855,
+    "industry_name": "IT System Design Services",
+    "postings": 19,
+    "market_share_pct": 0.02,
+    "salary_postings": 5,
+    "median_salary_usd": 161200.0,
+    "remote_tagged_postings": 7
+  },
+  {
+    "industry_id": 1309,
+    "industry_name": "Retail Furniture and Home Furnishings",
+    "postings": 19,
+    "market_share_pct": 0.02,
+    "salary_postings": 4,
+    "median_salary_usd": 86250.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 134,
+    "industry_name": "Wholesale Import and Export",
+    "postings": 19,
+    "market_share_pct": 0.02,
+    "salary_postings": 5,
+    "median_salary_usd": 75000.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 1090,
+    "industry_name": "Office Furniture and Fixtures Manufacturing",
+    "postings": 18,
+    "market_share_pct": 0.01,
+    "salary_postings": 5,
+    "median_salary_usd": 90000.0,
+    "remote_tagged_postings": 8
+  },
+  {
+    "industry_id": 2374,
+    "industry_name": "Community Development and Urban Planning",
+    "postings": 17,
+    "market_share_pct": 0.01,
+    "salary_postings": 10,
+    "median_salary_usd": 110912.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 2179,
+    "industry_name": "Golf Courses and Country Clubs",
+    "postings": 17,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 72500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1720,
+    "industry_name": "Investment Advice",
+    "postings": 17,
+    "market_share_pct": 0.01,
+    "salary_postings": 10,
+    "median_salary_usd": 95000.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 3212,
+    "industry_name": "Luxury Goods & Jewelry",
+    "postings": 16,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 54080.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 743,
+    "industry_name": "Plastics and Rubber Product Manufacturing",
+    "postings": 16,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 86250.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 130,
+    "industry_name": "Think Tanks",
+    "postings": 16,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 92925.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 3105,
+    "industry_name": "IT System Training and Support",
+    "postings": 15,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 54600.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 81,
+    "industry_name": "Newspaper Publishing",
+    "postings": 15,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 53750.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 3233,
+    "industry_name": "Research",
+    "postings": 15,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 122691.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 1267,
+    "industry_name": "Wholesale Alcoholic Beverages",
+    "postings": 15,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 72870.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 3070,
+    "industry_name": "Fire Protection",
+    "postings": 14,
+    "market_share_pct": 0.01,
+    "salary_postings": 5,
+    "median_salary_usd": 72800.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 883,
+    "industry_name": "Metal Treatments",
+    "postings": 14,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 50960.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 928,
+    "industry_name": "Metalworking Machinery Manufacturing",
+    "postings": 14,
+    "market_share_pct": 0.01,
+    "salary_postings": 10,
+    "median_salary_usd": 87500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3247,
+    "industry_name": "Robot Manufacturing",
+    "postings": 14,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 83200.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3085,
+    "industry_name": "Transportation Programs",
+    "postings": 14,
+    "market_share_pct": 0.01,
+    "salary_postings": 8,
+    "median_salary_usd": 114700.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 973,
+    "industry_name": "Audio and Video Equipment Manufacturing",
+    "postings": 13,
+    "market_share_pct": 0.01,
+    "salary_postings": 8,
+    "median_salary_usd": 87500.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 3226,
+    "industry_name": "Aviation & Aerospace",
+    "postings": 13,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 115000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 3208,
+    "industry_name": "E-learning",
+    "postings": 13,
+    "market_share_pct": 0.01,
+    "salary_postings": 2,
+    "median_salary_usd": 197600.0,
+    "remote_tagged_postings": 8
+  },
+  {
+    "industry_id": 3104,
+    "industry_name": "IT System Installation and Disposal",
+    "postings": 13,
+    "market_share_pct": 0.01,
+    "salary_postings": 7,
+    "median_salary_usd": 60000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 852,
+    "industry_name": "Architectural and Structural Metal Manufacturing",
+    "postings": 12,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 58240.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 615,
+    "industry_name": "Fashion Accessories Manufacturing",
+    "postings": 12,
+    "market_share_pct": 0.01,
+    "salary_postings": 7,
+    "median_salary_usd": 72800.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1495,
+    "industry_name": "Ground Passenger Transportation",
+    "postings": 12,
+    "market_share_pct": 0.01,
+    "salary_postings": 10,
+    "median_salary_usd": 114174.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3249,
+    "industry_name": "Surveying and Mapping Services",
+    "postings": 12,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 103750.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1171,
+    "industry_name": "Wholesale Appliances, Electrical, and Electronics",
+    "postings": 12,
+    "market_share_pct": 0.01,
+    "salary_postings": 5,
+    "median_salary_usd": 80000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1178,
+    "industry_name": "Wholesale Hardware, Plumbing, Heating Equipment",
+    "postings": 12,
+    "market_share_pct": 0.01,
+    "salary_postings": 5,
+    "median_salary_usd": 75000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 388,
+    "industry_name": "Environmental Quality Programs",
+    "postings": 11,
+    "market_share_pct": 0.01,
+    "salary_postings": 7,
+    "median_salary_usd": 102500.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 3216,
+    "industry_name": "Industrial Automation",
+    "postings": 11,
+    "market_share_pct": 0.01,
+    "salary_postings": 2,
+    "median_salary_usd": 122200.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 1445,
+    "industry_name": "Online and Mail Order Retail",
+    "postings": 11,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 100880.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 2054,
+    "industry_name": "Physical, Occupational and Speech Therapists",
+    "postings": 11,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 67500.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1512,
+    "industry_name": "School and Employee Bus Services",
+    "postings": 11,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 36041.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 387,
+    "industry_name": "Solar Electric Power Generation",
+    "postings": 11,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 116600.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 784,
+    "industry_name": "Wood Product Manufacturing",
+    "postings": 11,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 67040.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2375,
+    "industry_name": "Economic Programs",
+    "postings": 10,
+    "market_share_pct": 0.01,
+    "salary_postings": 5,
+    "median_salary_usd": 95305.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 201,
+    "industry_name": "Farming, Ranching, Forestry",
+    "postings": 10,
+    "market_share_pct": 0.01,
+    "salary_postings": 8,
+    "median_salary_usd": 90928.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 2934,
+    "industry_name": "Landscaping Services",
+    "postings": 10,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 82500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3194,
+    "industry_name": "Leisure, Travel & Tourism",
+    "postings": 10,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 57720.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 983,
+    "industry_name": "Measuring and Control Instrument Manufacturing",
+    "postings": 10,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 82970.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 397,
+    "industry_name": "Natural Gas Distribution",
+    "postings": 10,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 144404.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 1757,
+    "industry_name": "Real Estate and Equipment Rental Services",
+    "postings": 10,
+    "market_share_pct": 0.01,
+    "salary_postings": 5,
+    "median_salary_usd": 55765.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2142,
+    "industry_name": "Sports Teams and Clubs",
+    "postings": 10,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 70150.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 1137,
+    "industry_name": "Wholesale Furniture and Home Furnishings",
+    "postings": 10,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 80000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3246,
+    "industry_name": "Accessible Architecture and Design",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 105000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 120,
+    "industry_name": "Alternative Dispute Resolution",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 7,
+    "median_salary_usd": 220000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 3253,
+    "industry_name": "Alternative Fuel Vehicle Manufacturing",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 7,
+    "median_salary_usd": 81120.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 3252,
+    "industry_name": "Climate Data and Analytics",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 54938.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 3251,
+    "industry_name": "Climate Technology Product Manufacturing",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 5,
+    "median_salary_usd": 98000.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 871,
+    "industry_name": "Construction Hardware Manufacturing",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 8,
+    "median_salary_usd": 97200.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 3189,
+    "industry_name": "Cosmetics",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 53040.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 2045,
+    "industry_name": "Dentists",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 49920.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3227,
+    "industry_name": "Design",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 2,
+    "median_salary_usd": 117900.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 998,
+    "industry_name": "Electric Lighting Equipment Manufacturing",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 5,
+    "median_salary_usd": 60000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1770,
+    "industry_name": "Real Estate Agents and Brokers",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 1,
+    "median_salary_usd": 150000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 763,
+    "industry_name": "Rubber Products Manufacturing",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 1,
+    "median_salary_usd": 143000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1128,
+    "industry_name": "Wholesale Motor Vehicles and Parts",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 1,
+    "median_salary_usd": 48880.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3220,
+    "industry_name": "Wine & Spirits",
+    "postings": 9,
+    "market_share_pct": 0.01,
+    "salary_postings": 5,
+    "median_salary_usd": 85000.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 1738,
+    "industry_name": "Claims Adjusting, Actuarial Services",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 2,
+    "median_salary_usd": 59760.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 3219,
+    "industry_name": "Commercial Real Estate",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 2,
+    "median_salary_usd": 58750.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 2115,
+    "industry_name": "Community Services",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 87933.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3234,
+    "industry_name": "Computer Networking",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 1,
+    "median_salary_usd": 104500.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 1923,
+    "industry_name": "Executive Search Services",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 7,
+    "median_salary_usd": 114400.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 3193,
+    "industry_name": "Furniture",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 60163.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 3081,
+    "industry_name": "Housing Programs",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 55000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 679,
+    "industry_name": "Oil and Coal Product Manufacturing",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 92500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 408,
+    "industry_name": "Residential Building Construction",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 137500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 727,
+    "industry_name": "Soap and Cleaning Product Manufacturing",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 101000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1157,
+    "industry_name": "Wholesale Computer Equipment",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 1,
+    "median_salary_usd": 55000.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 1166,
+    "industry_name": "Wholesale Metals and Minerals",
+    "postings": 8,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 86250.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 481,
+    "industry_name": "Animal Feed Manufacturing",
+    "postings": 7,
+    "market_share_pct": 0.01,
+    "salary_postings": 1,
+    "median_salary_usd": 36400.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 3128,
+    "industry_name": "Business Intelligence Platforms",
+    "postings": 7,
+    "market_share_pct": 0.01,
+    "salary_postings": 2,
+    "median_salary_usd": 90500.0,
+    "remote_tagged_postings": 5
+  },
+  {
+    "industry_id": 3235,
+    "industry_name": "Computer Hardware",
+    "postings": 7,
+    "market_share_pct": 0.01,
+    "salary_postings": 1,
+    "median_salary_usd": 120000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3244,
+    "industry_name": "Digital Accessibility Services",
+    "postings": 7,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 97760.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 298,
+    "industry_name": "Forestry and Logging",
+    "postings": 7,
+    "market_share_pct": 0.01,
+    "salary_postings": 6,
+    "median_salary_usd": 75556.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 85,
+    "industry_name": "Libraries",
+    "postings": 7,
+    "market_share_pct": 0.01,
+    "salary_postings": 3,
+    "median_salary_usd": 79018.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1750,
+    "industry_name": "Trusts and Estates",
+    "postings": 7,
+    "market_share_pct": 0.01,
+    "salary_postings": 4,
+    "median_salary_usd": 150000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1208,
+    "industry_name": "Wholesale Luxury Goods and Jewelry",
+    "postings": 7,
+    "market_share_pct": 0.01,
+    "salary_postings": 5,
+    "median_salary_usd": 62400.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1786,
+    "industry_name": "Consumer Goods Rental",
+    "postings": 6,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1696,
+    "industry_name": "Loan Brokers",
+    "postings": 6,
+    "market_share_pct": 0.0,
+    "salary_postings": 4,
+    "median_salary_usd": 147800.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 521,
+    "industry_name": "Meat Products Manufacturing",
+    "postings": 6,
+    "market_share_pct": 0.0,
+    "salary_postings": 5,
+    "median_salary_usd": 85500.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1424,
+    "industry_name": "Retail Office Supplies and Gifts",
+    "postings": 6,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 99840.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 2018,
+    "industry_name": "Technical and Vocational Training",
+    "postings": 6,
+    "market_share_pct": 0.0,
+    "salary_postings": 4,
+    "median_salary_usd": 96050.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 2226,
+    "industry_name": "Vehicle Repair and Maintenance",
+    "postings": 6,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 46800.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1262,
+    "industry_name": "Wholesale Petroleum and Petroleum Products",
+    "postings": 6,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 105000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2190,
+    "industry_name": "Accommodation and Food Services",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 50000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3134,
+    "industry_name": "Blockchain Services",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 168750.0,
+    "remote_tagged_postings": 4
+  },
+  {
+    "industry_id": 1798,
+    "industry_name": "Commercial and Industrial Equipment Rental",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 964,
+    "industry_name": "Communications Equipment Manufacturing",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 87530.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 3196,
+    "industry_name": "Fine Art",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 56500.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 622,
+    "industry_name": "Footwear Manufacturing",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1742,
+    "industry_name": "Funds and Trusts",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 126922.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 779,
+    "industry_name": "Glass Product Manufacturing",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 110000.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 72,
+    "industry_name": "Legislative Offices",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 4,
+    "median_salary_usd": 47670.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3223,
+    "industry_name": "Packaging & Containers",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 39000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2259,
+    "industry_name": "Personal Care Services",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 4,
+    "median_salary_usd": 44720.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1520,
+    "industry_name": "Pipeline Transportation",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 4,
+    "median_salary_usd": 100900.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3203,
+    "industry_name": "Program Development",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 104000.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 1409,
+    "industry_name": "Retail Books and Printed News",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 66250.0,
+    "remote_tagged_postings": 3
+  },
+  {
+    "industry_id": 873,
+    "industry_name": "Spring and Wire Product Manufacturing",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 55900.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 495,
+    "industry_name": "Sugar and Confectionery Product Manufacturing",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 65000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 3229,
+    "industry_name": "Warehousing",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 75000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 398,
+    "industry_name": "Water, Waste, Steam, and Air Conditioning Services",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 100000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1257,
+    "industry_name": "Wholesale Chemical and Allied Products",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 105000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1206,
+    "industry_name": "Wholesale Recyclable Materials",
+    "postings": 5,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 63440.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 127,
+    "industry_name": "Animation and Post-production",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 257500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2212,
+    "industry_name": "Caterers",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 57500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3068,
+    "industry_name": "Correctional Institutions",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 98800.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1965,
+    "industry_name": "Janitorial Services",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 36400.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2069,
+    "industry_name": "Medical and Diagnostic Laboratories",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 125000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1431,
+    "industry_name": "Retail Recyclable Materials & Used Merchandise",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 92500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 528,
+    "industry_name": "Seafood Product Manufacturing",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 127750.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3188,
+    "industry_name": "Veterinary",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 39370.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1222,
+    "industry_name": "Wholesale Apparel and Sewing Supplies",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 85000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1250,
+    "industry_name": "Wholesale Raw Farm Products",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 115938.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 2500,
+    "industry_name": "Wineries",
+    "postings": 4,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 130000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 529,
+    "industry_name": "Baked Goods Manufacturing",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 64600.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2197,
+    "industry_name": "Bed-and-Breakfasts, Hostels, Homestays",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 861,
+    "industry_name": "Boilers, Tanks, and Shipping Container Manufacturing",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 117500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2368,
+    "industry_name": "Conservation Programs",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 127500.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 3101,
+    "industry_name": "Desktop Computing Software Products",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 57500.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 150,
+    "industry_name": "Horticulture",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2318,
+    "industry_name": "Household Services",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 77500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 994,
+    "industry_name": "Magnetic and Optical Media Manufacturing",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 130000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 2159,
+    "industry_name": "Museums",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 70000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3239,
+    "industry_name": "Paper & Forest Products",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 38480.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2130,
+    "industry_name": "Performing Arts and Spectator Sports",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 70000.0,
+    "remote_tagged_postings": 2
+  },
+  {
+    "industry_id": 2258,
+    "industry_name": "Personal and Laundry Services",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 81250.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1423,
+    "industry_name": "Retail Florists",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 48880.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1713,
+    "industry_name": "Securities and Commodity Exchanges",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 175000.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 876,
+    "industry_name": "Turned Products and Fastener Manufacturing",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 419,
+    "industry_name": "Utility System Construction",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 57200.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1187,
+    "industry_name": "Wholesale Machinery",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 140000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2489,
+    "industry_name": "Wind Electric Power Generation",
+    "postings": 3,
+    "market_share_pct": 0.0,
+    "salary_postings": 3,
+    "median_salary_usd": 135000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2167,
+    "industry_name": "Amusement Parks and Arcades",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 113883.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1673,
+    "industry_name": "Credit Intermediation",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1095,
+    "industry_name": "Mattress and Blinds Manufacturing",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 82500.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 887,
+    "industry_name": "Metal Valve, Ball, and Roller Manufacturing",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 413,
+    "industry_name": "Nonresidential Building Construction",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3214,
+    "industry_name": "Online Media",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1745,
+    "industry_name": "Pension Funds",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1407,
+    "industry_name": "Retail Musical Instruments",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 2133,
+    "industry_name": "Theater Companies",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 70000.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1029,
+    "industry_name": "Transportation Equipment Manufacturing",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 179680.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1497,
+    "industry_name": "Urban Transit Services",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 81033.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1221,
+    "industry_name": "Wholesale Drugs and Sundries",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1230,
+    "industry_name": "Wholesale Footwear",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 82500.0,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1212,
+    "industry_name": "Wholesale Paper Products",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 1153,
+    "industry_name": "Wholesale Photography Equipment and Supplies",
+    "postings": 2,
+    "market_share_pct": 0.0,
+    "salary_postings": 2,
+    "median_salary_usd": 94130.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 799,
+    "industry_name": "Abrasives and Nonmetallic Minerals Manufacturing",
+    "postings": 1,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 453,
+    "industry_name": "Building Equipment Contractors",
+    "postings": 1,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3199,
+    "industry_name": "Dairy",
+    "postings": 1,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1080,
+    "industry_name": "Household and Institutional Furniture Manufacturing",
+    "postings": 1,
+    "market_share_pct": 0.0,
+    "salary_postings": 1,
+    "median_salary_usd": 45760.0,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 3236,
+    "industry_name": "Maritime",
+    "postings": 1,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 2360,
+    "industry_name": "Public Assistance Programs",
+    "postings": 1,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  },
+  {
+    "industry_id": 1986,
+    "industry_name": "Waste Treatment and Disposal",
+    "postings": 1,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 1
+  },
+  {
+    "industry_id": 2163,
+    "industry_name": "Zoos and Botanical Gardens",
+    "postings": 1,
+    "market_share_pct": 0.0,
+    "salary_postings": 0,
+    "median_salary_usd": null,
+    "remote_tagged_postings": 0
+  }
+]

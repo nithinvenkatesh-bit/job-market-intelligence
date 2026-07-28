@@ -1,0 +1,36 @@
+skill_abr,skill_name,postings,market_share_pct,salary_postings,median_salary_usd
+IT,Information Technology,25256,20.39,7087,112500.0
+SALE,Sales,21193,17.11,5592,75000.0
+MGMT,Management,20385,16.46,5445,59500.0
+MNFC,Manufacturing,17728,14.31,4611,55120.0
+HCPR,Health Care Provider,16675,13.46,3712,86258.0
+BD,Business Development,13304,10.74,3357,77000.0
+ENG,Engineering,12530,10.12,3727,120000.0
+OTHR,Other,12314,9.94,3351,59450.0
+FIN,Finance,8011,6.47,2905,92500.0
+MRKT,Marketing,5400,4.36,1630,87308.0
+ACCT,Accounting/Auditing,4999,4.04,2272,87500.0
+ADM,Administrative,4787,3.87,1872,59280.0
+CUST,Customer Service,4167,3.36,1139,50190.0
+PRJM,Project Management,3825,3.09,1429,114400.0
+ANLS,Analyst,3775,3.05,1242,94104.0
+RSCH,Research,2928,2.36,921,93600.0
+HR,Human Resources,2608,2.11,934,86840.0
+CNSL,Consulting,2241,1.81,784,115000.0
+LGL,Legal,2229,1.8,959,120000.0
+EDU,Education,2217,1.79,560,65000.0
+DSGN,Design,2207,1.78,755,92500.0
+TRNG,Training,2164,1.75,549,60500.0
+GENB,General Business,1929,1.56,553,75000.0
+QA,Quality Assurance,1752,1.41,542,87430.0
+ART,Art/Creative,1637,1.32,500,81000.0
+WRT,Writing/Editing,1426,1.15,420,77500.0
+PRDM,Product Management,1313,1.06,471,142500.0
+PR,Public Relations,1258,1.02,373,74500.0
+SUPL,Supply Chain,1167,0.94,386,90000.0
+STRA,Strategy/Planning,1158,0.94,468,122000.0
+SCI,Science,782,0.63,363,93600.0
+PROD,Production,753,0.61,282,69840.0
+ADVR,Advertising,652,0.53,231,95000.0
+PRCH,Purchasing,599,0.48,198,88750.0
+DIST,Distribution,409,0.33,133,60320.0

@@ -1,0 +1,282 @@
+[
+  {
+    "skill_abr": "IT",
+    "skill_name": "Information Technology",
+    "postings": 25256,
+    "market_share_pct": 20.39,
+    "salary_postings": 7087,
+    "median_salary_usd": 112500.0
+  },
+  {
+    "skill_abr": "SALE",
+    "skill_name": "Sales",
+    "postings": 21193,
+    "market_share_pct": 17.11,
+    "salary_postings": 5592,
+    "median_salary_usd": 75000.0
+  },
+  {
+    "skill_abr": "MGMT",
+    "skill_name": "Management",
+    "postings": 20385,
+    "market_share_pct": 16.46,
+    "salary_postings": 5445,
+    "median_salary_usd": 59500.0
+  },
+  {
+    "skill_abr": "MNFC",
+    "skill_name": "Manufacturing",
+    "postings": 17728,
+    "market_share_pct": 14.31,
+    "salary_postings": 4611,
+    "median_salary_usd": 55120.0
+  },
+  {
+    "skill_abr": "HCPR",
+    "skill_name": "Health Care Provider",
+    "postings": 16675,
+    "market_share_pct": 13.46,
+    "salary_postings": 3712,
+    "median_salary_usd": 86258.0
+  },
+  {
+    "skill_abr": "BD",
+    "skill_name": "Business Development",
+    "postings": 13304,
+    "market_share_pct": 10.74,
+    "salary_postings": 3357,
+    "median_salary_usd": 77000.0
+  },
+  {
+    "skill_abr": "ENG",
+    "skill_name": "Engineering",
+    "postings": 12530,
+    "market_share_pct": 10.12,
+    "salary_postings": 3727,
+    "median_salary_usd": 120000.0
+  },
+  {
+    "skill_abr": "OTHR",
+    "skill_name": "Other",
+    "postings": 12314,
+    "market_share_pct": 9.94,
+    "salary_postings": 3351,
+    "median_salary_usd": 59450.0
+  },
+  {
+    "skill_abr": "FIN",
+    "skill_name": "Finance",
+    "postings": 8011,
+    "market_share_pct": 6.47,
+    "salary_postings": 2905,
+    "median_salary_usd": 92500.0
+  },
+  {
+    "skill_abr": "MRKT",
+    "skill_name": "Marketing",
+    "postings": 5400,
+    "market_share_pct": 4.36,
+    "salary_postings": 1630,
+    "median_salary_usd": 87308.0
+  },
+  {
+    "skill_abr": "ACCT",
+    "skill_name": "Accounting/Auditing",
+    "postings": 4999,
+    "market_share_pct": 4.04,
+    "salary_postings": 2272,
+    "median_salary_usd": 87500.0
+  },
+  {
+    "skill_abr": "ADM",
+    "skill_name": "Administrative",
+    "postings": 4787,
+    "market_share_pct": 3.87,
+    "salary_postings": 1872,
+    "median_salary_usd": 59280.0
+  },
+  {
+    "skill_abr": "CUST",
+    "skill_name": "Customer Service",
+    "postings": 4167,
+    "market_share_pct": 3.36,
+    "salary_postings": 1139,
+    "median_salary_usd": 50190.0
+  },
+  {
+    "skill_abr": "PRJM",
+    "skill_name": "Project Management",
+    "postings": 3825,
+    "market_share_pct": 3.09,
+    "salary_postings": 1429,
+    "median_salary_usd": 114400.0
+  },
+  {
+    "skill_abr": "ANLS",
+    "skill_name": "Analyst",
+    "postings": 3775,
+    "market_share_pct": 3.05,
+    "salary_postings": 1242,
+    "median_salary_usd": 94104.0
+  },
+  {
+    "skill_abr": "RSCH",
+    "skill_name": "Research",
+    "postings": 2928,
+    "market_share_pct": 2.36,
+    "salary_postings": 921,
+    "median_salary_usd": 93600.0
+  },
+  {
+    "skill_abr": "HR",
+    "skill_name": "Human Resources",
+    "postings": 2608,
+    "market_share_pct": 2.11,
+    "salary_postings": 934,
+    "median_salary_usd": 86840.0
+  },
+  {
+    "skill_abr": "CNSL",
+    "skill_name": "Consulting",
+    "postings": 2241,
+    "market_share_pct": 1.81,
+    "salary_postings": 784,
+    "median_salary_usd": 115000.0
+  },
+  {
+    "skill_abr": "LGL",
+    "skill_name": "Legal",
+    "postings": 2229,
+    "market_share_pct": 1.8,
+    "salary_postings": 959,
+    "median_salary_usd": 120000.0
+  },
+  {
+    "skill_abr": "EDU",
+    "skill_name": "Education",
+    "postings": 2217,
+    "market_share_pct": 1.79,
+    "salary_postings": 560,
+    "median_salary_usd": 65000.0
+  },
+  {
+    "skill_abr": "DSGN",
+    "skill_name": "Design",
+    "postings": 2207,
+    "market_share_pct": 1.78,
+    "salary_postings": 755,
+    "median_salary_usd": 92500.0
+  },
+  {
+    "skill_abr": "TRNG",
+    "skill_name": "Training",
+    "postings": 2164,
+    "market_share_pct": 1.75,
+    "salary_postings": 549,
+    "median_salary_usd": 60500.0
+  },
+  {
+    "skill_abr": "GENB",
+    "skill_name": "General Business",
+    "postings": 1929,
+    "market_share_pct": 1.56,
+    "salary_postings": 553,
+    "median_salary_usd": 75000.0
+  },
+  {
+    "skill_abr": "QA",
+    "skill_name": "Quality Assurance",
+    "postings": 1752,
+    "market_share_pct": 1.41,
+    "salary_postings": 542,
+    "median_salary_usd": 87430.0
+  },
+  {
+    "skill_abr": "ART",
+    "skill_name": "Art/Creative",
+    "postings": 1637,
+    "market_share_pct": 1.32,
+    "salary_postings": 500,
+    "median_salary_usd": 81000.0
+  },
+  {
+    "skill_abr": "WRT",
+    "skill_name": "Writing/Editing",
+    "postings": 1426,
+    "market_share_pct": 1.15,
+    "salary_postings": 420,
+    "median_salary_usd": 77500.0
+  },
+  {
+    "skill_abr": "PRDM",
+    "skill_name": "Product Management",
+    "postings": 1313,
+    "market_share_pct": 1.06,
+    "salary_postings": 471,
+    "median_salary_usd": 142500.0
+  },
+  {
+    "skill_abr": "PR",
+    "skill_name": "Public Relations",
+    "postings": 1258,
+    "market_share_pct": 1.02,
+    "salary_postings": 373,
+    "median_salary_usd": 74500.0
+  },
+  {
+    "skill_abr": "SUPL",
+    "skill_name": "Supply Chain",
+    "postings": 1167,
+    "market_share_pct": 0.94,
+    "salary_postings": 386,
+    "median_salary_usd": 90000.0
+  },
+  {
+    "skill_abr": "STRA",
+    "skill_name": "Strategy/Planning",
+    "postings": 1158,
+    "market_share_pct": 0.94,
+    "salary_postings": 468,
+    "median_salary_usd": 122000.0
+  },
+  {
+    "skill_abr": "SCI",
+    "skill_name": "Science",
+    "postings": 782,
+    "market_share_pct": 0.63,
+    "salary_postings": 363,
+    "median_salary_usd": 93600.0
+  },
+  {
+    "skill_abr": "PROD",
+    "skill_name": "Production",
+    "postings": 753,
+    "market_share_pct": 0.61,
+    "salary_postings": 282,
+    "median_salary_usd": 69840.0
+  },
+  {
+    "skill_abr": "ADVR",
+    "skill_name": "Advertising",
+    "postings": 652,
+    "market_share_pct": 0.53,
+    "salary_postings": 231,
+    "median_salary_usd": 95000.0
+  },
+  {
+    "skill_abr": "PRCH",
+    "skill_name": "Purchasing",
+    "postings": 599,
+    "market_share_pct": 0.48,
+    "salary_postings": 198,
+    "median_salary_usd": 88750.0
+  },
+  {
+    "skill_abr": "DIST",
+    "skill_name": "Distribution",
+    "postings": 409,
+    "market_share_pct": 0.33,
+    "salary_postings": 133,
+    "median_salary_usd": 60320.0
+  }
+]

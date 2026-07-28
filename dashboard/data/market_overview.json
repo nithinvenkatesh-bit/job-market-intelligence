@@ -1,0 +1,19 @@
+[
+  {
+    "total_postings": 123849,
+    "companies_with_id": 24474,
+    "company_names": 24430,
+    "earliest_posting_date": "2023-12-05T00:00:00",
+    "latest_posting_date": "2024-04-19T00:00:00",
+    "valid_salary_postings": 35543,
+    "salary_coverage_pct": 28.7,
+    "median_salary_usd": 82500.0,
+    "salary_p25_usd": 52000.0,
+    "salary_p75_usd": 125000.0,
+    "remote_tagged_postings": 15246,
+    "remote_tagged_pct": 12.31,
+    "sponsored_postings": 0,
+    "average_views": 14.6,
+    "average_applies": 10.6
+  }
+]
