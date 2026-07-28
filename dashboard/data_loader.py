@@ -12,12 +12,24 @@ import streamlit as st
 DATA_DIR = Path(__file__).resolve().parent / "data"
 
 DATA_FILES = [
+    # Gold-set evaluation
     "metadata.json",
     "method_summary.json",
     "pairwise_tests.json",
     "item_scores.json",
     "skill_errors.json",
     "llm_operations.json",
+
+    # Historical market intelligence
+    "market_metadata.json",
+    "market_overview.json",
+    "market_daily.json",
+    "market_companies.json",
+    "market_industries.json",
+    "market_skill_categories.json",
+    "data_role_family.json",
+    "data_role_daily.json",
+    "data_role_skills.json",
 ]
 
 
@@ -32,7 +44,7 @@ def data_signature() -> tuple[tuple[str, int, int], ...]:
         if not path.exists():
             raise FileNotFoundError(
                 f"Dashboard data file not found: {path}. "
-                "Run `python dashboard/export_data.py` first."
+                "Run the dashboard export scripts first."
             )
 
         stat = path.stat()
@@ -58,11 +70,11 @@ def load_cached_dashboard_data(
 ) -> dict[str, Any]:
     """Load dashboard data for one exact set of file versions."""
 
-    # The signature is intentionally unused inside the function body.
-    # It exists so changes to file timestamps or sizes invalidate the cache.
+    # The signature exists so timestamp or size changes invalidate the cache.
     del signature
 
     return {
+        # Gold-set evaluation
         "metadata": read_json("metadata.json"),
         "method_summary": pd.DataFrame(
             read_json("method_summary.json")
@@ -78,6 +90,35 @@ def load_cached_dashboard_data(
         ),
         "llm_operations": pd.DataFrame(
             read_json("llm_operations.json")
+        ),
+
+        # Historical market intelligence
+        "market_metadata": read_json(
+            "market_metadata.json"
+        ),
+        "market_overview": pd.DataFrame(
+            read_json("market_overview.json")
+        ),
+        "market_daily": pd.DataFrame(
+            read_json("market_daily.json")
+        ),
+        "market_companies": pd.DataFrame(
+            read_json("market_companies.json")
+        ),
+        "market_industries": pd.DataFrame(
+            read_json("market_industries.json")
+        ),
+        "market_skill_categories": pd.DataFrame(
+            read_json("market_skill_categories.json")
+        ),
+        "data_role_family": pd.DataFrame(
+            read_json("data_role_family.json")
+        ),
+        "data_role_daily": pd.DataFrame(
+            read_json("data_role_daily.json")
+        ),
+        "data_role_skills": pd.DataFrame(
+            read_json("data_role_skills.json")
         ),
     }
 

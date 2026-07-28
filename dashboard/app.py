@@ -12,6 +12,10 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from data_loader import load_dashboard_data
+from market_tabs import (
+    data_role_deep_dive_tab,
+    market_intelligence_tab,
+)
 
 METHOD_LABELS = {
     "rules": "Rules",
@@ -1617,14 +1621,37 @@ def operations_tab(operations: pd.DataFrame) -> None:
 
 
 
-def sidebar(metadata: dict) -> None:
+def sidebar(
+    metadata: dict,
+    market_metadata: dict,
+) -> None:
     with st.sidebar:
         st.title("Job Market Intelligence")
         st.markdown(
-            "Rules, LLM prompts, statistical evaluation, and field-level routing."
+            "Historical hiring trends and controlled extraction evaluation."
         )
 
         st.divider()
+
+        st.markdown("**Historical market snapshot**")
+
+        st.metric(
+            "Market postings",
+            f"{market_metadata['total_postings']:,}",
+        )
+        st.metric(
+            "Data-role postings",
+            f"{market_metadata['data_role_postings']:,}",
+        )
+
+        st.caption(
+            f"{market_metadata['earliest_posting_date']} through "
+            f"{market_metadata['latest_posting_date']}"
+        )
+
+        st.divider()
+
+        st.markdown("**Extraction benchmark**")
 
         st.metric(
             "Manual gold set",
@@ -1643,15 +1670,16 @@ def sidebar(metadata: dict) -> None:
 
         st.markdown(
             """
-            **Current dashboard scope**
+            **Dashboard scope**
 
-            - Gold-set performance
-            - Prompt comparison
+            - Historical market activity
+            - Companies and industries
+            - Data-role salary comparisons
+            - Technology-demand indicators
+            - Gold-set method performance
             - Statistical evidence
             - Error analysis
-            - Cost and reliability
-
-            Historical market insights will be added next.
+            - LLM cost and reliability
             """
         )
 
@@ -1666,20 +1694,27 @@ def main() -> None:
         st.stop()
 
     metadata = data["metadata"]
+    market_metadata = data["market_metadata"]
     summary = prepare_summary(data["method_summary"])
     operations = data["llm_operations"]
 
-    sidebar(metadata)
+    sidebar(
+        metadata,
+        market_metadata,
+    )
 
-    st.title("Does an LLM beat deterministic rules?")
+    st.title("Job Market Intelligence")
     st.markdown(
         """
-        ### Sometimes—but the winning method depends on the field.
+        ### Historical hiring trends and extraction-method evaluation
 
-        This dashboard evaluates deterministic extractors and four prompt
-        strategies against a manually reviewed gold benchmark.
+        Explore a 123,849-posting market snapshot, examine data-role demand,
+        and compare deterministic extraction rules with four LLM prompt
+        strategies on a manually reviewed gold benchmark.
         """
     )
+
+    st.caption("Extraction benchmark at a glance")
 
     executive_metrics(metadata, summary)
 
@@ -1687,6 +1722,8 @@ def main() -> None:
 
     (
         overview,
+        market_view,
+        data_role_view,
         comparison,
         statistical,
         error_analysis,
@@ -1694,6 +1731,8 @@ def main() -> None:
     ) = st.tabs(
         [
             "Executive overview",
+            "Market intelligence",
+            "Data-role deep dive",
             "Method comparison",
             "Statistical evidence",
             "Error analysis",
@@ -1703,6 +1742,12 @@ def main() -> None:
 
     with overview:
         overview_tab(metadata, summary)
+
+    with market_view:
+        market_intelligence_tab(data)
+
+    with data_role_view:
+        data_role_deep_dive_tab(data)
 
     with comparison:
         method_comparison_tab(summary)
