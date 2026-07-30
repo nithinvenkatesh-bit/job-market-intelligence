@@ -45,7 +45,7 @@ The primary extraction benchmark contains **80 manually annotated, difficulty-en
 | Field | Best observed approach | Evidence |
 |---|---|---|
 | Skills | **Rules** | Any-skill F1 0.926; every paired LLM-vs-rules skill bootstrap interval favored rules |
-| Work arrangement | **Few-shot by accuracy; schema-rules by macro-F1** | Every LLM variant significantly beat rules after Holm correction |
+| Work arrangement | **Few-shot by accuracy; schema-rules by macro-F1** | All four LLM variants significantly outperformed rules after Holm correction; rules scored 52.5% versus 81.2%–85.0% for the LLM variants |
 | Years of experience | **Zero-shot / few-shot** | 85.0% exact and 90.0% within ±1; every LLM variant significantly beat rules after Holm correction |
 
 The skill result is driven by precision. LLM prompts frequently extract technologies mentioned in company descriptions, team stacks, or contextual prose rather than only candidate requirements. The deterministic extractor is narrower and better aligned with the gold labels.
@@ -201,7 +201,7 @@ The broader project also includes an Airflow DAG for scheduled pipeline executio
 The final project state has been checked at multiple layers:
 
 - **57/57 Python tests passed**
-- **89/89 dbt build nodes passed**
+- **89/89 dbt build nodes passed, including models, seeds, and data tests**
 - Evaluation dashboard export validation passed
 - **181/181 market-export checks passed**
 - Streamlit and Looker exports reconcile to the dbt marts
