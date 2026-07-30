@@ -125,6 +125,8 @@ These are deterministic **description mentions**, not manually verified required
 
 [Open the public Streamlit dashboard](https://job-market-intelligence-nv.streamlit.app/)
 
+![Streamlit dashboard overview](docs/images/streamlit_overview.png)
+
 The Streamlit application combines:
 
 - Executive evaluation summary
@@ -140,6 +142,8 @@ The deployment reads committed, validated JSON exports and does not require API 
 ### Looker Studio
 
 [Open the public Looker Studio dashboard](https://datastudio.google.com/reporting/077e88eb-7839-4e72-9c3c-51a75f8ed288)
+
+![Looker Studio market overview](docs/images/looker_market_overview.png)
 
 The seven-page BI report covers:
 
@@ -330,6 +334,14 @@ docs/                           annotation guide and project artifacts
 tests/                          regression and evaluation tests
 config/                         pinned experiment configuration
 ```
+
+---
+
+## License
+
+Project code is released under the [MIT License](LICENSE). The LinkedIn/Kaggle
+dataset and artifacts derived from it remain subject to their original terms
+and are not relicensed by this repository.
 
 ---
 

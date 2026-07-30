@@ -38,3 +38,6 @@ airflow_home/
 
 # Version-controlled aggregated Looker Studio exports
 !looker_studio/data/*.csv
+
+# Generated local annotation interface
+/docs/annotate.html
