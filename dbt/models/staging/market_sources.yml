@@ -1,0 +1,63 @@
+version: 2
+
+sources:
+  - name: market_raw
+    description: >
+      Historical LinkedIn job-market files used for descriptive market
+      analysis. Market metrics are separate from the controlled LLM benchmark.
+
+    tables:
+      - name: postings
+        description: "123,849 unique LinkedIn postings"
+        meta:
+          external_location: "../data/raw/postings.csv"
+        columns:
+          - name: job_id
+            tests: [unique, not_null]
+
+      - name: companies
+        meta:
+          external_location: "../data/raw/companies/companies.csv"
+        columns:
+          - name: company_id
+            tests: [unique, not_null]
+
+      - name: job_skills
+        meta:
+          external_location: "../data/raw/jobs/job_skills.csv"
+        columns:
+          - name: job_id
+            tests: [not_null]
+          - name: skill_abr
+            tests: [not_null]
+
+      - name: skill_mapping
+        meta:
+          external_location: "../data/raw/mappings/skills.csv"
+        columns:
+          - name: skill_abr
+            tests: [unique, not_null]
+
+      - name: job_industries
+        meta:
+          external_location: "../data/raw/jobs/job_industries.csv"
+        columns:
+          - name: job_id
+            tests: [not_null]
+          - name: industry_id
+            tests: [not_null]
+
+      - name: industry_mapping
+        meta:
+          external_location: "../data/raw/mappings/industries.csv"
+        columns:
+          - name: industry_id
+            tests: [unique, not_null]
+
+      - name: data_roles
+        description: "1,977 data and analytics postings"
+        meta:
+          external_location: "../data/processed/data_roles.parquet"
+        columns:
+          - name: job_id
+            tests: [unique, not_null]

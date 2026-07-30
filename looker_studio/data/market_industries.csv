@@ -1,0 +1,388 @@
+industry_id,industry_name,postings,market_share_pct,salary_postings,median_salary_usd,remote_tagged_postings
+14,Hospitals and Health Care,17762,14.34,4072,82285.0,1203
+27,Retail,10731,8.66,1919,41600.0,211
+96,IT Services and IT Consulting,10039,8.11,2414,114400.0,2426
+104,Staffing and Recruiting,8261,6.67,3011,83200.0,769
+43,Financial Services,7964,6.43,2431,105000.0,1641
+4,Software Development,4852,3.92,1682,136850.0,1950
+25,Manufacturing,3550,2.87,1237,76627.0,205
+48,Construction,3305,2.67,1040,98800.0,149
+41,Banking,2745,2.22,1086,95250.0,193
+42,Insurance,2576,2.08,940,88200.0,695
+31,Hospitality,2417,1.95,727,54600.0,83
+15,Pharmaceutical Manufacturing,2403,1.94,727,107000.0,494
+44,Real Estate,2313,1.87,647,73840.0,206
+8,Telecommunications,2074,1.67,449,91500.0,156
+100,Non-profit Organizations,2033,1.64,666,65000.0,161
+135,Industrial Machinery Manufacturing,2030,1.64,404,76440.0,92
+12,Biotechnology Research,1955,1.58,694,113424.0,445
+53,Motor Vehicle Manufacturing,1923,1.55,345,75000.0,67
+34,Food and Beverage Services,1865,1.51,598,57200.0,101
+80,Advertising Services,1839,1.48,534,80000.0,291
+11,Business Consulting and Services,1784,1.44,603,104000.0,395
+47,Accounting,1691,1.37,822,90000.0,253
+68,Higher Education,1661,1.34,573,61500.0,115
+17,Medical Equipment Manufacturing,1587,1.28,570,90000.0,273
+75,Government Administration,1507,1.22,715,75850.0,88
+6,"Technology, Information and Internet",1503,1.21,580,145675.0,451
+124,Wellness and Fitness Services,1469,1.19,489,69711.0,115
+1,Defense and Space Manufacturing,1446,1.17,392,121008.0,86
+116,"Transportation, Logistics, Supply Chain and Storage",1411,1.14,497,58100.0,104
+23,Food and Beverage Manufacturing,1366,1.1,468,63232.0,91
+19,Retail Apparel and Fashion,1333,1.08,315,67246.0,58
+51,Civil Engineering,1329,1.07,336,107120.0,53
+112,"Appliances, Electrical, and Electronics Manufacturing",1285,1.04,357,83450.0,104
+13,Medical Practices,1222,0.99,287,80500.0,152
+84,Information Services,1164,0.94,354,130000.0,344
+57,Oil and Gas,1151,0.93,245,97760.0,74
+1594,"Technology, Information and Media",1147,0.93,452,119080.0,483
+86,Environmental Services,1146,0.93,312,72500.0,67
+9,Law Practice,1081,0.87,514,107500.0,86
+59,Utilities,1009,0.81,360,101205.0,92
+52,Aviation and Aerospace Component Manufacturing,998,0.81,297,99840.0,36
+54,Chemical Manufacturing,959,0.77,257,72800.0,58
+32,Restaurants,955,0.77,226,57350.0,32
+49,Wholesale Building Materials,944,0.76,180,59738.0,59
+69,Education Administration Programs,921,0.74,217,59900.0,130
+92,Truck Transportation,921,0.74,260,58890.0,48
+118,Computer and Network Security,917,0.74,241,130667.0,626
+28,Entertainment Providers,898,0.73,342,99920.0,77
+3242,Engineering Services,897,0.72,210,107500.0,349
+46,Investment Management,882,0.71,299,110000.0,51
+10,Legal Services,878,0.71,443,105000.0,116
+91,Consumer Services,818,0.66,248,70000.0,157
+139,Mental Health Care,810,0.65,286,75125.0,189
+137,Human Resources Services,806,0.65,228,80000.0,108
+70,Research Services,709,0.57,275,95000.0,122
+122,Facilities Services,617,0.5,206,55000.0,9
+3231,Information Technology & Services,610,0.49,72,102000.0,186
+45,Investment Banking,597,0.48,311,119600.0,28
+90,Civic and Social Organizations,574,0.46,80,59250.0,23
+55,Machinery Manufacturing,554,0.45,119,72800.0,26
+67,Primary and Secondary Education,553,0.45,127,73500.0,17
+133,Wholesale,538,0.43,142,56680.0,25
+94,Airlines and Aviation,532,0.43,137,92500.0,27
+146,Packaging and Containers Manufacturing,526,0.42,155,66500.0,29
+50,Architecture and Planning,523,0.42,161,100000.0,24
+7,Semiconductor Manufacturing,496,0.4,151,131123.0,32
+147,Automation Machinery Manufacturing,473,0.38,156,92560.0,40
+1862,Marketing Services,461,0.37,212,72000.0,145
+121,Security and Investigations,458,0.37,157,49920.0,32
+88,Individual and Family Services,453,0.37,163,59750.0,14
+1810,Professional Services,450,0.36,137,95000.0,35
+16,Veterinary Services,415,0.34,173,49920.0,11
+99,Design Services,391,0.32,135,102500.0,45
+3,Computer Hardware Manufacturing,378,0.31,163,138150.0,65
+78,Public Safety,367,0.3,110,98917.0,32
+3243,Services for Renewable Energy,342,0.28,142,113450.0,68
+36,Broadcast Media Production and Distribution,340,0.27,122,81250.0,37
+98,Public Relations and Communications Services,333,0.27,93,56160.0,80
+30,Travel Arrangements,317,0.26,118,58250.0,29
+2353,Health and Human Services,296,0.24,162,82000.0,48
+18,Personal Care Product Manufacturing,292,0.24,125,70000.0,21
+138,Retail Office Equipment,280,0.23,78,58240.0,9
+87,Freight and Package Transportation,275,0.22,107,40000.0,7
+3129,Business Content,273,0.22,45,46500.0,2
+24,Computers and Electronics Manufacturing,272,0.22,113,131123.0,34
+106,Venture Capital and Private Equity Principals,271,0.22,102,123750.0,92
+144,Renewable Energy Semiconductor Manufacturing,262,0.21,58,132500.0,59
+119,Wireless Services,255,0.21,68,127750.0,2
+132,E-Learning Providers,254,0.21,54,74000.0,197
+143,Retail Luxury Goods and Jewelry,252,0.2,102,62450.0,11
+1999,Education,248,0.2,91,85000.0,70
+22,Retail Groceries,235,0.19,86,40898.0,0
+56,Mining,234,0.19,42,101900.0,4
+93,Warehousing and Storage,226,0.18,58,77500.0,13
+20,Sporting Goods Manufacturing,223,0.18,44,71000.0,11
+82,Book and Periodical Publishing,199,0.16,52,60910.0,28
+117,Plastics Manufacturing,196,0.16,33,95000.0,14
+126,Media Production,193,0.16,82,83350.0,27
+1285,Internet Marketplace Platforms,188,0.15,78,125625.0,24
+110,Events Services,186,0.15,67,64000.0,27
+26,Furniture and Home Furnishings Manufacturing,185,0.15,64,52250.0,14
+3200,Education Management,184,0.15,49,71500.0,4
+406,Building Construction,175,0.14,117,105000.0,11
+2358,Public Health,172,0.14,117,95305.0,32
+33,Spectator Sports,172,0.14,47,70000.0,17
+148,Government Relations Services,169,0.14,92,88948.0,28
+129,Capital Markets,168,0.14,75,155000.0,10
+60,Textile Manufacturing,168,0.14,38,65000.0,7
+61,Paper and Forest Product Manufacturing,167,0.13,58,70640.0,9
+3102,IT System Custom Software Development,157,0.13,59,120000.0,69
+29,Gambling Facilities and Casinos,153,0.12,34,80000.0,12
+71,Armed Forces,147,0.12,16,65583.0,3
+141,International Trade and Development,133,0.11,27,59280.0,16
+63,Farming,126,0.1,38,76960.0,11
+3210,Human Resources,126,0.1,19,112500.0,6
+123,Outsourcing and Offshoring Consulting,126,0.1,34,52980.0,56
+142,Beverage Manufacturing,124,0.1,32,84250.0,9
+382,"Electric Power Transmission, Control, and Distribution",118,0.1,58,101000.0,22
+97,Market Research,108,0.09,43,95000.0,47
+105,Professional Training and Coaching,103,0.08,30,78750.0,50
+1912,Administrative and Support Services,102,0.08,56,49939.0,50
+128,Leasing Non-residential Real Estate,101,0.08,31,87500.0,10
+109,Computer Games,99,0.08,42,128505.0,26
+5,Computer Networking Products,99,0.08,55,156000.0,34
+3202,Non-profit Organization Management,99,0.08,39,50000.0,5
+83,Printing Services,99,0.08,29,52850.0,9
+3190,Apparel & Fashion,98,0.08,20,43160.0,4
+383,Electric Power Generation,91,0.07,40,127500.0,16
+1339,Food and Beverage Retail,91,0.07,42,96250.0,16
+113,Online Audio and Video Media,91,0.07,36,98000.0,31
+2458,Data Infrastructure and Analytics,89,0.07,38,88920.0,38
+1737,Insurance Agencies and Brokerages,87,0.07,38,93000.0,37
+2468,Electrical Equipment Manufacturing,86,0.07,44,85350.0,7
+77,Law Enforcement,84,0.07,30,109716.0,7
+108,Translation and Localization,84,0.07,8,55000.0,67
+2081,Hospitals,83,0.07,39,89440.0,8
+3198,Automotive,80,0.06,13,150000.0,5
+3192,Consumer Goods,77,0.06,18,54600.0,5
+3124,Internet News,75,0.06,19,139500.0,7
+1359,Retail Health and Personal Care Products,74,0.06,32,103750.0,17
+3106,IT System Data Services,73,0.06,22,99892.0,27
+901,"Agriculture, Construction, Mining Machinery Manufacturing",72,0.06,40,90000.0,5
+3250,Retail Pharmacies,72,0.06,16,63990.0,8
+89,Religious Institutions,69,0.06,11,85000.0,3
+76,Executive Offices,65,0.05,12,91000.0,6
+3238,Biotechnology,64,0.05,16,138025.0,16
+37,"Museums, Historical Sites, and Zoos",64,0.05,26,62500.0,0
+3207,"Health, Wellness & Fitness",60,0.05,19,70000.0,6
+923,HVAC and Refrigeration Equipment Manufacturing,57,0.05,38,92500.0,2
+2194,Hotels and Motels,57,0.05,30,78750.0,4
+3107,IT System Testing and Evaluation,57,0.05,10,102000.0,25
+3217,Medical Device,56,0.05,18,86775.0,15
+1916,Office Administration,56,0.05,38,49669.0,1
+935,Engines and Power Transmission Equipment Manufacturing,52,0.04,18,101170.0,3
+125,Alternative Medicine,51,0.04,10,38480.0,10
+40,Recreational Facilities,49,0.04,10,70000.0,3
+145,"Glass, Ceramics and Concrete Manufacturing",48,0.04,14,81250.0,4
+1042,Motor Vehicle Parts Manufacturing,47,0.04,21,93600.0,1
+2225,Repair and Maintenance,47,0.04,23,78104.0,1
+1292,Retail Motor Vehicles,47,0.04,14,84100.0,4
+3241,Renewable Energy Equipment Manufacturing,46,0.04,11,109200.0,10
+95,Maritime Transportation,45,0.04,10,80000.0,5
+3248,Robotics Engineering,45,0.04,14,107500.0,5
+3222,Transportation/Trucking/Railroad,45,0.04,13,57450.0,2
+65,Dairy Product Manufacturing,43,0.03,10,80000.0,7
+3195,Food & Beverages,43,0.03,13,60000.0,3
+3224,Food Production,43,0.03,9,61360.0,1
+1231,Wholesale Food and Beverage,43,0.03,24,88050.0,6
+3240,Renewable Energy Power Generation,41,0.03,11,140000.0,13
+58,Shipbuilding,41,0.03,9,76586.0,0
+101,Fundraising,40,0.03,25,80000.0,5
+3132,Internet Publishing,40,0.03,13,123650.0,17
+115,Musicians,40,0.03,15,71500.0,13
+1725,Insurance Carriers,38,0.03,15,85000.0,16
+332,"Oil, Gas, and Mining",38,0.03,15,111350.0,4
+2401,Operations Consulting,38,0.03,20,109719.0,19
+840,Fabricated Metal Products,37,0.03,20,82500.0,0
+3103,IT System Operations and Maintenance,37,0.03,20,117000.0,7
+1481,Rail Transportation,36,0.03,14,140629.0,3
+62,Railroad Equipment Manufacturing,36,0.03,7,72498.0,1
+21,Tobacco Manufacturing,36,0.03,13,85250.0,6
+3197,Building Materials,35,0.03,7,41600.0,3
+74,International Affairs,35,0.03,6,106800.0,15
+3127,Social Networking Platforms,35,0.03,16,81128.0,21
+2391,Military and International Affairs,34,0.03,11,120000.0,1
+39,Performing Arts,34,0.03,13,57200.0,4
+79,Public Policy Offices,34,0.03,24,83750.0,5
+131,Philanthropic Fundraising Services,33,0.03,19,90000.0,2
+102,Strategic Management Services,33,0.03,14,95738.0,7
+103,Writing and Editing,33,0.03,12,97500.0,21
+918,Commercial and Service Industry Machinery Manufacturing,31,0.03,12,90000.0,2
+3126,Interior Design,31,0.03,11,69680.0,2
+2091,Nursing Homes and Residential Care Facilities,31,0.03,16,91700.0,3
+3089,Space Research and Technology,31,0.03,15,181200.0,3
+3213,Renewables & Environment,30,0.02,9,86278.0,5
+1324,Retail Building Materials and Garden Equipment,30,0.02,3,95000.0,3
+3187,Defense & Space,29,0.02,3,106938.0,2
+1905,Holding Companies,28,0.02,4,61000.0,2
+2074,Home Health Care Services,28,0.02,4,53920.0,3
+136,Photography,28,0.02,3,70000.0,22
+3218,Semiconductors,28,0.02,2,127625.0,0
+2366,"Air, Water, and Waste Program Management",27,0.02,17,110000.0,3
+3065,Courts of Law,27,0.02,19,135000.0,6
+435,Specialty Trade Contractors,27,0.02,9,70000.0,0
+709,Agricultural Chemical Manufacturing,26,0.02,9,105505.0,3
+35,"Movies, Videos, and Sound",26,0.02,18,150000.0,7
+3237,Entertainment,25,0.02,12,56680.0,0
+1779,Equipment Rental Services,25,0.02,6,90000.0,2
+1743,Insurance and Employee Benefit Funds,25,0.02,8,108680.0,9
+3221,Mechanical Or Industrial Engineering,25,0.02,6,62500.0,2
+107,Political Organizations,25,0.02,10,73700.0,4
+1958,Security Systems Services,25,0.02,1,56160.0,2
+690,Chemical Raw Materials Manufacturing,24,0.02,12,112500.0,2
+722,"Paint, Coating, and Adhesive Manufacturing",24,0.02,9,65000.0,4
+2027,Sports and Recreation Instruction,24,0.02,2,43150.0,0
+38,Artists and Writers,23,0.02,4,45700.0,18
+3130,Data Security Software Products,23,0.02,12,63700.0,16
+807,Primary Metal Manufacturing,23,0.02,12,81600.0,0
+3191,Consumer Electronics,22,0.02,1,85000.0,1
+114,Nanotechnology Research,22,0.02,9,95680.0,1
+73,Administration of Justice,21,0.02,17,121081.0,1
+1319,"Retail Appliances, Electrical, and Electronic Equipment",21,0.02,5,56160.0,7
+2369,Housing and Community Development,20,0.02,12,88750.0,0
+111,Retail Art Supplies,20,0.02,7,38480.0,0
+1931,Telephone Call Centers,20,0.02,9,39520.0,10
+3086,Utilities Administration,20,0.02,11,99580.0,4
+598,Apparel Manufacturing,19,0.02,8,83750.0,3
+66,Fisheries,19,0.02,5,47476.0,0
+140,Graphic Design,19,0.02,9,101500.0,5
+1855,IT System Design Services,19,0.02,5,161200.0,7
+1309,Retail Furniture and Home Furnishings,19,0.02,4,86250.0,3
+134,Wholesale Import and Export,19,0.02,5,75000.0,2
+1090,Office Furniture and Fixtures Manufacturing,18,0.01,5,90000.0,8
+2374,Community Development and Urban Planning,17,0.01,10,110912.0,1
+2179,Golf Courses and Country Clubs,17,0.01,6,72500.0,0
+1720,Investment Advice,17,0.01,10,95000.0,2
+3212,Luxury Goods & Jewelry,16,0.01,6,54080.0,2
+743,Plastics and Rubber Product Manufacturing,16,0.01,4,86250.0,4
+130,Think Tanks,16,0.01,6,92925.0,4
+3105,IT System Training and Support,15,0.01,6,54600.0,4
+81,Newspaper Publishing,15,0.01,6,53750.0,3
+3233,Research,15,0.01,6,122691.0,2
+1267,Wholesale Alcoholic Beverages,15,0.01,4,72870.0,3
+3070,Fire Protection,14,0.01,5,72800.0,1
+883,Metal Treatments,14,0.01,6,50960.0,0
+928,Metalworking Machinery Manufacturing,14,0.01,10,87500.0,0
+3247,Robot Manufacturing,14,0.01,3,83200.0,0
+3085,Transportation Programs,14,0.01,8,114700.0,3
+973,Audio and Video Equipment Manufacturing,13,0.01,8,87500.0,4
+3226,Aviation & Aerospace,13,0.01,3,115000.0,1
+3208,E-learning,13,0.01,2,197600.0,8
+3104,IT System Installation and Disposal,13,0.01,7,60000.0,1
+852,Architectural and Structural Metal Manufacturing,12,0.01,3,58240.0,2
+615,Fashion Accessories Manufacturing,12,0.01,7,72800.0,1
+1495,Ground Passenger Transportation,12,0.01,10,114174.0,0
+3249,Surveying and Mapping Services,12,0.01,6,103750.0,0
+1171,"Wholesale Appliances, Electrical, and Electronics",12,0.01,5,80000.0,1
+1178,"Wholesale Hardware, Plumbing, Heating Equipment",12,0.01,5,75000.0,0
+388,Environmental Quality Programs,11,0.01,7,102500.0,1
+3216,Industrial Automation,11,0.01,2,122200.0,3
+1445,Online and Mail Order Retail,11,0.01,3,100880.0,4
+2054,"Physical, Occupational and Speech Therapists",11,0.01,3,67500.0,1
+1512,School and Employee Bus Services,11,0.01,4,36041.0,0
+387,Solar Electric Power Generation,11,0.01,4,116600.0,4
+784,Wood Product Manufacturing,11,0.01,4,67040.0,0
+2375,Economic Programs,10,0.01,5,95305.0,0
+201,"Farming, Ranching, Forestry",10,0.01,8,90928.0,1
+2934,Landscaping Services,10,0.01,6,82500.0,0
+3194,"Leisure, Travel & Tourism",10,0.01,3,57720.0,2
+983,Measuring and Control Instrument Manufacturing,10,0.01,6,82970.0,4
+397,Natural Gas Distribution,10,0.01,6,144404.0,3
+1757,Real Estate and Equipment Rental Services,10,0.01,5,55765.0,0
+2142,Sports Teams and Clubs,10,0.01,6,70150.0,3
+1137,Wholesale Furniture and Home Furnishings,10,0.01,4,80000.0,0
+3246,Accessible Architecture and Design,9,0.01,3,105000.0,0
+120,Alternative Dispute Resolution,9,0.01,7,220000.0,1
+3253,Alternative Fuel Vehicle Manufacturing,9,0.01,7,81120.0,1
+3252,Climate Data and Analytics,9,0.01,4,54938.0,3
+3251,Climate Technology Product Manufacturing,9,0.01,5,98000.0,2
+871,Construction Hardware Manufacturing,9,0.01,8,97200.0,3
+3189,Cosmetics,9,0.01,3,53040.0,1
+2045,Dentists,9,0.01,3,49920.0,0
+3227,Design,9,0.01,2,117900.0,1
+998,Electric Lighting Equipment Manufacturing,9,0.01,5,60000.0,0
+1770,Real Estate Agents and Brokers,9,0.01,1,150000.0,1
+763,Rubber Products Manufacturing,9,0.01,1,143000.0,0
+1128,Wholesale Motor Vehicles and Parts,9,0.01,1,48880.0,0
+3220,Wine & Spirits,9,0.01,5,85000.0,3
+1738,"Claims Adjusting, Actuarial Services",8,0.01,2,59760.0,1
+3219,Commercial Real Estate,8,0.01,2,58750.0,1
+2115,Community Services,8,0.01,4,87933.0,0
+3234,Computer Networking,8,0.01,1,104500.0,5
+1923,Executive Search Services,8,0.01,7,114400.0,1
+3193,Furniture,8,0.01,3,60163.0,1
+3081,Housing Programs,8,0.01,3,55000.0,0
+679,Oil and Coal Product Manufacturing,8,0.01,4,92500.0,0
+408,Residential Building Construction,8,0.01,3,137500.0,0
+727,Soap and Cleaning Product Manufacturing,8,0.01,3,101000.0,1
+1157,Wholesale Computer Equipment,8,0.01,1,55000.0,5
+1166,Wholesale Metals and Minerals,8,0.01,4,86250.0,0
+481,Animal Feed Manufacturing,7,0.01,1,36400.0,1
+3128,Business Intelligence Platforms,7,0.01,2,90500.0,5
+3235,Computer Hardware,7,0.01,1,120000.0,0
+3244,Digital Accessibility Services,7,0.01,4,97760.0,2
+298,Forestry and Logging,7,0.01,6,75556.0,1
+85,Libraries,7,0.01,3,79018.0,0
+1750,Trusts and Estates,7,0.01,4,150000.0,0
+1208,Wholesale Luxury Goods and Jewelry,7,0.01,5,62400.0,0
+1786,Consumer Goods Rental,6,0.0,0,,1
+1696,Loan Brokers,6,0.0,4,147800.0,4
+521,Meat Products Manufacturing,6,0.0,5,85500.0,1
+1424,Retail Office Supplies and Gifts,6,0.0,3,99840.0,1
+2018,Technical and Vocational Training,6,0.0,4,96050.0,2
+2226,Vehicle Repair and Maintenance,6,0.0,2,46800.0,1
+1262,Wholesale Petroleum and Petroleum Products,6,0.0,1,105000.0,0
+2190,Accommodation and Food Services,5,0.0,1,50000.0,0
+3134,Blockchain Services,5,0.0,2,168750.0,4
+1798,Commercial and Industrial Equipment Rental,5,0.0,0,,0
+964,Communications Equipment Manufacturing,5,0.0,2,87530.0,3
+3196,Fine Art,5,0.0,2,56500.0,1
+622,Footwear Manufacturing,5,0.0,0,,1
+1742,Funds and Trusts,5,0.0,2,126922.0,0
+779,Glass Product Manufacturing,5,0.0,3,110000.0,2
+72,Legislative Offices,5,0.0,4,47670.0,0
+3223,Packaging & Containers,5,0.0,2,39000.0,0
+2259,Personal Care Services,5,0.0,4,44720.0,0
+1520,Pipeline Transportation,5,0.0,4,100900.0,0
+3203,Program Development,5,0.0,1,104000.0,2
+1409,Retail Books and Printed News,5,0.0,2,66250.0,3
+873,Spring and Wire Product Manufacturing,5,0.0,2,55900.0,0
+495,Sugar and Confectionery Product Manufacturing,5,0.0,1,65000.0,1
+3229,Warehousing,5,0.0,1,75000.0,0
+398,"Water, Waste, Steam, and Air Conditioning Services",5,0.0,3,100000.0,0
+1257,Wholesale Chemical and Allied Products,5,0.0,3,105000.0,0
+1206,Wholesale Recyclable Materials,5,0.0,3,63440.0,0
+127,Animation and Post-production,4,0.0,1,257500.0,0
+2212,Caterers,4,0.0,3,57500.0,0
+3068,Correctional Institutions,4,0.0,3,98800.0,0
+1965,Janitorial Services,4,0.0,1,36400.0,0
+2069,Medical and Diagnostic Laboratories,4,0.0,1,125000.0,0
+1431,Retail Recyclable Materials & Used Merchandise,4,0.0,2,92500.0,0
+528,Seafood Product Manufacturing,4,0.0,2,127750.0,0
+3188,Veterinary,4,0.0,2,39370.0,0
+1222,Wholesale Apparel and Sewing Supplies,4,0.0,3,85000.0,0
+1250,Wholesale Raw Farm Products,4,0.0,2,115938.0,1
+2500,Wineries,4,0.0,1,130000.0,1
+529,Baked Goods Manufacturing,3,0.0,2,64600.0,0
+2197,"Bed-and-Breakfasts, Hostels, Homestays",3,0.0,0,,0
+861,"Boilers, Tanks, and Shipping Container Manufacturing",3,0.0,2,117500.0,0
+2368,Conservation Programs,3,0.0,2,127500.0,2
+3101,Desktop Computing Software Products,3,0.0,1,57500.0,2
+150,Horticulture,3,0.0,0,,0
+2318,Household Services,3,0.0,1,77500.0,0
+994,Magnetic and Optical Media Manufacturing,3,0.0,1,130000.0,1
+2159,Museums,3,0.0,3,70000.0,0
+3239,Paper & Forest Products,3,0.0,1,38480.0,0
+2130,Performing Arts and Spectator Sports,3,0.0,3,70000.0,2
+2258,Personal and Laundry Services,3,0.0,2,81250.0,0
+1423,Retail Florists,3,0.0,2,48880.0,0
+1713,Securities and Commodity Exchanges,3,0.0,3,175000.0,1
+876,Turned Products and Fastener Manufacturing,3,0.0,0,,1
+419,Utility System Construction,3,0.0,1,57200.0,0
+1187,Wholesale Machinery,3,0.0,3,140000.0,0
+2489,Wind Electric Power Generation,3,0.0,3,135000.0,0
+2167,Amusement Parks and Arcades,2,0.0,2,113883.0,0
+1673,Credit Intermediation,2,0.0,0,,0
+1095,Mattress and Blinds Manufacturing,2,0.0,1,82500.0,0
+887,"Metal Valve, Ball, and Roller Manufacturing",2,0.0,0,,0
+413,Nonresidential Building Construction,2,0.0,0,,0
+3214,Online Media,2,0.0,0,,0
+1745,Pension Funds,2,0.0,0,,0
+1407,Retail Musical Instruments,2,0.0,0,,1
+2133,Theater Companies,2,0.0,2,70000.0,0
+1029,Transportation Equipment Manufacturing,2,0.0,1,179680.0,1
+1497,Urban Transit Services,2,0.0,2,81033.0,0
+1221,Wholesale Drugs and Sundries,2,0.0,0,,1
+1230,Wholesale Footwear,2,0.0,1,82500.0,1
+1212,Wholesale Paper Products,2,0.0,0,,1
+1153,Wholesale Photography Equipment and Supplies,2,0.0,2,94130.0,0
+799,Abrasives and Nonmetallic Minerals Manufacturing,1,0.0,0,,0
+453,Building Equipment Contractors,1,0.0,0,,0
+3199,Dairy,1,0.0,0,,0
+1080,Household and Institutional Furniture Manufacturing,1,0.0,1,45760.0,0
+3236,Maritime,1,0.0,0,,0
+2360,Public Assistance Programs,1,0.0,0,,0
+1986,Waste Treatment and Disposal,1,0.0,0,,1
+2163,Zoos and Botanical Gardens,1,0.0,0,,0

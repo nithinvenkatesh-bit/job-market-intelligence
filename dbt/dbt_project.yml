@@ -12,9 +12,10 @@ clean-targets: ["target", "dbt_packages"]
 
 models:
   job_market_intelligence:
-    # Views: cheap, and always reflect the current parquet files.
+    # Tables make external CSV/Parquet paths durable after dbt finishes.
+    # This allows the dashboard to query jmi.duckdb from any working directory.
     staging:
-      +materialized: view
+      +materialized: table
       +schema: staging
     # Ephemeral: inlined into downstream models rather than persisted.
     # This is a join-and-compute step nothing queries directly.

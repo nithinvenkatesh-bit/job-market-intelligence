@@ -1,0 +1,2432 @@
+[
+  {
+    "skill_name": "SQL",
+    "skill_category": "Programming and query languages",
+    "display_order": 1,
+    "role_family": "All data roles",
+    "postings": 1012,
+    "role_share_pct": 51.19,
+    "salary_postings": 339,
+    "median_salary_usd": 127550.0
+  },
+  {
+    "skill_name": "Python",
+    "skill_category": "Programming and query languages",
+    "display_order": 2,
+    "role_family": "All data roles",
+    "postings": 818,
+    "role_share_pct": 41.38,
+    "salary_postings": 266,
+    "median_salary_usd": 138525.0
+  },
+  {
+    "skill_name": "Excel",
+    "skill_category": "BI and visualization",
+    "display_order": 10,
+    "role_family": "All data roles",
+    "postings": 429,
+    "role_share_pct": 21.7,
+    "salary_postings": 152,
+    "median_salary_usd": 100700.0
+  },
+  {
+    "skill_name": "AWS",
+    "skill_category": "Cloud platforms",
+    "display_order": 20,
+    "role_family": "All data roles",
+    "postings": 373,
+    "role_share_pct": 18.87,
+    "salary_postings": 106,
+    "median_salary_usd": 145600.0
+  },
+  {
+    "skill_name": "Power BI",
+    "skill_category": "BI and visualization",
+    "display_order": 12,
+    "role_family": "All data roles",
+    "postings": 365,
+    "role_share_pct": 18.46,
+    "salary_postings": 139,
+    "median_salary_usd": 117500.0
+  },
+  {
+    "skill_name": "Azure",
+    "skill_category": "Cloud platforms",
+    "display_order": 21,
+    "role_family": "All data roles",
+    "postings": 316,
+    "role_share_pct": 15.98,
+    "salary_postings": 97,
+    "median_salary_usd": 140000.0
+  },
+  {
+    "skill_name": "Tableau",
+    "skill_category": "BI and visualization",
+    "display_order": 11,
+    "role_family": "All data roles",
+    "postings": 306,
+    "role_share_pct": 15.48,
+    "salary_postings": 121,
+    "median_salary_usd": 123200.0
+  },
+  {
+    "skill_name": "Java",
+    "skill_category": "Programming and query languages",
+    "display_order": 4,
+    "role_family": "All data roles",
+    "postings": 183,
+    "role_share_pct": 9.26,
+    "salary_postings": 63,
+    "median_salary_usd": 151874.0
+  },
+  {
+    "skill_name": "Google Cloud",
+    "skill_category": "Cloud platforms",
+    "display_order": 22,
+    "role_family": "All data roles",
+    "postings": 174,
+    "role_share_pct": 8.8,
+    "salary_postings": 56,
+    "median_salary_usd": 140200.0
+  },
+  {
+    "skill_name": "Snowflake",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 30,
+    "role_family": "All data roles",
+    "postings": 167,
+    "role_share_pct": 8.45,
+    "salary_postings": 52,
+    "median_salary_usd": 142800.0
+  },
+  {
+    "skill_name": "Scala",
+    "skill_category": "Programming and query languages",
+    "display_order": 5,
+    "role_family": "All data roles",
+    "postings": 153,
+    "role_share_pct": 7.74,
+    "salary_postings": 51,
+    "median_salary_usd": 145000.0
+  },
+  {
+    "skill_name": "Jira",
+    "skill_category": "Engineering tools",
+    "display_order": 73,
+    "role_family": "All data roles",
+    "postings": 139,
+    "role_share_pct": 7.03,
+    "salary_postings": 44,
+    "median_salary_usd": 134685.0
+  },
+  {
+    "skill_name": "Databricks",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 31,
+    "role_family": "All data roles",
+    "postings": 123,
+    "role_share_pct": 6.22,
+    "salary_postings": 47,
+    "median_salary_usd": 140000.0
+  },
+  {
+    "skill_name": "Hadoop",
+    "skill_category": "Big data and streaming",
+    "display_order": 41,
+    "role_family": "All data roles",
+    "postings": 122,
+    "role_share_pct": 6.17,
+    "salary_postings": 46,
+    "median_salary_usd": 143950.0
+  },
+  {
+    "skill_name": "Git",
+    "skill_category": "Engineering tools",
+    "display_order": 70,
+    "role_family": "All data roles",
+    "postings": 121,
+    "role_share_pct": 6.12,
+    "salary_postings": 45,
+    "median_salary_usd": 140000.0
+  },
+  {
+    "skill_name": "NoSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 38,
+    "role_family": "All data roles",
+    "postings": 116,
+    "role_share_pct": 5.87,
+    "salary_postings": 37,
+    "median_salary_usd": 155000.0
+  },
+  {
+    "skill_name": "R",
+    "skill_category": "Programming and query languages",
+    "display_order": 3,
+    "role_family": "All data roles",
+    "postings": 109,
+    "role_share_pct": 5.51,
+    "salary_postings": 32,
+    "median_salary_usd": 147500.0
+  },
+  {
+    "skill_name": "Redshift",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 33,
+    "role_family": "All data roles",
+    "postings": 107,
+    "role_share_pct": 5.41,
+    "salary_postings": 30,
+    "median_salary_usd": 137800.0
+  },
+  {
+    "skill_name": "Apache Spark",
+    "skill_category": "Big data and streaming",
+    "display_order": 40,
+    "role_family": "All data roles",
+    "postings": 107,
+    "role_share_pct": 5.41,
+    "salary_postings": 25,
+    "median_salary_usd": 130000.0
+  },
+  {
+    "skill_name": "SAS",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 60,
+    "role_family": "All data roles",
+    "postings": 97,
+    "role_share_pct": 4.91,
+    "salary_postings": 43,
+    "median_salary_usd": 114938.0
+  },
+  {
+    "skill_name": "PyTorch",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 65,
+    "role_family": "All data roles",
+    "postings": 90,
+    "role_share_pct": 4.55,
+    "salary_postings": 28,
+    "median_salary_usd": 173325.0
+  },
+  {
+    "skill_name": "TensorFlow",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 64,
+    "role_family": "All data roles",
+    "postings": 78,
+    "role_share_pct": 3.95,
+    "salary_postings": 29,
+    "median_salary_usd": 170000.0
+  },
+  {
+    "skill_name": "Airflow",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 51,
+    "role_family": "All data roles",
+    "postings": 77,
+    "role_share_pct": 3.89,
+    "salary_postings": 26,
+    "median_salary_usd": 146250.0
+  },
+  {
+    "skill_name": "Kafka",
+    "skill_category": "Big data and streaming",
+    "display_order": 42,
+    "role_family": "All data roles",
+    "postings": 76,
+    "role_share_pct": 3.84,
+    "salary_postings": 24,
+    "median_salary_usd": 150937.0
+  },
+  {
+    "skill_name": "Kubernetes",
+    "skill_category": "Engineering tools",
+    "display_order": 72,
+    "role_family": "All data roles",
+    "postings": 75,
+    "role_share_pct": 3.79,
+    "salary_postings": 29,
+    "median_salary_usd": 156000.0
+  },
+  {
+    "skill_name": "Docker",
+    "skill_category": "Engineering tools",
+    "display_order": 71,
+    "role_family": "All data roles",
+    "postings": 70,
+    "role_share_pct": 3.54,
+    "salary_postings": 27,
+    "median_salary_usd": 140400.0
+  },
+  {
+    "skill_name": "BigQuery",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 32,
+    "role_family": "All data roles",
+    "postings": 65,
+    "role_share_pct": 3.29,
+    "salary_postings": 18,
+    "median_salary_usd": 139000.0
+  },
+  {
+    "skill_name": "PostgreSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 34,
+    "role_family": "All data roles",
+    "postings": 56,
+    "role_share_pct": 2.83,
+    "salary_postings": 23,
+    "median_salary_usd": 140000.0
+  },
+  {
+    "skill_name": "MySQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 35,
+    "role_family": "All data roles",
+    "postings": 55,
+    "role_share_pct": 2.78,
+    "salary_postings": 15,
+    "median_salary_usd": 130764.0
+  },
+  {
+    "skill_name": "dbt",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 50,
+    "role_family": "All data roles",
+    "postings": 50,
+    "role_share_pct": 2.53,
+    "salary_postings": 16,
+    "median_salary_usd": 156000.0
+  },
+  {
+    "skill_name": "Scikit-learn",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 63,
+    "role_family": "All data roles",
+    "postings": 47,
+    "role_share_pct": 2.38,
+    "salary_postings": 9,
+    "median_salary_usd": 166400.0
+  },
+  {
+    "skill_name": "Informatica",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 52,
+    "role_family": "All data roles",
+    "postings": 45,
+    "role_share_pct": 2.28,
+    "salary_postings": 10,
+    "median_salary_usd": 135200.0
+  },
+  {
+    "skill_name": "Pandas",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 61,
+    "role_family": "All data roles",
+    "postings": 44,
+    "role_share_pct": 2.23,
+    "salary_postings": 18,
+    "median_salary_usd": 172250.0
+  },
+  {
+    "skill_name": "Qlik",
+    "skill_category": "BI and visualization",
+    "display_order": 14,
+    "role_family": "All data roles",
+    "postings": 37,
+    "role_share_pct": 1.87,
+    "salary_postings": 14,
+    "median_salary_usd": 88470.0
+  },
+  {
+    "skill_name": "Looker",
+    "skill_category": "BI and visualization",
+    "display_order": 13,
+    "role_family": "All data roles",
+    "postings": 32,
+    "role_share_pct": 1.62,
+    "salary_postings": 14,
+    "median_salary_usd": 136000.0
+  },
+  {
+    "skill_name": "NumPy",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 62,
+    "role_family": "All data roles",
+    "postings": 30,
+    "role_share_pct": 1.52,
+    "salary_postings": 15,
+    "median_salary_usd": 170000.0
+  },
+  {
+    "skill_name": "MongoDB",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 37,
+    "role_family": "All data roles",
+    "postings": 29,
+    "role_share_pct": 1.47,
+    "salary_postings": 14,
+    "median_salary_usd": 148750.0
+  },
+  {
+    "skill_name": "Alteryx",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 53,
+    "role_family": "All data roles",
+    "postings": 24,
+    "role_share_pct": 1.21,
+    "salary_postings": 6,
+    "median_salary_usd": 124300.0
+  },
+  {
+    "skill_name": "Oracle",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 36,
+    "role_family": "All data roles",
+    "postings": 7,
+    "role_share_pct": 0.35,
+    "salary_postings": 1,
+    "median_salary_usd": 81120.0
+  },
+  {
+    "skill_name": "SQL",
+    "skill_category": "Programming and query languages",
+    "display_order": 1,
+    "role_family": "Analytics Engineer",
+    "postings": 18,
+    "role_share_pct": 78.26,
+    "salary_postings": 10,
+    "median_salary_usd": 169550.0
+  },
+  {
+    "skill_name": "Python",
+    "skill_category": "Programming and query languages",
+    "display_order": 2,
+    "role_family": "Analytics Engineer",
+    "postings": 15,
+    "role_share_pct": 65.22,
+    "salary_postings": 7,
+    "median_salary_usd": 171600.0
+  },
+  {
+    "skill_name": "Tableau",
+    "skill_category": "BI and visualization",
+    "display_order": 11,
+    "role_family": "Analytics Engineer",
+    "postings": 10,
+    "role_share_pct": 43.48,
+    "salary_postings": 4,
+    "median_salary_usd": 195413.0
+  },
+  {
+    "skill_name": "Snowflake",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 30,
+    "role_family": "Analytics Engineer",
+    "postings": 10,
+    "role_share_pct": 43.48,
+    "salary_postings": 4,
+    "median_salary_usd": 162738.0
+  },
+  {
+    "skill_name": "AWS",
+    "skill_category": "Cloud platforms",
+    "display_order": 20,
+    "role_family": "Analytics Engineer",
+    "postings": 9,
+    "role_share_pct": 39.13,
+    "salary_postings": 3,
+    "median_salary_usd": 150000.0
+  },
+  {
+    "skill_name": "Power BI",
+    "skill_category": "BI and visualization",
+    "display_order": 12,
+    "role_family": "Analytics Engineer",
+    "postings": 7,
+    "role_share_pct": 30.43,
+    "salary_postings": 4,
+    "median_salary_usd": 252675.0
+  },
+  {
+    "skill_name": "dbt",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 50,
+    "role_family": "Analytics Engineer",
+    "postings": 7,
+    "role_share_pct": 30.43,
+    "salary_postings": 3,
+    "median_salary_usd": 167500.0
+  },
+  {
+    "skill_name": "Excel",
+    "skill_category": "BI and visualization",
+    "display_order": 10,
+    "role_family": "Analytics Engineer",
+    "postings": 6,
+    "role_share_pct": 26.09,
+    "salary_postings": 3,
+    "median_salary_usd": 175475.0
+  },
+  {
+    "skill_name": "Azure",
+    "skill_category": "Cloud platforms",
+    "display_order": 21,
+    "role_family": "Analytics Engineer",
+    "postings": 6,
+    "role_share_pct": 26.09,
+    "salary_postings": 2,
+    "median_salary_usd": 182675.0
+  },
+  {
+    "skill_name": "Airflow",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 51,
+    "role_family": "Analytics Engineer",
+    "postings": 5,
+    "role_share_pct": 21.74,
+    "salary_postings": 4,
+    "median_salary_usd": 228750.0
+  },
+  {
+    "skill_name": "Databricks",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 31,
+    "role_family": "Analytics Engineer",
+    "postings": 4,
+    "role_share_pct": 17.39,
+    "salary_postings": 3,
+    "median_salary_usd": 215350.0
+  },
+  {
+    "skill_name": "Looker",
+    "skill_category": "BI and visualization",
+    "display_order": 13,
+    "role_family": "Analytics Engineer",
+    "postings": 3,
+    "role_share_pct": 13.04,
+    "salary_postings": 1,
+    "median_salary_usd": 215350.0
+  },
+  {
+    "skill_name": "BigQuery",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 32,
+    "role_family": "Analytics Engineer",
+    "postings": 3,
+    "role_share_pct": 13.04,
+    "salary_postings": 2,
+    "median_salary_usd": 257675.0
+  },
+  {
+    "skill_name": "Redshift",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 33,
+    "role_family": "Analytics Engineer",
+    "postings": 3,
+    "role_share_pct": 13.04,
+    "salary_postings": 2,
+    "median_salary_usd": 257675.0
+  },
+  {
+    "skill_name": "Git",
+    "skill_category": "Engineering tools",
+    "display_order": 70,
+    "role_family": "Analytics Engineer",
+    "postings": 3,
+    "role_share_pct": 13.04,
+    "salary_postings": 2,
+    "median_salary_usd": 287500.0
+  },
+  {
+    "skill_name": "Google Cloud",
+    "skill_category": "Cloud platforms",
+    "display_order": 22,
+    "role_family": "Analytics Engineer",
+    "postings": 2,
+    "role_share_pct": 8.7,
+    "salary_postings": 1,
+    "median_salary_usd": 215350.0
+  },
+  {
+    "skill_name": "Alteryx",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 53,
+    "role_family": "Analytics Engineer",
+    "postings": 2,
+    "role_share_pct": 8.7,
+    "salary_postings": 1,
+    "median_salary_usd": 116100.0
+  },
+  {
+    "skill_name": "Java",
+    "skill_category": "Programming and query languages",
+    "display_order": 4,
+    "role_family": "Analytics Engineer",
+    "postings": 1,
+    "role_share_pct": 4.35,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "PostgreSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 34,
+    "role_family": "Analytics Engineer",
+    "postings": 1,
+    "role_share_pct": 4.35,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Apache Spark",
+    "skill_category": "Big data and streaming",
+    "display_order": 40,
+    "role_family": "Analytics Engineer",
+    "postings": 1,
+    "role_share_pct": 4.35,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "SAS",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 60,
+    "role_family": "Analytics Engineer",
+    "postings": 1,
+    "role_share_pct": 4.35,
+    "salary_postings": 1,
+    "median_salary_usd": 175475.0
+  },
+  {
+    "skill_name": "SQL",
+    "skill_category": "Programming and query languages",
+    "display_order": 1,
+    "role_family": "BI Analyst",
+    "postings": 146,
+    "role_share_pct": 68.22,
+    "salary_postings": 53,
+    "median_salary_usd": 115700.0
+  },
+  {
+    "skill_name": "Power BI",
+    "skill_category": "BI and visualization",
+    "display_order": 12,
+    "role_family": "BI Analyst",
+    "postings": 119,
+    "role_share_pct": 55.61,
+    "salary_postings": 44,
+    "median_salary_usd": 112150.0
+  },
+  {
+    "skill_name": "Tableau",
+    "skill_category": "BI and visualization",
+    "display_order": 11,
+    "role_family": "BI Analyst",
+    "postings": 79,
+    "role_share_pct": 36.92,
+    "salary_postings": 31,
+    "median_salary_usd": 120640.0
+  },
+  {
+    "skill_name": "Excel",
+    "skill_category": "BI and visualization",
+    "display_order": 10,
+    "role_family": "BI Analyst",
+    "postings": 67,
+    "role_share_pct": 31.31,
+    "salary_postings": 30,
+    "median_salary_usd": 100000.0
+  },
+  {
+    "skill_name": "Python",
+    "skill_category": "Programming and query languages",
+    "display_order": 2,
+    "role_family": "BI Analyst",
+    "postings": 48,
+    "role_share_pct": 22.43,
+    "salary_postings": 16,
+    "median_salary_usd": 122595.0
+  },
+  {
+    "skill_name": "Azure",
+    "skill_category": "Cloud platforms",
+    "display_order": 21,
+    "role_family": "BI Analyst",
+    "postings": 37,
+    "role_share_pct": 17.29,
+    "salary_postings": 14,
+    "median_salary_usd": 136560.0
+  },
+  {
+    "skill_name": "Snowflake",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 30,
+    "role_family": "BI Analyst",
+    "postings": 15,
+    "role_share_pct": 7.01,
+    "salary_postings": 7,
+    "median_salary_usd": 137500.0
+  },
+  {
+    "skill_name": "AWS",
+    "skill_category": "Cloud platforms",
+    "display_order": 20,
+    "role_family": "BI Analyst",
+    "postings": 14,
+    "role_share_pct": 6.54,
+    "salary_postings": 4,
+    "median_salary_usd": 128550.0
+  },
+  {
+    "skill_name": "SAS",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 60,
+    "role_family": "BI Analyst",
+    "postings": 14,
+    "role_share_pct": 6.54,
+    "salary_postings": 4,
+    "median_salary_usd": 124853.0
+  },
+  {
+    "skill_name": "Qlik",
+    "skill_category": "BI and visualization",
+    "display_order": 14,
+    "role_family": "BI Analyst",
+    "postings": 13,
+    "role_share_pct": 6.07,
+    "salary_postings": 9,
+    "median_salary_usd": 87500.0
+  },
+  {
+    "skill_name": "Redshift",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 33,
+    "role_family": "BI Analyst",
+    "postings": 12,
+    "role_share_pct": 5.61,
+    "salary_postings": 3,
+    "median_salary_usd": 120640.0
+  },
+  {
+    "skill_name": "NoSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 38,
+    "role_family": "BI Analyst",
+    "postings": 12,
+    "role_share_pct": 5.61,
+    "salary_postings": 4,
+    "median_salary_usd": 120250.0
+  },
+  {
+    "skill_name": "R",
+    "skill_category": "Programming and query languages",
+    "display_order": 3,
+    "role_family": "BI Analyst",
+    "postings": 9,
+    "role_share_pct": 4.21,
+    "salary_postings": 2,
+    "median_salary_usd": 160500.0
+  },
+  {
+    "skill_name": "Informatica",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 52,
+    "role_family": "BI Analyst",
+    "postings": 7,
+    "role_share_pct": 3.27,
+    "salary_postings": 1,
+    "median_salary_usd": 125155.0
+  },
+  {
+    "skill_name": "Jira",
+    "skill_category": "Engineering tools",
+    "display_order": 73,
+    "role_family": "BI Analyst",
+    "postings": 7,
+    "role_share_pct": 3.27,
+    "salary_postings": 1,
+    "median_salary_usd": 73455.0
+  },
+  {
+    "skill_name": "Databricks",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 31,
+    "role_family": "BI Analyst",
+    "postings": 6,
+    "role_share_pct": 2.8,
+    "salary_postings": 2,
+    "median_salary_usd": 153960.0
+  },
+  {
+    "skill_name": "Alteryx",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 53,
+    "role_family": "BI Analyst",
+    "postings": 6,
+    "role_share_pct": 2.8,
+    "salary_postings": 2,
+    "median_salary_usd": 108500.0
+  },
+  {
+    "skill_name": "Looker",
+    "skill_category": "BI and visualization",
+    "display_order": 13,
+    "role_family": "BI Analyst",
+    "postings": 5,
+    "role_share_pct": 2.34,
+    "salary_postings": 3,
+    "median_salary_usd": 95000.0
+  },
+  {
+    "skill_name": "Apache Spark",
+    "skill_category": "Big data and streaming",
+    "display_order": 40,
+    "role_family": "BI Analyst",
+    "postings": 5,
+    "role_share_pct": 2.34,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "BigQuery",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 32,
+    "role_family": "BI Analyst",
+    "postings": 4,
+    "role_share_pct": 1.87,
+    "salary_postings": 2,
+    "median_salary_usd": 98750.0
+  },
+  {
+    "skill_name": "Git",
+    "skill_category": "Engineering tools",
+    "display_order": 70,
+    "role_family": "BI Analyst",
+    "postings": 4,
+    "role_share_pct": 1.87,
+    "salary_postings": 3,
+    "median_salary_usd": 124800.0
+  },
+  {
+    "skill_name": "Java",
+    "skill_category": "Programming and query languages",
+    "display_order": 4,
+    "role_family": "BI Analyst",
+    "postings": 3,
+    "role_share_pct": 1.4,
+    "salary_postings": 2,
+    "median_salary_usd": 126012.0
+  },
+  {
+    "skill_name": "Google Cloud",
+    "skill_category": "Cloud platforms",
+    "display_order": 22,
+    "role_family": "BI Analyst",
+    "postings": 3,
+    "role_share_pct": 1.4,
+    "salary_postings": 2,
+    "median_salary_usd": 138650.0
+  },
+  {
+    "skill_name": "PostgreSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 34,
+    "role_family": "BI Analyst",
+    "postings": 2,
+    "role_share_pct": 0.93,
+    "salary_postings": 2,
+    "median_salary_usd": 132400.0
+  },
+  {
+    "skill_name": "MySQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 35,
+    "role_family": "BI Analyst",
+    "postings": 2,
+    "role_share_pct": 0.93,
+    "salary_postings": 1,
+    "median_salary_usd": 140000.0
+  },
+  {
+    "skill_name": "dbt",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 50,
+    "role_family": "BI Analyst",
+    "postings": 2,
+    "role_share_pct": 0.93,
+    "salary_postings": 1,
+    "median_salary_usd": 137500.0
+  },
+  {
+    "skill_name": "Scala",
+    "skill_category": "Programming and query languages",
+    "display_order": 5,
+    "role_family": "BI Analyst",
+    "postings": 1,
+    "role_share_pct": 0.47,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Oracle",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 36,
+    "role_family": "BI Analyst",
+    "postings": 1,
+    "role_share_pct": 0.47,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "MongoDB",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 37,
+    "role_family": "BI Analyst",
+    "postings": 1,
+    "role_share_pct": 0.47,
+    "salary_postings": 1,
+    "median_salary_usd": 124800.0
+  },
+  {
+    "skill_name": "Hadoop",
+    "skill_category": "Big data and streaming",
+    "display_order": 41,
+    "role_family": "BI Analyst",
+    "postings": 1,
+    "role_share_pct": 0.47,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Airflow",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 51,
+    "role_family": "BI Analyst",
+    "postings": 1,
+    "role_share_pct": 0.47,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Pandas",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 61,
+    "role_family": "BI Analyst",
+    "postings": 1,
+    "role_share_pct": 0.47,
+    "salary_postings": 1,
+    "median_salary_usd": 77250.0
+  },
+  {
+    "skill_name": "Docker",
+    "skill_category": "Engineering tools",
+    "display_order": 71,
+    "role_family": "BI Analyst",
+    "postings": 1,
+    "role_share_pct": 0.47,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Kubernetes",
+    "skill_category": "Engineering tools",
+    "display_order": 72,
+    "role_family": "BI Analyst",
+    "postings": 1,
+    "role_share_pct": 0.47,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Excel",
+    "skill_category": "BI and visualization",
+    "display_order": 10,
+    "role_family": "Business Analyst",
+    "postings": 156,
+    "role_share_pct": 29.16,
+    "salary_postings": 40,
+    "median_salary_usd": 100700.0
+  },
+  {
+    "skill_name": "SQL",
+    "skill_category": "Programming and query languages",
+    "display_order": 1,
+    "role_family": "Business Analyst",
+    "postings": 126,
+    "role_share_pct": 23.55,
+    "salary_postings": 38,
+    "median_salary_usd": 111160.0
+  },
+  {
+    "skill_name": "Jira",
+    "skill_category": "Engineering tools",
+    "display_order": 73,
+    "role_family": "Business Analyst",
+    "postings": 77,
+    "role_share_pct": 14.39,
+    "salary_postings": 21,
+    "median_salary_usd": 122800.0
+  },
+  {
+    "skill_name": "Power BI",
+    "skill_category": "BI and visualization",
+    "display_order": 12,
+    "role_family": "Business Analyst",
+    "postings": 48,
+    "role_share_pct": 8.97,
+    "salary_postings": 13,
+    "median_salary_usd": 118000.0
+  },
+  {
+    "skill_name": "Tableau",
+    "skill_category": "BI and visualization",
+    "display_order": 11,
+    "role_family": "Business Analyst",
+    "postings": 36,
+    "role_share_pct": 6.73,
+    "salary_postings": 10,
+    "median_salary_usd": 101610.0
+  },
+  {
+    "skill_name": "Python",
+    "skill_category": "Programming and query languages",
+    "display_order": 2,
+    "role_family": "Business Analyst",
+    "postings": 25,
+    "role_share_pct": 4.67,
+    "salary_postings": 10,
+    "median_salary_usd": 104000.0
+  },
+  {
+    "skill_name": "Azure",
+    "skill_category": "Cloud platforms",
+    "display_order": 21,
+    "role_family": "Business Analyst",
+    "postings": 24,
+    "role_share_pct": 4.49,
+    "salary_postings": 4,
+    "median_salary_usd": 94800.0
+  },
+  {
+    "skill_name": "AWS",
+    "skill_category": "Cloud platforms",
+    "display_order": 20,
+    "role_family": "Business Analyst",
+    "postings": 16,
+    "role_share_pct": 2.99,
+    "salary_postings": 5,
+    "median_salary_usd": 80080.0
+  },
+  {
+    "skill_name": "Google Cloud",
+    "skill_category": "Cloud platforms",
+    "display_order": 22,
+    "role_family": "Business Analyst",
+    "postings": 10,
+    "role_share_pct": 1.87,
+    "salary_postings": 4,
+    "median_salary_usd": 71450.0
+  },
+  {
+    "skill_name": "Java",
+    "skill_category": "Programming and query languages",
+    "display_order": 4,
+    "role_family": "Business Analyst",
+    "postings": 8,
+    "role_share_pct": 1.5,
+    "salary_postings": 1,
+    "median_salary_usd": 127500.0
+  },
+  {
+    "skill_name": "SAS",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 60,
+    "role_family": "Business Analyst",
+    "postings": 6,
+    "role_share_pct": 1.12,
+    "salary_postings": 1,
+    "median_salary_usd": 91957.0
+  },
+  {
+    "skill_name": "MySQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 35,
+    "role_family": "Business Analyst",
+    "postings": 4,
+    "role_share_pct": 0.75,
+    "salary_postings": 1,
+    "median_salary_usd": 91957.0
+  },
+  {
+    "skill_name": "Git",
+    "skill_category": "Engineering tools",
+    "display_order": 70,
+    "role_family": "Business Analyst",
+    "postings": 4,
+    "role_share_pct": 0.75,
+    "salary_postings": 1,
+    "median_salary_usd": 125000.0
+  },
+  {
+    "skill_name": "R",
+    "skill_category": "Programming and query languages",
+    "display_order": 3,
+    "role_family": "Business Analyst",
+    "postings": 3,
+    "role_share_pct": 0.56,
+    "salary_postings": 1,
+    "median_salary_usd": 72250.0
+  },
+  {
+    "skill_name": "BigQuery",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 32,
+    "role_family": "Business Analyst",
+    "postings": 3,
+    "role_share_pct": 0.56,
+    "salary_postings": 2,
+    "median_salary_usd": 78950.0
+  },
+  {
+    "skill_name": "Oracle",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 36,
+    "role_family": "Business Analyst",
+    "postings": 3,
+    "role_share_pct": 0.56,
+    "salary_postings": 1,
+    "median_salary_usd": 81120.0
+  },
+  {
+    "skill_name": "Informatica",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 52,
+    "role_family": "Business Analyst",
+    "postings": 3,
+    "role_share_pct": 0.56,
+    "salary_postings": 1,
+    "median_salary_usd": 150280.0
+  },
+  {
+    "skill_name": "Alteryx",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 53,
+    "role_family": "Business Analyst",
+    "postings": 3,
+    "role_share_pct": 0.56,
+    "salary_postings": 1,
+    "median_salary_usd": 72800.0
+  },
+  {
+    "skill_name": "Looker",
+    "skill_category": "BI and visualization",
+    "display_order": 13,
+    "role_family": "Business Analyst",
+    "postings": 2,
+    "role_share_pct": 0.37,
+    "salary_postings": 2,
+    "median_salary_usd": 93460.0
+  },
+  {
+    "skill_name": "Qlik",
+    "skill_category": "BI and visualization",
+    "display_order": 14,
+    "role_family": "Business Analyst",
+    "postings": 2,
+    "role_share_pct": 0.37,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Snowflake",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 30,
+    "role_family": "Business Analyst",
+    "postings": 2,
+    "role_share_pct": 0.37,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Redshift",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 33,
+    "role_family": "Business Analyst",
+    "postings": 2,
+    "role_share_pct": 0.37,
+    "salary_postings": 1,
+    "median_salary_usd": 91957.0
+  },
+  {
+    "skill_name": "Docker",
+    "skill_category": "Engineering tools",
+    "display_order": 71,
+    "role_family": "Business Analyst",
+    "postings": 2,
+    "role_share_pct": 0.37,
+    "salary_postings": 1,
+    "median_salary_usd": 125000.0
+  },
+  {
+    "skill_name": "Kubernetes",
+    "skill_category": "Engineering tools",
+    "display_order": 72,
+    "role_family": "Business Analyst",
+    "postings": 2,
+    "role_share_pct": 0.37,
+    "salary_postings": 1,
+    "median_salary_usd": 125000.0
+  },
+  {
+    "skill_name": "MongoDB",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 37,
+    "role_family": "Business Analyst",
+    "postings": 1,
+    "role_share_pct": 0.19,
+    "salary_postings": 1,
+    "median_salary_usd": 88400.0
+  },
+  {
+    "skill_name": "NoSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 38,
+    "role_family": "Business Analyst",
+    "postings": 1,
+    "role_share_pct": 0.19,
+    "salary_postings": 1,
+    "median_salary_usd": 91957.0
+  },
+  {
+    "skill_name": "Hadoop",
+    "skill_category": "Big data and streaming",
+    "display_order": 41,
+    "role_family": "Business Analyst",
+    "postings": 1,
+    "role_share_pct": 0.19,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "SQL",
+    "skill_category": "Programming and query languages",
+    "display_order": 1,
+    "role_family": "Data Analyst",
+    "postings": 251,
+    "role_share_pct": 58.37,
+    "salary_postings": 86,
+    "median_salary_usd": 109733.0
+  },
+  {
+    "skill_name": "Excel",
+    "skill_category": "BI and visualization",
+    "display_order": 10,
+    "role_family": "Data Analyst",
+    "postings": 158,
+    "role_share_pct": 36.74,
+    "salary_postings": 64,
+    "median_salary_usd": 91050.0
+  },
+  {
+    "skill_name": "Python",
+    "skill_category": "Programming and query languages",
+    "display_order": 2,
+    "role_family": "Data Analyst",
+    "postings": 151,
+    "role_share_pct": 35.12,
+    "salary_postings": 44,
+    "median_salary_usd": 106552.0
+  },
+  {
+    "skill_name": "Power BI",
+    "skill_category": "BI and visualization",
+    "display_order": 12,
+    "role_family": "Data Analyst",
+    "postings": 91,
+    "role_share_pct": 21.16,
+    "salary_postings": 45,
+    "median_salary_usd": 100000.0
+  },
+  {
+    "skill_name": "Tableau",
+    "skill_category": "BI and visualization",
+    "display_order": 11,
+    "role_family": "Data Analyst",
+    "postings": 87,
+    "role_share_pct": 20.23,
+    "salary_postings": 44,
+    "median_salary_usd": 109552.0
+  },
+  {
+    "skill_name": "R",
+    "skill_category": "Programming and query languages",
+    "display_order": 3,
+    "role_family": "Data Analyst",
+    "postings": 42,
+    "role_share_pct": 9.77,
+    "salary_postings": 8,
+    "median_salary_usd": 129381.0
+  },
+  {
+    "skill_name": "SAS",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 60,
+    "role_family": "Data Analyst",
+    "postings": 36,
+    "role_share_pct": 8.37,
+    "salary_postings": 17,
+    "median_salary_usd": 89440.0
+  },
+  {
+    "skill_name": "AWS",
+    "skill_category": "Cloud platforms",
+    "display_order": 20,
+    "role_family": "Data Analyst",
+    "postings": 33,
+    "role_share_pct": 7.67,
+    "salary_postings": 9,
+    "median_salary_usd": 98800.0
+  },
+  {
+    "skill_name": "Snowflake",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 30,
+    "role_family": "Data Analyst",
+    "postings": 26,
+    "role_share_pct": 6.05,
+    "salary_postings": 11,
+    "median_salary_usd": 125050.0
+  },
+  {
+    "skill_name": "Azure",
+    "skill_category": "Cloud platforms",
+    "display_order": 21,
+    "role_family": "Data Analyst",
+    "postings": 24,
+    "role_share_pct": 5.58,
+    "salary_postings": 9,
+    "median_salary_usd": 110000.0
+  },
+  {
+    "skill_name": "Looker",
+    "skill_category": "BI and visualization",
+    "display_order": 13,
+    "role_family": "Data Analyst",
+    "postings": 17,
+    "role_share_pct": 3.95,
+    "salary_postings": 5,
+    "median_salary_usd": 135000.0
+  },
+  {
+    "skill_name": "Git",
+    "skill_category": "Engineering tools",
+    "display_order": 70,
+    "role_family": "Data Analyst",
+    "postings": 16,
+    "role_share_pct": 3.72,
+    "salary_postings": 6,
+    "median_salary_usd": 108700.0
+  },
+  {
+    "skill_name": "Hadoop",
+    "skill_category": "Big data and streaming",
+    "display_order": 41,
+    "role_family": "Data Analyst",
+    "postings": 15,
+    "role_share_pct": 3.49,
+    "salary_postings": 9,
+    "median_salary_usd": 135200.0
+  },
+  {
+    "skill_name": "Jira",
+    "skill_category": "Engineering tools",
+    "display_order": 73,
+    "role_family": "Data Analyst",
+    "postings": 15,
+    "role_share_pct": 3.49,
+    "salary_postings": 7,
+    "median_salary_usd": 146640.0
+  },
+  {
+    "skill_name": "Databricks",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 31,
+    "role_family": "Data Analyst",
+    "postings": 14,
+    "role_share_pct": 3.26,
+    "salary_postings": 5,
+    "median_salary_usd": 80500.0
+  },
+  {
+    "skill_name": "Java",
+    "skill_category": "Programming and query languages",
+    "display_order": 4,
+    "role_family": "Data Analyst",
+    "postings": 12,
+    "role_share_pct": 2.79,
+    "salary_postings": 7,
+    "median_salary_usd": 89440.0
+  },
+  {
+    "skill_name": "Google Cloud",
+    "skill_category": "Cloud platforms",
+    "display_order": 22,
+    "role_family": "Data Analyst",
+    "postings": 12,
+    "role_share_pct": 2.79,
+    "salary_postings": 6,
+    "median_salary_usd": 115120.0
+  },
+  {
+    "skill_name": "Qlik",
+    "skill_category": "BI and visualization",
+    "display_order": 14,
+    "role_family": "Data Analyst",
+    "postings": 10,
+    "role_share_pct": 2.33,
+    "salary_postings": 3,
+    "median_salary_usd": 83200.0
+  },
+  {
+    "skill_name": "Redshift",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 33,
+    "role_family": "Data Analyst",
+    "postings": 9,
+    "role_share_pct": 2.09,
+    "salary_postings": 2,
+    "median_salary_usd": 151925.0
+  },
+  {
+    "skill_name": "Informatica",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 52,
+    "role_family": "Data Analyst",
+    "postings": 9,
+    "role_share_pct": 2.09,
+    "salary_postings": 3,
+    "median_salary_usd": 124800.0
+  },
+  {
+    "skill_name": "Alteryx",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 53,
+    "role_family": "Data Analyst",
+    "postings": 8,
+    "role_share_pct": 1.86,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "BigQuery",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 32,
+    "role_family": "Data Analyst",
+    "postings": 7,
+    "role_share_pct": 1.63,
+    "salary_postings": 2,
+    "median_salary_usd": 136500.0
+  },
+  {
+    "skill_name": "PostgreSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 34,
+    "role_family": "Data Analyst",
+    "postings": 6,
+    "role_share_pct": 1.4,
+    "salary_postings": 1,
+    "median_salary_usd": 168850.0
+  },
+  {
+    "skill_name": "dbt",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 50,
+    "role_family": "Data Analyst",
+    "postings": 5,
+    "role_share_pct": 1.16,
+    "salary_postings": 3,
+    "median_salary_usd": 135000.0
+  },
+  {
+    "skill_name": "NoSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 38,
+    "role_family": "Data Analyst",
+    "postings": 4,
+    "role_share_pct": 0.93,
+    "salary_postings": 2,
+    "median_salary_usd": 163465.0
+  },
+  {
+    "skill_name": "Apache Spark",
+    "skill_category": "Big data and streaming",
+    "display_order": 40,
+    "role_family": "Data Analyst",
+    "postings": 4,
+    "role_share_pct": 0.93,
+    "salary_postings": 3,
+    "median_salary_usd": 124800.0
+  },
+  {
+    "skill_name": "Scala",
+    "skill_category": "Programming and query languages",
+    "display_order": 5,
+    "role_family": "Data Analyst",
+    "postings": 3,
+    "role_share_pct": 0.7,
+    "salary_postings": 1,
+    "median_salary_usd": 98800.0
+  },
+  {
+    "skill_name": "MySQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 35,
+    "role_family": "Data Analyst",
+    "postings": 3,
+    "role_share_pct": 0.7,
+    "salary_postings": 1,
+    "median_salary_usd": 168850.0
+  },
+  {
+    "skill_name": "Docker",
+    "skill_category": "Engineering tools",
+    "display_order": 71,
+    "role_family": "Data Analyst",
+    "postings": 3,
+    "role_share_pct": 0.7,
+    "salary_postings": 1,
+    "median_salary_usd": 77500.0
+  },
+  {
+    "skill_name": "Kubernetes",
+    "skill_category": "Engineering tools",
+    "display_order": 72,
+    "role_family": "Data Analyst",
+    "postings": 3,
+    "role_share_pct": 0.7,
+    "salary_postings": 1,
+    "median_salary_usd": 122850.0
+  },
+  {
+    "skill_name": "Kafka",
+    "skill_category": "Big data and streaming",
+    "display_order": 42,
+    "role_family": "Data Analyst",
+    "postings": 2,
+    "role_share_pct": 0.47,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Airflow",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 51,
+    "role_family": "Data Analyst",
+    "postings": 2,
+    "role_share_pct": 0.47,
+    "salary_postings": 2,
+    "median_salary_usd": 125653.0
+  },
+  {
+    "skill_name": "Pandas",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 61,
+    "role_family": "Data Analyst",
+    "postings": 2,
+    "role_share_pct": 0.47,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "NumPy",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 62,
+    "role_family": "Data Analyst",
+    "postings": 2,
+    "role_share_pct": 0.47,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Scikit-learn",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 63,
+    "role_family": "Data Analyst",
+    "postings": 2,
+    "role_share_pct": 0.47,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "MongoDB",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 37,
+    "role_family": "Data Analyst",
+    "postings": 1,
+    "role_share_pct": 0.23,
+    "salary_postings": 1,
+    "median_salary_usd": 168850.0
+  },
+  {
+    "skill_name": "TensorFlow",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 64,
+    "role_family": "Data Analyst",
+    "postings": 1,
+    "role_share_pct": 0.23,
+    "salary_postings": 1,
+    "median_salary_usd": 60555.0
+  },
+  {
+    "skill_name": "PyTorch",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 65,
+    "role_family": "Data Analyst",
+    "postings": 1,
+    "role_share_pct": 0.23,
+    "salary_postings": 1,
+    "median_salary_usd": 60555.0
+  },
+  {
+    "skill_name": "SQL",
+    "skill_category": "Programming and query languages",
+    "display_order": 1,
+    "role_family": "Data Engineer",
+    "postings": 295,
+    "role_share_pct": 71.78,
+    "salary_postings": 95,
+    "median_salary_usd": 138550.0
+  },
+  {
+    "skill_name": "Python",
+    "skill_category": "Programming and query languages",
+    "display_order": 2,
+    "role_family": "Data Engineer",
+    "postings": 283,
+    "role_share_pct": 68.86,
+    "salary_postings": 92,
+    "median_salary_usd": 140400.0
+  },
+  {
+    "skill_name": "AWS",
+    "skill_category": "Cloud platforms",
+    "display_order": 20,
+    "role_family": "Data Engineer",
+    "postings": 214,
+    "role_share_pct": 52.07,
+    "salary_postings": 59,
+    "median_salary_usd": 142500.0
+  },
+  {
+    "skill_name": "Azure",
+    "skill_category": "Cloud platforms",
+    "display_order": 21,
+    "role_family": "Data Engineer",
+    "postings": 177,
+    "role_share_pct": 43.07,
+    "salary_postings": 51,
+    "median_salary_usd": 140000.0
+  },
+  {
+    "skill_name": "Java",
+    "skill_category": "Programming and query languages",
+    "display_order": 4,
+    "role_family": "Data Engineer",
+    "postings": 112,
+    "role_share_pct": 27.25,
+    "salary_postings": 31,
+    "median_salary_usd": 155000.0
+  },
+  {
+    "skill_name": "Snowflake",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 30,
+    "role_family": "Data Engineer",
+    "postings": 104,
+    "role_share_pct": 25.3,
+    "salary_postings": 27,
+    "median_salary_usd": 150000.0
+  },
+  {
+    "skill_name": "Scala",
+    "skill_category": "Programming and query languages",
+    "display_order": 5,
+    "role_family": "Data Engineer",
+    "postings": 102,
+    "role_share_pct": 24.82,
+    "salary_postings": 32,
+    "median_salary_usd": 140200.0
+  },
+  {
+    "skill_name": "Google Cloud",
+    "skill_category": "Cloud platforms",
+    "display_order": 22,
+    "role_family": "Data Engineer",
+    "postings": 90,
+    "role_share_pct": 21.9,
+    "salary_postings": 27,
+    "median_salary_usd": 140000.0
+  },
+  {
+    "skill_name": "Redshift",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 33,
+    "role_family": "Data Engineer",
+    "postings": 79,
+    "role_share_pct": 19.22,
+    "salary_postings": 22,
+    "median_salary_usd": 148025.0
+  },
+  {
+    "skill_name": "Databricks",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 31,
+    "role_family": "Data Engineer",
+    "postings": 78,
+    "role_share_pct": 18.98,
+    "salary_postings": 30,
+    "median_salary_usd": 136544.0
+  },
+  {
+    "skill_name": "NoSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 38,
+    "role_family": "Data Engineer",
+    "postings": 77,
+    "role_share_pct": 18.73,
+    "salary_postings": 22,
+    "median_salary_usd": 151250.0
+  },
+  {
+    "skill_name": "Hadoop",
+    "skill_category": "Big data and streaming",
+    "display_order": 41,
+    "role_family": "Data Engineer",
+    "postings": 70,
+    "role_share_pct": 17.03,
+    "salary_postings": 18,
+    "median_salary_usd": 143950.0
+  },
+  {
+    "skill_name": "Apache Spark",
+    "skill_category": "Big data and streaming",
+    "display_order": 40,
+    "role_family": "Data Engineer",
+    "postings": 67,
+    "role_share_pct": 16.3,
+    "salary_postings": 17,
+    "median_salary_usd": 130764.0
+  },
+  {
+    "skill_name": "Git",
+    "skill_category": "Engineering tools",
+    "display_order": 70,
+    "role_family": "Data Engineer",
+    "postings": 67,
+    "role_share_pct": 16.3,
+    "salary_postings": 20,
+    "median_salary_usd": 140200.0
+  },
+  {
+    "skill_name": "Kafka",
+    "skill_category": "Big data and streaming",
+    "display_order": 42,
+    "role_family": "Data Engineer",
+    "postings": 66,
+    "role_share_pct": 16.06,
+    "salary_postings": 19,
+    "median_salary_usd": 148493.0
+  },
+  {
+    "skill_name": "Power BI",
+    "skill_category": "BI and visualization",
+    "display_order": 12,
+    "role_family": "Data Engineer",
+    "postings": 60,
+    "role_share_pct": 14.6,
+    "salary_postings": 17,
+    "median_salary_usd": 145000.0
+  },
+  {
+    "skill_name": "Airflow",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 51,
+    "role_family": "Data Engineer",
+    "postings": 59,
+    "role_share_pct": 14.36,
+    "salary_postings": 18,
+    "median_salary_usd": 146250.0
+  },
+  {
+    "skill_name": "Tableau",
+    "skill_category": "BI and visualization",
+    "display_order": 11,
+    "role_family": "Data Engineer",
+    "postings": 41,
+    "role_share_pct": 9.98,
+    "salary_postings": 14,
+    "median_salary_usd": 149687.0
+  },
+  {
+    "skill_name": "BigQuery",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 32,
+    "role_family": "Data Engineer",
+    "postings": 39,
+    "role_share_pct": 9.49,
+    "salary_postings": 8,
+    "median_salary_usd": 140400.0
+  },
+  {
+    "skill_name": "PostgreSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 34,
+    "role_family": "Data Engineer",
+    "postings": 39,
+    "role_share_pct": 9.49,
+    "salary_postings": 17,
+    "median_salary_usd": 138550.0
+  },
+  {
+    "skill_name": "MySQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 35,
+    "role_family": "Data Engineer",
+    "postings": 39,
+    "role_share_pct": 9.49,
+    "salary_postings": 10,
+    "median_salary_usd": 132882.0
+  },
+  {
+    "skill_name": "Kubernetes",
+    "skill_category": "Engineering tools",
+    "display_order": 72,
+    "role_family": "Data Engineer",
+    "postings": 37,
+    "role_share_pct": 9.0,
+    "salary_postings": 17,
+    "median_salary_usd": 148493.0
+  },
+  {
+    "skill_name": "dbt",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 50,
+    "role_family": "Data Engineer",
+    "postings": 34,
+    "role_share_pct": 8.27,
+    "salary_postings": 8,
+    "median_salary_usd": 163000.0
+  },
+  {
+    "skill_name": "Docker",
+    "skill_category": "Engineering tools",
+    "display_order": 71,
+    "role_family": "Data Engineer",
+    "postings": 30,
+    "role_share_pct": 7.3,
+    "salary_postings": 13,
+    "median_salary_usd": 142500.0
+  },
+  {
+    "skill_name": "Jira",
+    "skill_category": "Engineering tools",
+    "display_order": 73,
+    "role_family": "Data Engineer",
+    "postings": 30,
+    "role_share_pct": 7.3,
+    "salary_postings": 11,
+    "median_salary_usd": 140400.0
+  },
+  {
+    "skill_name": "Informatica",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 52,
+    "role_family": "Data Engineer",
+    "postings": 26,
+    "role_share_pct": 6.33,
+    "salary_postings": 5,
+    "median_salary_usd": 135200.0
+  },
+  {
+    "skill_name": "MongoDB",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 37,
+    "role_family": "Data Engineer",
+    "postings": 20,
+    "role_share_pct": 4.87,
+    "salary_postings": 10,
+    "median_salary_usd": 151750.0
+  },
+  {
+    "skill_name": "R",
+    "skill_category": "Programming and query languages",
+    "display_order": 3,
+    "role_family": "Data Engineer",
+    "postings": 19,
+    "role_share_pct": 4.62,
+    "salary_postings": 12,
+    "median_salary_usd": 140400.0
+  },
+  {
+    "skill_name": "Excel",
+    "skill_category": "BI and visualization",
+    "display_order": 10,
+    "role_family": "Data Engineer",
+    "postings": 14,
+    "role_share_pct": 3.41,
+    "salary_postings": 4,
+    "median_salary_usd": 149246.0
+  },
+  {
+    "skill_name": "Pandas",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 61,
+    "role_family": "Data Engineer",
+    "postings": 13,
+    "role_share_pct": 3.16,
+    "salary_postings": 4,
+    "median_salary_usd": 162500.0
+  },
+  {
+    "skill_name": "Qlik",
+    "skill_category": "BI and visualization",
+    "display_order": 14,
+    "role_family": "Data Engineer",
+    "postings": 7,
+    "role_share_pct": 1.7,
+    "salary_postings": 1,
+    "median_salary_usd": 173250.0
+  },
+  {
+    "skill_name": "Looker",
+    "skill_category": "BI and visualization",
+    "display_order": 13,
+    "role_family": "Data Engineer",
+    "postings": 4,
+    "role_share_pct": 0.97,
+    "salary_postings": 3,
+    "median_salary_usd": 254900.0
+  },
+  {
+    "skill_name": "SAS",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 60,
+    "role_family": "Data Engineer",
+    "postings": 4,
+    "role_share_pct": 0.97,
+    "salary_postings": 1,
+    "median_salary_usd": 99500.0
+  },
+  {
+    "skill_name": "NumPy",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 62,
+    "role_family": "Data Engineer",
+    "postings": 4,
+    "role_share_pct": 0.97,
+    "salary_postings": 1,
+    "median_salary_usd": 150000.0
+  },
+  {
+    "skill_name": "PyTorch",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 65,
+    "role_family": "Data Engineer",
+    "postings": 3,
+    "role_share_pct": 0.73,
+    "salary_postings": 1,
+    "median_salary_usd": 165000.0
+  },
+  {
+    "skill_name": "Oracle",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 36,
+    "role_family": "Data Engineer",
+    "postings": 2,
+    "role_share_pct": 0.49,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Alteryx",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 53,
+    "role_family": "Data Engineer",
+    "postings": 2,
+    "role_share_pct": 0.49,
+    "salary_postings": 1,
+    "median_salary_usd": 174000.0
+  },
+  {
+    "skill_name": "TensorFlow",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 64,
+    "role_family": "Data Engineer",
+    "postings": 2,
+    "role_share_pct": 0.49,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Scikit-learn",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 63,
+    "role_family": "Data Engineer",
+    "postings": 1,
+    "role_share_pct": 0.24,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Python",
+    "skill_category": "Programming and query languages",
+    "display_order": 2,
+    "role_family": "Data Scientist",
+    "postings": 290,
+    "role_share_pct": 85.8,
+    "salary_postings": 94,
+    "median_salary_usd": 166400.0
+  },
+  {
+    "skill_name": "SQL",
+    "skill_category": "Programming and query languages",
+    "display_order": 1,
+    "role_family": "Data Scientist",
+    "postings": 167,
+    "role_share_pct": 49.41,
+    "salary_postings": 54,
+    "median_salary_usd": 162200.0
+  },
+  {
+    "skill_name": "AWS",
+    "skill_category": "Cloud platforms",
+    "display_order": 20,
+    "role_family": "Data Scientist",
+    "postings": 86,
+    "role_share_pct": 25.44,
+    "salary_postings": 26,
+    "median_salary_usd": 170000.0
+  },
+  {
+    "skill_name": "PyTorch",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 65,
+    "role_family": "Data Scientist",
+    "postings": 86,
+    "role_share_pct": 25.44,
+    "salary_postings": 26,
+    "median_salary_usd": 174500.0
+  },
+  {
+    "skill_name": "TensorFlow",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 64,
+    "role_family": "Data Scientist",
+    "postings": 75,
+    "role_share_pct": 22.19,
+    "salary_postings": 28,
+    "median_salary_usd": 171075.0
+  },
+  {
+    "skill_name": "Google Cloud",
+    "skill_category": "Cloud platforms",
+    "display_order": 22,
+    "role_family": "Data Scientist",
+    "postings": 57,
+    "role_share_pct": 16.86,
+    "salary_postings": 16,
+    "median_salary_usd": 170000.0
+  },
+  {
+    "skill_name": "Azure",
+    "skill_category": "Cloud platforms",
+    "display_order": 21,
+    "role_family": "Data Scientist",
+    "postings": 48,
+    "role_share_pct": 14.2,
+    "salary_postings": 17,
+    "median_salary_usd": 160000.0
+  },
+  {
+    "skill_name": "Java",
+    "skill_category": "Programming and query languages",
+    "display_order": 4,
+    "role_family": "Data Scientist",
+    "postings": 47,
+    "role_share_pct": 13.91,
+    "salary_postings": 22,
+    "median_salary_usd": 165700.0
+  },
+  {
+    "skill_name": "Scala",
+    "skill_category": "Programming and query languages",
+    "display_order": 5,
+    "role_family": "Data Scientist",
+    "postings": 47,
+    "role_share_pct": 13.91,
+    "salary_postings": 18,
+    "median_salary_usd": 158600.0
+  },
+  {
+    "skill_name": "Tableau",
+    "skill_category": "BI and visualization",
+    "display_order": 11,
+    "role_family": "Data Scientist",
+    "postings": 46,
+    "role_share_pct": 13.61,
+    "salary_postings": 16,
+    "median_salary_usd": 141250.0
+  },
+  {
+    "skill_name": "Scikit-learn",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 63,
+    "role_family": "Data Scientist",
+    "postings": 44,
+    "role_share_pct": 13.02,
+    "salary_postings": 9,
+    "median_salary_usd": 166400.0
+  },
+  {
+    "skill_name": "R",
+    "skill_category": "Programming and query languages",
+    "display_order": 3,
+    "role_family": "Data Scientist",
+    "postings": 36,
+    "role_share_pct": 10.65,
+    "salary_postings": 9,
+    "median_salary_usd": 171600.0
+  },
+  {
+    "skill_name": "SAS",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 60,
+    "role_family": "Data Scientist",
+    "postings": 36,
+    "role_share_pct": 10.65,
+    "salary_postings": 19,
+    "median_salary_usd": 121898.0
+  },
+  {
+    "skill_name": "Hadoop",
+    "skill_category": "Big data and streaming",
+    "display_order": 41,
+    "role_family": "Data Scientist",
+    "postings": 35,
+    "role_share_pct": 10.36,
+    "salary_postings": 19,
+    "median_salary_usd": 163900.0
+  },
+  {
+    "skill_name": "Power BI",
+    "skill_category": "BI and visualization",
+    "display_order": 12,
+    "role_family": "Data Scientist",
+    "postings": 34,
+    "role_share_pct": 10.06,
+    "salary_postings": 14,
+    "median_salary_usd": 150050.0
+  },
+  {
+    "skill_name": "Docker",
+    "skill_category": "Engineering tools",
+    "display_order": 71,
+    "role_family": "Data Scientist",
+    "postings": 34,
+    "role_share_pct": 10.06,
+    "salary_postings": 12,
+    "median_salary_usd": 146000.0
+  },
+  {
+    "skill_name": "Kubernetes",
+    "skill_category": "Engineering tools",
+    "display_order": 72,
+    "role_family": "Data Scientist",
+    "postings": 32,
+    "role_share_pct": 9.47,
+    "salary_postings": 10,
+    "median_salary_usd": 173325.0
+  },
+  {
+    "skill_name": "Apache Spark",
+    "skill_category": "Big data and streaming",
+    "display_order": 40,
+    "role_family": "Data Scientist",
+    "postings": 30,
+    "role_share_pct": 8.88,
+    "salary_postings": 5,
+    "median_salary_usd": 130000.0
+  },
+  {
+    "skill_name": "Pandas",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 61,
+    "role_family": "Data Scientist",
+    "postings": 28,
+    "role_share_pct": 8.28,
+    "salary_postings": 13,
+    "median_salary_usd": 174500.0
+  },
+  {
+    "skill_name": "Git",
+    "skill_category": "Engineering tools",
+    "display_order": 70,
+    "role_family": "Data Scientist",
+    "postings": 27,
+    "role_share_pct": 7.99,
+    "salary_postings": 13,
+    "median_salary_usd": 162000.0
+  },
+  {
+    "skill_name": "NumPy",
+    "skill_category": "Analytics and machine learning",
+    "display_order": 62,
+    "role_family": "Data Scientist",
+    "postings": 24,
+    "role_share_pct": 7.1,
+    "salary_postings": 14,
+    "median_salary_usd": 172250.0
+  },
+  {
+    "skill_name": "NoSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 38,
+    "role_family": "Data Scientist",
+    "postings": 22,
+    "role_share_pct": 6.51,
+    "salary_postings": 8,
+    "median_salary_usd": 199360.0
+  },
+  {
+    "skill_name": "Excel",
+    "skill_category": "BI and visualization",
+    "display_order": 10,
+    "role_family": "Data Scientist",
+    "postings": 21,
+    "role_share_pct": 6.21,
+    "salary_postings": 10,
+    "median_salary_usd": 177255.0
+  },
+  {
+    "skill_name": "Databricks",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 31,
+    "role_family": "Data Scientist",
+    "postings": 21,
+    "role_share_pct": 6.21,
+    "salary_postings": 7,
+    "median_salary_usd": 182000.0
+  },
+  {
+    "skill_name": "Snowflake",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 30,
+    "role_family": "Data Scientist",
+    "postings": 10,
+    "role_share_pct": 2.96,
+    "salary_postings": 3,
+    "median_salary_usd": 170000.0
+  },
+  {
+    "skill_name": "Airflow",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 51,
+    "role_family": "Data Scientist",
+    "postings": 10,
+    "role_share_pct": 2.96,
+    "salary_postings": 2,
+    "median_salary_usd": 166250.0
+  },
+  {
+    "skill_name": "BigQuery",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 32,
+    "role_family": "Data Scientist",
+    "postings": 9,
+    "role_share_pct": 2.66,
+    "salary_postings": 2,
+    "median_salary_usd": 155000.0
+  },
+  {
+    "skill_name": "PostgreSQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 34,
+    "role_family": "Data Scientist",
+    "postings": 8,
+    "role_share_pct": 2.37,
+    "salary_postings": 3,
+    "median_salary_usd": 150000.0
+  },
+  {
+    "skill_name": "Kafka",
+    "skill_category": "Big data and streaming",
+    "display_order": 42,
+    "role_family": "Data Scientist",
+    "postings": 8,
+    "role_share_pct": 2.37,
+    "salary_postings": 5,
+    "median_salary_usd": 170000.0
+  },
+  {
+    "skill_name": "MySQL",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 35,
+    "role_family": "Data Scientist",
+    "postings": 7,
+    "role_share_pct": 2.07,
+    "salary_postings": 2,
+    "median_salary_usd": 101733.0
+  },
+  {
+    "skill_name": "MongoDB",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 37,
+    "role_family": "Data Scientist",
+    "postings": 6,
+    "role_share_pct": 1.78,
+    "salary_postings": 1,
+    "median_salary_usd": 150000.0
+  },
+  {
+    "skill_name": "Qlik",
+    "skill_category": "BI and visualization",
+    "display_order": 14,
+    "role_family": "Data Scientist",
+    "postings": 5,
+    "role_share_pct": 1.48,
+    "salary_postings": 1,
+    "median_salary_usd": 180000.0
+  },
+  {
+    "skill_name": "Jira",
+    "skill_category": "Engineering tools",
+    "display_order": 73,
+    "role_family": "Data Scientist",
+    "postings": 5,
+    "role_share_pct": 1.48,
+    "salary_postings": 2,
+    "median_salary_usd": 172000.0
+  },
+  {
+    "skill_name": "Alteryx",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 53,
+    "role_family": "Data Scientist",
+    "postings": 3,
+    "role_share_pct": 0.89,
+    "salary_postings": 1,
+    "median_salary_usd": 132500.0
+  },
+  {
+    "skill_name": "Redshift",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 33,
+    "role_family": "Data Scientist",
+    "postings": 2,
+    "role_share_pct": 0.59,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "dbt",
+    "skill_category": "Transformation and orchestration",
+    "display_order": 50,
+    "role_family": "Data Scientist",
+    "postings": 2,
+    "role_share_pct": 0.59,
+    "salary_postings": 1,
+    "median_salary_usd": 150000.0
+  },
+  {
+    "skill_name": "Looker",
+    "skill_category": "BI and visualization",
+    "display_order": 13,
+    "role_family": "Data Scientist",
+    "postings": 1,
+    "role_share_pct": 0.3,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "Oracle",
+    "skill_category": "Data platforms and warehouses",
+    "display_order": 36,
+    "role_family": "Data Scientist",
+    "postings": 1,
+    "role_share_pct": 0.3,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  },
+  {
+    "skill_name": "SQL",
+    "skill_category": "Programming and query languages",
+    "display_order": 1,
+    "role_family": "Product Analyst",
+    "postings": 9,
+    "role_share_pct": 34.62,
+    "salary_postings": 3,
+    "median_salary_usd": 64480.0
+  },
+  {
+    "skill_name": "Excel",
+    "skill_category": "BI and visualization",
+    "display_order": 10,
+    "role_family": "Product Analyst",
+    "postings": 7,
+    "role_share_pct": 26.92,
+    "salary_postings": 1,
+    "median_salary_usd": 54725.0
+  },
+  {
+    "skill_name": "Tableau",
+    "skill_category": "BI and visualization",
+    "display_order": 11,
+    "role_family": "Product Analyst",
+    "postings": 7,
+    "role_share_pct": 26.92,
+    "salary_postings": 2,
+    "median_salary_usd": 116464.0
+  },
+  {
+    "skill_name": "Python",
+    "skill_category": "Programming and query languages",
+    "display_order": 2,
+    "role_family": "Product Analyst",
+    "postings": 6,
+    "role_share_pct": 23.08,
+    "salary_postings": 3,
+    "median_salary_usd": 65000.0
+  },
+  {
+    "skill_name": "Power BI",
+    "skill_category": "BI and visualization",
+    "display_order": 12,
+    "role_family": "Product Analyst",
+    "postings": 6,
+    "role_share_pct": 23.08,
+    "salary_postings": 2,
+    "median_salary_usd": 116464.0
+  },
+  {
+    "skill_name": "Jira",
+    "skill_category": "Engineering tools",
+    "display_order": 73,
+    "role_family": "Product Analyst",
+    "postings": 5,
+    "role_share_pct": 19.23,
+    "salary_postings": 2,
+    "median_salary_usd": 126780.0
+  },
+  {
+    "skill_name": "AWS",
+    "skill_category": "Cloud platforms",
+    "display_order": 20,
+    "role_family": "Product Analyst",
+    "postings": 1,
+    "role_share_pct": 3.85,
+    "salary_postings": 0,
+    "median_salary_usd": null
+  }
+]

@@ -15,6 +15,9 @@ data/processed/*
 *.parquet
 *.csv
 
+# Version-controlled dbt lookup seeds
+!dbt/seeds/*.csv
+
 # dbt
 dbt/target/
 dbt/dbt_packages/
@@ -32,3 +35,6 @@ dbt/logs/
 airflow_home/
 # Local timestamped source backups
 *_before_*.py
+
+# Version-controlled aggregated Looker Studio exports
+!looker_studio/data/*.csv

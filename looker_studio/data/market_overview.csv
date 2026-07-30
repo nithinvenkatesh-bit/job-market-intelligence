@@ -1,0 +1,2 @@
+total_postings,companies_with_id,company_names,earliest_posting_date,latest_posting_date,valid_salary_postings,salary_coverage_pct,median_salary_usd,salary_p25_usd,salary_p75_usd,remote_tagged_postings,remote_tagged_pct,sponsored_postings,average_views,average_applies
+123849,24474,24430,2023-12-05,2024-04-19,35543,28.7,82500.0,52000.0,125000.0,15246,12.31,0,14.6,10.6

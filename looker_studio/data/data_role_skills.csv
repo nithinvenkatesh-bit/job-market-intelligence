@@ -1,0 +1,244 @@
+skill_name,skill_category,display_order,role_family,postings,role_share_pct,salary_postings,median_salary_usd
+SQL,Programming and query languages,1,All data roles,1012,51.19,339,127550.0
+Python,Programming and query languages,2,All data roles,818,41.38,266,138525.0
+Excel,BI and visualization,10,All data roles,429,21.7,152,100700.0
+AWS,Cloud platforms,20,All data roles,373,18.87,106,145600.0
+Power BI,BI and visualization,12,All data roles,365,18.46,139,117500.0
+Azure,Cloud platforms,21,All data roles,316,15.98,97,140000.0
+Tableau,BI and visualization,11,All data roles,306,15.48,121,123200.0
+Java,Programming and query languages,4,All data roles,183,9.26,63,151874.0
+Google Cloud,Cloud platforms,22,All data roles,174,8.8,56,140200.0
+Snowflake,Data platforms and warehouses,30,All data roles,167,8.45,52,142800.0
+Scala,Programming and query languages,5,All data roles,153,7.74,51,145000.0
+Jira,Engineering tools,73,All data roles,139,7.03,44,134685.0
+Databricks,Data platforms and warehouses,31,All data roles,123,6.22,47,140000.0
+Hadoop,Big data and streaming,41,All data roles,122,6.17,46,143950.0
+Git,Engineering tools,70,All data roles,121,6.12,45,140000.0
+NoSQL,Data platforms and warehouses,38,All data roles,116,5.87,37,155000.0
+R,Programming and query languages,3,All data roles,109,5.51,32,147500.0
+Redshift,Data platforms and warehouses,33,All data roles,107,5.41,30,137800.0
+Apache Spark,Big data and streaming,40,All data roles,107,5.41,25,130000.0
+SAS,Analytics and machine learning,60,All data roles,97,4.91,43,114938.0
+PyTorch,Analytics and machine learning,65,All data roles,90,4.55,28,173325.0
+TensorFlow,Analytics and machine learning,64,All data roles,78,3.95,29,170000.0
+Airflow,Transformation and orchestration,51,All data roles,77,3.89,26,146250.0
+Kafka,Big data and streaming,42,All data roles,76,3.84,24,150937.0
+Kubernetes,Engineering tools,72,All data roles,75,3.79,29,156000.0
+Docker,Engineering tools,71,All data roles,70,3.54,27,140400.0
+BigQuery,Data platforms and warehouses,32,All data roles,65,3.29,18,139000.0
+PostgreSQL,Data platforms and warehouses,34,All data roles,56,2.83,23,140000.0
+MySQL,Data platforms and warehouses,35,All data roles,55,2.78,15,130764.0
+dbt,Transformation and orchestration,50,All data roles,50,2.53,16,156000.0
+Scikit-learn,Analytics and machine learning,63,All data roles,47,2.38,9,166400.0
+Informatica,Transformation and orchestration,52,All data roles,45,2.28,10,135200.0
+Pandas,Analytics and machine learning,61,All data roles,44,2.23,18,172250.0
+Qlik,BI and visualization,14,All data roles,37,1.87,14,88470.0
+Looker,BI and visualization,13,All data roles,32,1.62,14,136000.0
+NumPy,Analytics and machine learning,62,All data roles,30,1.52,15,170000.0
+MongoDB,Data platforms and warehouses,37,All data roles,29,1.47,14,148750.0
+Alteryx,Transformation and orchestration,53,All data roles,24,1.21,6,124300.0
+Oracle,Data platforms and warehouses,36,All data roles,7,0.35,1,81120.0
+SQL,Programming and query languages,1,Analytics Engineer,18,78.26,10,169550.0
+Python,Programming and query languages,2,Analytics Engineer,15,65.22,7,171600.0
+Tableau,BI and visualization,11,Analytics Engineer,10,43.48,4,195413.0
+Snowflake,Data platforms and warehouses,30,Analytics Engineer,10,43.48,4,162738.0
+AWS,Cloud platforms,20,Analytics Engineer,9,39.13,3,150000.0
+Power BI,BI and visualization,12,Analytics Engineer,7,30.43,4,252675.0
+dbt,Transformation and orchestration,50,Analytics Engineer,7,30.43,3,167500.0
+Excel,BI and visualization,10,Analytics Engineer,6,26.09,3,175475.0
+Azure,Cloud platforms,21,Analytics Engineer,6,26.09,2,182675.0
+Airflow,Transformation and orchestration,51,Analytics Engineer,5,21.74,4,228750.0
+Databricks,Data platforms and warehouses,31,Analytics Engineer,4,17.39,3,215350.0
+Looker,BI and visualization,13,Analytics Engineer,3,13.04,1,215350.0
+BigQuery,Data platforms and warehouses,32,Analytics Engineer,3,13.04,2,257675.0
+Redshift,Data platforms and warehouses,33,Analytics Engineer,3,13.04,2,257675.0
+Git,Engineering tools,70,Analytics Engineer,3,13.04,2,287500.0
+Google Cloud,Cloud platforms,22,Analytics Engineer,2,8.7,1,215350.0
+Alteryx,Transformation and orchestration,53,Analytics Engineer,2,8.7,1,116100.0
+Java,Programming and query languages,4,Analytics Engineer,1,4.35,0,
+PostgreSQL,Data platforms and warehouses,34,Analytics Engineer,1,4.35,0,
+Apache Spark,Big data and streaming,40,Analytics Engineer,1,4.35,0,
+SAS,Analytics and machine learning,60,Analytics Engineer,1,4.35,1,175475.0
+SQL,Programming and query languages,1,BI Analyst,146,68.22,53,115700.0
+Power BI,BI and visualization,12,BI Analyst,119,55.61,44,112150.0
+Tableau,BI and visualization,11,BI Analyst,79,36.92,31,120640.0
+Excel,BI and visualization,10,BI Analyst,67,31.31,30,100000.0
+Python,Programming and query languages,2,BI Analyst,48,22.43,16,122595.0
+Azure,Cloud platforms,21,BI Analyst,37,17.29,14,136560.0
+Snowflake,Data platforms and warehouses,30,BI Analyst,15,7.01,7,137500.0
+AWS,Cloud platforms,20,BI Analyst,14,6.54,4,128550.0
+SAS,Analytics and machine learning,60,BI Analyst,14,6.54,4,124853.0
+Qlik,BI and visualization,14,BI Analyst,13,6.07,9,87500.0
+Redshift,Data platforms and warehouses,33,BI Analyst,12,5.61,3,120640.0
+NoSQL,Data platforms and warehouses,38,BI Analyst,12,5.61,4,120250.0
+R,Programming and query languages,3,BI Analyst,9,4.21,2,160500.0
+Informatica,Transformation and orchestration,52,BI Analyst,7,3.27,1,125155.0
+Jira,Engineering tools,73,BI Analyst,7,3.27,1,73455.0
+Databricks,Data platforms and warehouses,31,BI Analyst,6,2.8,2,153960.0
+Alteryx,Transformation and orchestration,53,BI Analyst,6,2.8,2,108500.0
+Looker,BI and visualization,13,BI Analyst,5,2.34,3,95000.0
+Apache Spark,Big data and streaming,40,BI Analyst,5,2.34,0,
+BigQuery,Data platforms and warehouses,32,BI Analyst,4,1.87,2,98750.0
+Git,Engineering tools,70,BI Analyst,4,1.87,3,124800.0
+Java,Programming and query languages,4,BI Analyst,3,1.4,2,126012.0
+Google Cloud,Cloud platforms,22,BI Analyst,3,1.4,2,138650.0
+PostgreSQL,Data platforms and warehouses,34,BI Analyst,2,0.93,2,132400.0
+MySQL,Data platforms and warehouses,35,BI Analyst,2,0.93,1,140000.0
+dbt,Transformation and orchestration,50,BI Analyst,2,0.93,1,137500.0
+Scala,Programming and query languages,5,BI Analyst,1,0.47,0,
+Oracle,Data platforms and warehouses,36,BI Analyst,1,0.47,0,
+MongoDB,Data platforms and warehouses,37,BI Analyst,1,0.47,1,124800.0
+Hadoop,Big data and streaming,41,BI Analyst,1,0.47,0,
+Airflow,Transformation and orchestration,51,BI Analyst,1,0.47,0,
+Pandas,Analytics and machine learning,61,BI Analyst,1,0.47,1,77250.0
+Docker,Engineering tools,71,BI Analyst,1,0.47,0,
+Kubernetes,Engineering tools,72,BI Analyst,1,0.47,0,
+Excel,BI and visualization,10,Business Analyst,156,29.16,40,100700.0
+SQL,Programming and query languages,1,Business Analyst,126,23.55,38,111160.0
+Jira,Engineering tools,73,Business Analyst,77,14.39,21,122800.0
+Power BI,BI and visualization,12,Business Analyst,48,8.97,13,118000.0
+Tableau,BI and visualization,11,Business Analyst,36,6.73,10,101610.0
+Python,Programming and query languages,2,Business Analyst,25,4.67,10,104000.0
+Azure,Cloud platforms,21,Business Analyst,24,4.49,4,94800.0
+AWS,Cloud platforms,20,Business Analyst,16,2.99,5,80080.0
+Google Cloud,Cloud platforms,22,Business Analyst,10,1.87,4,71450.0
+Java,Programming and query languages,4,Business Analyst,8,1.5,1,127500.0
+SAS,Analytics and machine learning,60,Business Analyst,6,1.12,1,91957.0
+MySQL,Data platforms and warehouses,35,Business Analyst,4,0.75,1,91957.0
+Git,Engineering tools,70,Business Analyst,4,0.75,1,125000.0
+R,Programming and query languages,3,Business Analyst,3,0.56,1,72250.0
+BigQuery,Data platforms and warehouses,32,Business Analyst,3,0.56,2,78950.0
+Oracle,Data platforms and warehouses,36,Business Analyst,3,0.56,1,81120.0
+Informatica,Transformation and orchestration,52,Business Analyst,3,0.56,1,150280.0
+Alteryx,Transformation and orchestration,53,Business Analyst,3,0.56,1,72800.0
+Looker,BI and visualization,13,Business Analyst,2,0.37,2,93460.0
+Qlik,BI and visualization,14,Business Analyst,2,0.37,0,
+Snowflake,Data platforms and warehouses,30,Business Analyst,2,0.37,0,
+Redshift,Data platforms and warehouses,33,Business Analyst,2,0.37,1,91957.0
+Docker,Engineering tools,71,Business Analyst,2,0.37,1,125000.0
+Kubernetes,Engineering tools,72,Business Analyst,2,0.37,1,125000.0
+MongoDB,Data platforms and warehouses,37,Business Analyst,1,0.19,1,88400.0
+NoSQL,Data platforms and warehouses,38,Business Analyst,1,0.19,1,91957.0
+Hadoop,Big data and streaming,41,Business Analyst,1,0.19,0,
+SQL,Programming and query languages,1,Data Analyst,251,58.37,86,109733.0
+Excel,BI and visualization,10,Data Analyst,158,36.74,64,91050.0
+Python,Programming and query languages,2,Data Analyst,151,35.12,44,106552.0
+Power BI,BI and visualization,12,Data Analyst,91,21.16,45,100000.0
+Tableau,BI and visualization,11,Data Analyst,87,20.23,44,109552.0
+R,Programming and query languages,3,Data Analyst,42,9.77,8,129381.0
+SAS,Analytics and machine learning,60,Data Analyst,36,8.37,17,89440.0
+AWS,Cloud platforms,20,Data Analyst,33,7.67,9,98800.0
+Snowflake,Data platforms and warehouses,30,Data Analyst,26,6.05,11,125050.0
+Azure,Cloud platforms,21,Data Analyst,24,5.58,9,110000.0
+Looker,BI and visualization,13,Data Analyst,17,3.95,5,135000.0
+Git,Engineering tools,70,Data Analyst,16,3.72,6,108700.0
+Hadoop,Big data and streaming,41,Data Analyst,15,3.49,9,135200.0
+Jira,Engineering tools,73,Data Analyst,15,3.49,7,146640.0
+Databricks,Data platforms and warehouses,31,Data Analyst,14,3.26,5,80500.0
+Java,Programming and query languages,4,Data Analyst,12,2.79,7,89440.0
+Google Cloud,Cloud platforms,22,Data Analyst,12,2.79,6,115120.0
+Qlik,BI and visualization,14,Data Analyst,10,2.33,3,83200.0
+Redshift,Data platforms and warehouses,33,Data Analyst,9,2.09,2,151925.0
+Informatica,Transformation and orchestration,52,Data Analyst,9,2.09,3,124800.0
+Alteryx,Transformation and orchestration,53,Data Analyst,8,1.86,0,
+BigQuery,Data platforms and warehouses,32,Data Analyst,7,1.63,2,136500.0
+PostgreSQL,Data platforms and warehouses,34,Data Analyst,6,1.4,1,168850.0
+dbt,Transformation and orchestration,50,Data Analyst,5,1.16,3,135000.0
+NoSQL,Data platforms and warehouses,38,Data Analyst,4,0.93,2,163465.0
+Apache Spark,Big data and streaming,40,Data Analyst,4,0.93,3,124800.0
+Scala,Programming and query languages,5,Data Analyst,3,0.7,1,98800.0
+MySQL,Data platforms and warehouses,35,Data Analyst,3,0.7,1,168850.0
+Docker,Engineering tools,71,Data Analyst,3,0.7,1,77500.0
+Kubernetes,Engineering tools,72,Data Analyst,3,0.7,1,122850.0
+Kafka,Big data and streaming,42,Data Analyst,2,0.47,0,
+Airflow,Transformation and orchestration,51,Data Analyst,2,0.47,2,125653.0
+Pandas,Analytics and machine learning,61,Data Analyst,2,0.47,0,
+NumPy,Analytics and machine learning,62,Data Analyst,2,0.47,0,
+Scikit-learn,Analytics and machine learning,63,Data Analyst,2,0.47,0,
+MongoDB,Data platforms and warehouses,37,Data Analyst,1,0.23,1,168850.0
+TensorFlow,Analytics and machine learning,64,Data Analyst,1,0.23,1,60555.0
+PyTorch,Analytics and machine learning,65,Data Analyst,1,0.23,1,60555.0
+SQL,Programming and query languages,1,Data Engineer,295,71.78,95,138550.0
+Python,Programming and query languages,2,Data Engineer,283,68.86,92,140400.0
+AWS,Cloud platforms,20,Data Engineer,214,52.07,59,142500.0
+Azure,Cloud platforms,21,Data Engineer,177,43.07,51,140000.0
+Java,Programming and query languages,4,Data Engineer,112,27.25,31,155000.0
+Snowflake,Data platforms and warehouses,30,Data Engineer,104,25.3,27,150000.0
+Scala,Programming and query languages,5,Data Engineer,102,24.82,32,140200.0
+Google Cloud,Cloud platforms,22,Data Engineer,90,21.9,27,140000.0
+Redshift,Data platforms and warehouses,33,Data Engineer,79,19.22,22,148025.0
+Databricks,Data platforms and warehouses,31,Data Engineer,78,18.98,30,136544.0
+NoSQL,Data platforms and warehouses,38,Data Engineer,77,18.73,22,151250.0
+Hadoop,Big data and streaming,41,Data Engineer,70,17.03,18,143950.0
+Apache Spark,Big data and streaming,40,Data Engineer,67,16.3,17,130764.0
+Git,Engineering tools,70,Data Engineer,67,16.3,20,140200.0
+Kafka,Big data and streaming,42,Data Engineer,66,16.06,19,148493.0
+Power BI,BI and visualization,12,Data Engineer,60,14.6,17,145000.0
+Airflow,Transformation and orchestration,51,Data Engineer,59,14.36,18,146250.0
+Tableau,BI and visualization,11,Data Engineer,41,9.98,14,149687.0
+BigQuery,Data platforms and warehouses,32,Data Engineer,39,9.49,8,140400.0
+PostgreSQL,Data platforms and warehouses,34,Data Engineer,39,9.49,17,138550.0
+MySQL,Data platforms and warehouses,35,Data Engineer,39,9.49,10,132882.0
+Kubernetes,Engineering tools,72,Data Engineer,37,9.0,17,148493.0
+dbt,Transformation and orchestration,50,Data Engineer,34,8.27,8,163000.0
+Docker,Engineering tools,71,Data Engineer,30,7.3,13,142500.0
+Jira,Engineering tools,73,Data Engineer,30,7.3,11,140400.0
+Informatica,Transformation and orchestration,52,Data Engineer,26,6.33,5,135200.0
+MongoDB,Data platforms and warehouses,37,Data Engineer,20,4.87,10,151750.0
+R,Programming and query languages,3,Data Engineer,19,4.62,12,140400.0
+Excel,BI and visualization,10,Data Engineer,14,3.41,4,149246.0
+Pandas,Analytics and machine learning,61,Data Engineer,13,3.16,4,162500.0
+Qlik,BI and visualization,14,Data Engineer,7,1.7,1,173250.0
+Looker,BI and visualization,13,Data Engineer,4,0.97,3,254900.0
+SAS,Analytics and machine learning,60,Data Engineer,4,0.97,1,99500.0
+NumPy,Analytics and machine learning,62,Data Engineer,4,0.97,1,150000.0
+PyTorch,Analytics and machine learning,65,Data Engineer,3,0.73,1,165000.0
+Oracle,Data platforms and warehouses,36,Data Engineer,2,0.49,0,
+Alteryx,Transformation and orchestration,53,Data Engineer,2,0.49,1,174000.0
+TensorFlow,Analytics and machine learning,64,Data Engineer,2,0.49,0,
+Scikit-learn,Analytics and machine learning,63,Data Engineer,1,0.24,0,
+Python,Programming and query languages,2,Data Scientist,290,85.8,94,166400.0
+SQL,Programming and query languages,1,Data Scientist,167,49.41,54,162200.0
+AWS,Cloud platforms,20,Data Scientist,86,25.44,26,170000.0
+PyTorch,Analytics and machine learning,65,Data Scientist,86,25.44,26,174500.0
+TensorFlow,Analytics and machine learning,64,Data Scientist,75,22.19,28,171075.0
+Google Cloud,Cloud platforms,22,Data Scientist,57,16.86,16,170000.0
+Azure,Cloud platforms,21,Data Scientist,48,14.2,17,160000.0
+Java,Programming and query languages,4,Data Scientist,47,13.91,22,165700.0
+Scala,Programming and query languages,5,Data Scientist,47,13.91,18,158600.0
+Tableau,BI and visualization,11,Data Scientist,46,13.61,16,141250.0
+Scikit-learn,Analytics and machine learning,63,Data Scientist,44,13.02,9,166400.0
+R,Programming and query languages,3,Data Scientist,36,10.65,9,171600.0
+SAS,Analytics and machine learning,60,Data Scientist,36,10.65,19,121898.0
+Hadoop,Big data and streaming,41,Data Scientist,35,10.36,19,163900.0
+Power BI,BI and visualization,12,Data Scientist,34,10.06,14,150050.0
+Docker,Engineering tools,71,Data Scientist,34,10.06,12,146000.0
+Kubernetes,Engineering tools,72,Data Scientist,32,9.47,10,173325.0
+Apache Spark,Big data and streaming,40,Data Scientist,30,8.88,5,130000.0
+Pandas,Analytics and machine learning,61,Data Scientist,28,8.28,13,174500.0
+Git,Engineering tools,70,Data Scientist,27,7.99,13,162000.0
+NumPy,Analytics and machine learning,62,Data Scientist,24,7.1,14,172250.0
+NoSQL,Data platforms and warehouses,38,Data Scientist,22,6.51,8,199360.0
+Excel,BI and visualization,10,Data Scientist,21,6.21,10,177255.0
+Databricks,Data platforms and warehouses,31,Data Scientist,21,6.21,7,182000.0
+Snowflake,Data platforms and warehouses,30,Data Scientist,10,2.96,3,170000.0
+Airflow,Transformation and orchestration,51,Data Scientist,10,2.96,2,166250.0
+BigQuery,Data platforms and warehouses,32,Data Scientist,9,2.66,2,155000.0
+PostgreSQL,Data platforms and warehouses,34,Data Scientist,8,2.37,3,150000.0
+Kafka,Big data and streaming,42,Data Scientist,8,2.37,5,170000.0
+MySQL,Data platforms and warehouses,35,Data Scientist,7,2.07,2,101733.0
+MongoDB,Data platforms and warehouses,37,Data Scientist,6,1.78,1,150000.0
+Qlik,BI and visualization,14,Data Scientist,5,1.48,1,180000.0
+Jira,Engineering tools,73,Data Scientist,5,1.48,2,172000.0
+Alteryx,Transformation and orchestration,53,Data Scientist,3,0.89,1,132500.0
+Redshift,Data platforms and warehouses,33,Data Scientist,2,0.59,0,
+dbt,Transformation and orchestration,50,Data Scientist,2,0.59,1,150000.0
+Looker,BI and visualization,13,Data Scientist,1,0.3,0,
+Oracle,Data platforms and warehouses,36,Data Scientist,1,0.3,0,
+SQL,Programming and query languages,1,Product Analyst,9,34.62,3,64480.0
+Excel,BI and visualization,10,Product Analyst,7,26.92,1,54725.0
+Tableau,BI and visualization,11,Product Analyst,7,26.92,2,116464.0
+Python,Programming and query languages,2,Product Analyst,6,23.08,3,65000.0
+Power BI,BI and visualization,12,Product Analyst,6,23.08,2,116464.0
+Jira,Engineering tools,73,Product Analyst,5,19.23,2,126780.0
+AWS,Cloud platforms,20,Product Analyst,1,3.85,0,
