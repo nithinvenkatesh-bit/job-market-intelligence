@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -31,10 +31,13 @@ jobs:
       # possibly work. Style opinions are deliberately excluded so CI stays a
       # signal about correctness rather than a nag about formatting.
       - name: Lint (errors only)
-        run: ruff check --select E9,F63,F7,F82 src/ tests/ dags/
+        run: ruff check --select E9,F63,F7,F82 src/ tests/ dags/ dashboard/
 
       - name: Run tests
         run: pytest -q
+
+      - name: Validate committed market exports
+        run: python dashboard/validate_market_data.py
 
 # NOTE -- what this workflow deliberately does NOT do:
 #
